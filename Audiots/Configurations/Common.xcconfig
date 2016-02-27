@@ -1,0 +1,22 @@
+//
+//  Common.xcconfig
+//  Brightspot Mobile Demo
+//
+//  Created by Bob Ward on 3/10/15.
+//  Copyright (c) 2015 Perfect Sense Digital. All rights reserved.
+//
+
+//do not directly reference this file, instead have project reference either Release.xcconfig or Debug.xcconfig
+//enter shared definitions (version, etc)
+
+// only configuration independent options should be specified
+
+//GCC_PREPROCESSOR_DEFINITIONS = $(inherited) $(PODS_GCC_PREPROCESSOR_DEFINITIONS_SHARED) AOD_CONFIG_ROOT_URL=@\"$(AOD_CONFIG_ROOT_URL)\"
+//GCC_PREPROCESSOR_DEFINITIONS = $(inherited) $(PODS_GCC_PREPROCESSOR_DEFINITIONS_SHARED) $(AOD_GCC_PREPROCESSOR_DEFINITIONS)
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) $(PODS_GCC_PREPROCESSOR_DEFINITIONS_SHARED)
+HEADER_SEARCH_PATHS = $(inherited) $(PODS_HEADER_SEARCH_PATHS)
+OTHER_LDFLAGS = $(inherited) $(PODS_OTHER_LDFLAGS)
+OTHER_CFLAGS = $(inherited) $(PODS_OTHER_CFLAGS)
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PODS_FRAMEWORK_SEARCH_PATHS)
+LIBRARY_SEARCH_PATHS = $(inherited) $(PODS_LIBRARY_SEARCH_PATHS)
+

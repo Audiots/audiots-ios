@@ -1,0 +1,16 @@
+PODS:
+  - iCloudDocumentSync (7.4.1)
+  - PSDDataSource (0.2.7)
+  - Toast (3.0)
+
+DEPENDENCIES:
+  - iCloudDocumentSync (= 7.4.1)
+  - PSDDataSource (= 0.2.7)
+  - Toast (= 3.0)
+
+SPEC CHECKSUMS:
+  iCloudDocumentSync: 961aac30ca09c221de4c236e94dae69912f2c589
+  PSDDataSource: de07700e784807a3c0fa168c9616acffeba28fa6
+  Toast: 32c59229abfcf41850162b83bb9259dc84372473
+
+COCOAPODS: 0.39.0

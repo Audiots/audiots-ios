@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10102" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10080"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="createCustomAudiotCollectionViewCell" id="gTV-IL-0wX" customClass="AudiotsCreateCustomAudiotCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Rn-ll-5AA" userLabel="Round View">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YU3-mM-Z60">
+                                <rect key="frame" x="16.5" y="1.5" width="27" height="51"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25490196079999999" green="0.72156862749999995" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YU3-mM-Z60" firstAttribute="centerY" secondItem="6Rn-ll-5AA" secondAttribute="centerY" constant="-3" id="Gzj-Aj-kPw"/>
+                            <constraint firstItem="YU3-mM-Z60" firstAttribute="centerX" secondItem="6Rn-ll-5AA" secondAttribute="centerX" id="S2v-en-mrV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6Rn-ll-5AA" secondAttribute="trailing" constant="10" id="S3I-H3-etf"/>
+                <constraint firstAttribute="bottom" secondItem="6Rn-ll-5AA" secondAttribute="bottom" constant="10" id="hbl-UB-3Jk"/>
+                <constraint firstItem="6Rn-ll-5AA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="ooj-Zi-PNb"/>
+                <constraint firstItem="6Rn-ll-5AA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="rgd-OA-1sd"/>
+            </constraints>
+        </collectionViewCell>
+    </objects>
+</document>
