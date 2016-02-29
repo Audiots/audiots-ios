@@ -17,6 +17,9 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
 @interface AudiotsKeyboardViewController ()
 @property (assign, nonatomic) NSInteger shiftStatus; //0 = off, 1 = on, 2 = caps lock
 @end
@@ -25,7 +28,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
+    // Initialize Crashlytics
+    [Fabric with:@[[Crashlytics class]]];
+
     //Initialize Collection Views
     [self initializeKeyboard];
     [self initializePackSelectionCollectionView];

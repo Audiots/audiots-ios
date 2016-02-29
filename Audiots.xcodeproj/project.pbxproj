@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D195EC71C8497BD0093DF3F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D195EC01C8495220093DF3F /* Crashlytics.framework */; };
+		2D195EC81C8497C00093DF3F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D195EC11C8495220093DF3F /* Fabric.framework */; };
+		2D195EC91C8497CB0093DF3F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D195EC01C8495220093DF3F /* Crashlytics.framework */; };
+		2D195ECA1C8497D10093DF3F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D195EC11C8495220093DF3F /* Fabric.framework */; };
 		2D369CD61C298196005E2629 /* PackLogo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D369CD51C298196005E2629 /* PackLogo.xcassets */; };
 		2D369CD71C298196005E2629 /* PackLogo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D369CD51C298196005E2629 /* PackLogo.xcassets */; };
 		2D40FAF51BF2943B003579CD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2D40FAF41BF2943B003579CD /* Settings.bundle */; };
@@ -114,6 +118,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D195EC01C8495220093DF3F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		2D195EC11C8495220093DF3F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		2D369CD51C298196005E2629 /* PackLogo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackLogo.xcassets; path = Packs/PackLogo.xcassets; sourceTree = "<group>"; };
 		2D40FAF41BF2943B003579CD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2D4C8C871C039563003E8FE8 /* Audiots Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Audiots Keyboard.entitlements"; sourceTree = "<group>"; };
@@ -209,7 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DC13F0D1BF246A6005E9202 /* AVFoundation.framework in Frameworks */,
+				2D195EC81C8497C00093DF3F /* Fabric.framework in Frameworks */,
 				2DF0E9FB1BE411070043E215 /* MessageUI.framework in Frameworks */,
+				2D195EC71C8497BD0093DF3F /* Crashlytics.framework in Frameworks */,
 				C0235B837BBE82568DA88FEF /* libPods-Audiots.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +226,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D195EC91C8497CB0093DF3F /* Crashlytics.framework in Frameworks */,
 				F23E690756DB9BB9B89DD88D /* libPods-Audiots Keyboard.a in Frameworks */,
+				2D195ECA1C8497D10093DF3F /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +259,8 @@
 		2DCFF68A1BE3DE31008869BF = {
 			isa = PBXGroup;
 			children = (
+				2D195EC01C8495220093DF3F /* Crashlytics.framework */,
+				2D195EC11C8495220093DF3F /* Fabric.framework */,
 				2DCFF72C1BE3EB07008869BF /* AVFoundation.framework */,
 				2DCFF6951BE3DE31008869BF /* Audiots */,
 				2DCFF6B81BE3DF34008869BF /* Audiots Keyboard */,
@@ -493,6 +505,7 @@
 				2DCFF6DE1BE3E25A008869BF /* Embed Frameworks */,
 				F9F8F8BFECCA69CEAC766A6F /* Embed Pods Frameworks */,
 				631570F67DA4012B8BF54749 /* Copy Pods Resources */,
+				2D195EBF1C8492260093DF3F /* Fabric / Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -513,6 +526,7 @@
 				2DCFF6B41BE3DF34008869BF /* Frameworks */,
 				2DCFF6B51BE3DF34008869BF /* Resources */,
 				9B7756A87BD9445916144D58 /* Copy Pods Resources */,
+				2D195EC61C8496520093DF3F /* Fabric / Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -663,6 +677,34 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		2D195EBF1C8492260093DF3F /* Fabric / Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fabric / Crashlytics";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "distributionConfig=\"Distribution\"\nif [ \"$distributionConfig\" = \"${CONFIGURATION}\" ]; then\necho \"Running Crashlytics\"\n./Pods/CrashlyticsFramework/Crashlytics.framework/run 9ab292590adaef28f059466534a6b451d21f081b 2853b85fa1e11b7cd1625be04270a6796902205781967e4dd2c58ac83f5d0ff2\nfi";
+		};
+		2D195EC61C8496520093DF3F /* Fabric / Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fabric / Crashlytics";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "distributionConfig=\"Distribution\"\nif [ \"$distributionConfig\" = \"${CONFIGURATION}\" ]; then\necho \"Running Crashlytics\"\n./Pods/CrashlyticsFramework/Crashlytics.framework/run 9ab292590adaef28f059466534a6b451d21f081b 2853b85fa1e11b7cd1625be04270a6796902205781967e4dd2c58ac83f5d0ff2\nfi";
 		};
 		631570F67DA4012B8BF54749 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -878,6 +920,10 @@
 				CODE_SIGN_ENTITLEMENTS = Audiots/Audiots.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Audiots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.4-girls-tech.audiots";
@@ -894,6 +940,10 @@
 				CODE_SIGN_ENTITLEMENTS = Audiots/Audiots.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Audiots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.4-girls-tech.audiots";
@@ -949,6 +999,10 @@
 				CODE_SIGN_ENTITLEMENTS = Audiots/Audiots.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Audiots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.4-girls-tech.audiots";
@@ -1005,6 +1059,10 @@
 				CODE_SIGN_ENTITLEMENTS = Audiots/Audiots.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Audiots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.4-girls-tech.audiots";
@@ -1020,6 +1078,10 @@
 				CODE_SIGN_ENTITLEMENTS = "Audiots Keyboard/Audiots Keyboard.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Audiots Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.4-girls-tech.audiots.Audiots-Keyboard";
@@ -1036,6 +1098,10 @@
 				CODE_SIGN_ENTITLEMENTS = "Audiots Keyboard/Audiots Keyboard.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Audiots Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.4-girls-tech.audiots.Audiots-Keyboard";
@@ -1052,6 +1118,10 @@
 				CODE_SIGN_ENTITLEMENTS = "Audiots Keyboard/Audiots Keyboard.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Audiots Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.4-girls-tech.audiots.Audiots-Keyboard";
@@ -1068,6 +1138,10 @@
 				CODE_SIGN_ENTITLEMENTS = "Audiots Keyboard/Audiots Keyboard.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Audiots Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.4-girls-tech.audiots.Audiots-Keyboard";
