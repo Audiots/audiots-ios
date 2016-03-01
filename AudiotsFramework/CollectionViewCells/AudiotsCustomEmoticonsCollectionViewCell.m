@@ -16,21 +16,21 @@
     // Initialization code
 }
 
--(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-    UIView *view = [self.emoticonPreviewButton hitTest:[self.emoticonPreviewButton convertPoint:point fromView:self] withEvent:event];
-    if (view == nil) {
-        view = [super hitTest:point withEvent:event];
-    }
-    return view;
-}
-
--(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
-    if ([super pointInside:point withEvent:event]) {
-        return YES;
-    }
-    //Check to see if it is within the delete button
-    return !self.emoticonPreviewButton.hidden && [self.emoticonPreviewButton pointInside:[self.emoticonPreviewButton convertPoint:point fromView:self] withEvent:event];
-}
+//-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+//    UIView *view = [self.emoticonPreviewButton hitTest:[self.emoticonPreviewButton convertPoint:point fromView:self] withEvent:event];
+//    if (view == nil) {
+//        view = [super hitTest:point withEvent:event];
+//    }
+//    return view;
+//}
+//
+//-(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+//    if ([super pointInside:point withEvent:event]) {
+//        return YES;
+//    }
+//    //Check to see if it is within the delete button
+//    return !self.emoticonPreviewButton.hidden && [self.emoticonPreviewButton pointInside:[self.emoticonPreviewButton convertPoint:point fromView:self] withEvent:event];
+//}
 
 -(void)setEmoticonInfoDictionary:(NSDictionary *)emoticonInfoDictionary {
     if (emoticonInfoDictionary != _emoticonInfoDictionary) {
