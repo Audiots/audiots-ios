@@ -91,18 +91,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>bubbles_plain</string>
-				<key>image_play</key>
-				<string>bubbles_play</string>
-				<key>image_speaker</key>
-				<string>bubbles_speaker</string>
-				<key>sound_mp3</key>
-				<string>bubbles_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>burp_plain</string>
 				<key>image_play</key>
 				<string>burp_play</string>
@@ -110,30 +98,6 @@
 				<string>burp_speaker</string>
 				<key>sound_mp3</key>
 				<string>burp_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>call-me_plain</string>
-				<key>image_play</key>
-				<string>call-me_play</string>
-				<key>image_speaker</key>
-				<string>call-me_speaker</string>
-				<key>sound_mp3</key>
-				<string>call-me_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>camera_plain</string>
-				<key>image_play</key>
-				<string>camera_play</string>
-				<key>image_speaker</key>
-				<string>camera_speaker</string>
-				<key>sound_mp3</key>
-				<string>camera_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -175,18 +139,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>front-door_plain</string>
-				<key>image_play</key>
-				<string>front-door_play</string>
-				<key>image_speaker</key>
-				<string>front-door_speaker</string>
-				<key>sound_mp3</key>
-				<string>front-door_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>frown_plain</string>
 				<key>image_play</key>
 				<string>frown_play</string>
@@ -206,18 +158,6 @@
 				<string>grin_speaker</string>
 				<key>sound_mp3</key>
 				<string>grin_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>hair-spray_plain</string>
-				<key>image_play</key>
-				<string>hair-spray_play</string>
-				<key>image_speaker</key>
-				<string>hair-spray_speaker</string>
-				<key>sound_mp3</key>
-				<string>hair-spray_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -283,30 +223,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>meeting_plain</string>
-				<key>image_play</key>
-				<string>meeting_play</string>
-				<key>image_speaker</key>
-				<string>meeting_speaker</string>
-				<key>sound_mp3</key>
-				<string>meeting_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>my-house_plain</string>
-				<key>image_play</key>
-				<string>my-house_play</string>
-				<key>image_speaker</key>
-				<string>my-house_speaker</string>
-				<key>sound_mp3</key>
-				<string>my-house_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>omg_plain</string>
 				<key>image_play</key>
 				<string>omg_play</string>
@@ -367,13 +283,49 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>soccer_plain</string>
+				<string>bestie_plain</string>
 				<key>image_play</key>
-				<string>soccer_play</string>
+				<string>bestie_play</string>
 				<key>image_speaker</key>
-				<string>soccer_speaker</string>
+				<string>bestie_speaker</string>
 				<key>sound_mp3</key>
-				<string>soccer_sound</string>
+				<string>bestie_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>rofl_plain</string>
+				<key>image_play</key>
+				<string>rofl_play</string>
+				<key>image_speaker</key>
+				<string>rofl_speaker</string>
+				<key>sound_mp3</key>
+				<string>rofl_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>wink_plain</string>
+				<key>image_play</key>
+				<string>wink_play</string>
+				<key>image_speaker</key>
+				<string>wink_speaker</string>
+				<key>sound_mp3</key>
+				<string>wink_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>crossfingers_plain</string>
+				<key>image_play</key>
+				<string>crossfingers_play</string>
+				<key>image_speaker</key>
+				<string>crossfingers_speaker</string>
+				<key>sound_mp3</key>
+				<string>crossfingers_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>

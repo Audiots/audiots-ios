@@ -19,18 +19,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>celebrate_plain</string>
-				<key>image_play</key>
-				<string>celebrate_play</string>
-				<key>image_speaker</key>
-				<string>celebrate_speaker</string>
-				<key>sound_mp3</key>
-				<string>celebrate_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>cow_plain</string>
 				<key>image_play</key>
 				<string>cow_play</string>
@@ -223,18 +211,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>team-cheer_plain</string>
-				<key>image_play</key>
-				<string>team-cheer_play</string>
-				<key>image_speaker</key>
-				<string>team-cheer_speaker</string>
-				<key>sound_mp3</key>
-				<string>team-cheer_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>wind-gust_plain</string>
 				<key>image_play</key>
 				<string>wind-gust_play</string>
@@ -242,6 +218,42 @@
 				<string>wind-gust_speaker</string>
 				<key>sound_mp3</key>
 				<string>wind-gust_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>hamster_plain</string>
+				<key>image_play</key>
+				<string>hamster_play</string>
+				<key>image_speaker</key>
+				<string>hamster_speaker</string>
+				<key>sound_mp3</key>
+				<string>hamster_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>4-leaf-clover_plain</string>
+				<key>image_play</key>
+				<string>4-leaf-clover_play</string>
+				<key>image_speaker</key>
+				<string>4-leaf-clover_speaker</string>
+				<key>sound_mp3</key>
+				<string>4-leaf-clover_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>leprechaun_plain</string>
+				<key>image_play</key>
+				<string>leprechaun_play</string>
+				<key>image_speaker</key>
+				<string>leprechaun_speaker</string>
+				<key>sound_mp3</key>
+				<string>leprechaun_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
