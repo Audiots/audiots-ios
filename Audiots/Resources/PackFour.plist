@@ -307,18 +307,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>car_plain</string>
-				<key>image_play</key>
-				<string>car_play</string>
-				<key>image_speaker</key>
-				<string>car_speaker</string>
-				<key>sound_mp3</key>
-				<string>car_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>contract_plain</string>
 				<key>image_play</key>
 				<string>contract_play</string>
@@ -367,18 +355,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>minnesota_plain</string>
-				<key>image_play</key>
-				<string>minnesota_play</string>
-				<key>image_speaker</key>
-				<string>minnesota_speaker</string>
-				<key>sound_mp3</key>
-				<string>minnesota_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>mirror_plain</string>
 				<key>image_play</key>
 				<string>mirror_play</string>
@@ -403,30 +379,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>motorcycle_plain</string>
-				<key>image_play</key>
-				<string>motorcycle_play</string>
-				<key>image_speaker</key>
-				<string>motorcycle_speaker</string>
-				<key>sound_mp3</key>
-				<string>motorcycle_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>nailpolish_plain</string>
-				<key>image_play</key>
-				<string>nailpolish_play</string>
-				<key>image_speaker</key>
-				<string>nailpolish_speaker</string>
-				<key>sound_mp3</key>
-				<string>nailpolish_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>pot-of-gold_plain</string>
 				<key>image_play</key>
 				<string>pot-of-gold_play</string>
@@ -434,30 +386,6 @@
 				<string>pot-of-gold_speaker</string>
 				<key>sound_mp3</key>
 				<string>pot-of-gold_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>tennisracquet_plain</string>
-				<key>image_play</key>
-				<string>tennisracquet_play</string>
-				<key>image_speaker</key>
-				<string>tennisracquet_speaker</string>
-				<key>sound_mp3</key>
-				<string>tennisracquet_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>vote_plain</string>
-				<key>image_play</key>
-				<string>vote_play</string>
-				<key>image_speaker</key>
-				<string>vote_speaker</string>
-				<key>sound_mp3</key>
-				<string>vote_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>

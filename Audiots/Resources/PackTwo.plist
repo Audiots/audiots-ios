@@ -223,18 +223,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>hamster_plain</string>
-				<key>image_play</key>
-				<string>hamster_play</string>
-				<key>image_speaker</key>
-				<string>hamster_speaker</string>
-				<key>sound_mp3</key>
-				<string>hamster_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>4-leaf-clover_plain</string>
 				<key>image_play</key>
 				<string>4-leaf-clover_play</string>
