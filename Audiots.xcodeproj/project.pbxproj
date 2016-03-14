@@ -10,6 +10,7 @@
 		27D4A6DF1C87641A009FAE0E /* PackFour.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6DE1C87641A009FAE0E /* PackFour.plist */; };
 		27D4A6E41C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
 		27D4A6E51C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
+		27FB60971C977B88003EED9F /* PackFour.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6DE1C87641A009FAE0E /* PackFour.plist */; };
 		2D195EC71C8497BD0093DF3F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D195EC01C8495220093DF3F /* Crashlytics.framework */; };
 		2D195EC81C8497C00093DF3F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D195EC11C8495220093DF3F /* Fabric.framework */; };
 		2D195EC91C8497CB0093DF3F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D195EC01C8495220093DF3F /* Crashlytics.framework */; };
@@ -640,6 +641,7 @@
 				2D9A55CF1C2331D800ECB5C0 /* PackThree.plist in Resources */,
 				2DC13F041BF2453E005E9202 /* AudiotsPackEmoticonsCollectionViewCell.xib in Resources */,
 				2D93EC1C1BFA248100F8AA32 /* PackOne.plist in Resources */,
+				27FB60971C977B88003EED9F /* PackFour.plist in Resources */,
 				2DF0E9F21BE3FF960043E215 /* AudiotsAvailablePacks.plist in Resources */,
 				2D9A55CC1C2331C800ECB5C0 /* PackTwo.plist in Resources */,
 				2D369CD71C298196005E2629 /* PackLogo.xcassets in Resources */,
