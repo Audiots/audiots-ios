@@ -702,7 +702,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "distributionConfig=\"Distribution\"\nif [ \"$distributionConfig\" = \"${CONFIGURATION}\" ]; then\necho \"Running Crashlytics\"\n./Pods/CrashlyticsFramework/Crashlytics.framework/run 9ab292590adaef28f059466534a6b451d21f081b 2853b85fa1e11b7cd1625be04270a6796902205781967e4dd2c58ac83f5d0ff2\nfi";
+			shellScript = "distributionConfig=\"Distribution\"\nif [ \"$distributionConfig\" = \"${CONFIGURATION}\" ]; then\necho \"Running Crashlytics\"\n./Crashlytics.framework/run 9ab292590adaef28f059466534a6b451d21f081b 2853b85fa1e11b7cd1625be04270a6796902205781967e4dd2c58ac83f5d0ff2\nfi";
 		};
 		2D195EC61C8496520093DF3F /* Fabric / Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -716,7 +716,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "distributionConfig=\"Distribution\"\nif [ \"$distributionConfig\" = \"${CONFIGURATION}\" ]; then\necho \"Running Crashlytics\"\n./Pods/CrashlyticsFramework/Crashlytics.framework/run 9ab292590adaef28f059466534a6b451d21f081b 2853b85fa1e11b7cd1625be04270a6796902205781967e4dd2c58ac83f5d0ff2\nfi";
+			shellScript = "distributionConfig=\"Distribution\"\nif [ \"$distributionConfig\" = \"${CONFIGURATION}\" ]; then\necho \"Running Crashlytics\"\n./Crashlytics.framework/run 9ab292590adaef28f059466534a6b451d21f081b 2853b85fa1e11b7cd1625be04270a6796902205781967e4dd2c58ac83f5d0ff2\nfi";
 		};
 		631570F67DA4012B8BF54749 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
