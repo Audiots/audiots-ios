@@ -1,15 +1,16 @@
 source 'git@github.com:perfectsense/cocoapods-podspecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'Audiots', :exclusive => true do
+target 'Audiots' do
     ##### PSD DataSource #####
     pod 'PSDDataSource', '0.2.7'
     pod 'Toast', '3.0'
     #pod 'XLPagerTabStrip', '2.0.0'
     pod 'iCloudDocumentSync', '7.4.1'
+    pod 'UrbanAirship-iOS-SDK', '7.0.2'
 end
 
-target 'Audiots Keyboard', :exclusive => true do
+target 'Audiots Keyboard' do
     ##### PSD DataSource #####
     pod 'PSDDataSource', '0.2.7'
     pod 'Toast', '3.0'

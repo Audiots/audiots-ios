@@ -11,6 +11,7 @@
 		27D4A6E41C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
 		27D4A6E51C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
 		27FB60971C977B88003EED9F /* PackFour.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6DE1C87641A009FAE0E /* PackFour.plist */; };
+		2BEB1404C43CDCFA044A3BE2 /* libPods-Audiots.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9676E8DF5E84E1D32AC58FC /* libPods-Audiots.a */; };
 		2D195EC71C8497BD0093DF3F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D195EC01C8495220093DF3F /* Crashlytics.framework */; };
 		2D195EC81C8497C00093DF3F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D195EC11C8495220093DF3F /* Fabric.framework */; };
 		2D195EC91C8497CB0093DF3F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D195EC01C8495220093DF3F /* Crashlytics.framework */; };
@@ -83,8 +84,7 @@
 		2DF0E9F21BE3FF960043E215 /* AudiotsAvailablePacks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DF0E9D01BE3F5E20043E215 /* AudiotsAvailablePacks.plist */; };
 		2DF0E9F91BE3FF9B0043E215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFF6A21BE3DE31008869BF /* Assets.xcassets */; };
 		2DF0E9FB1BE411070043E215 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF0E9FA1BE411070043E215 /* MessageUI.framework */; };
-		C0235B837BBE82568DA88FEF /* libPods-Audiots.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA00278301BDC1D784A8F4E2 /* libPods-Audiots.a */; };
-		F23E690756DB9BB9B89DD88D /* libPods-Audiots Keyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E0B5FD5113CCB8032C3C0B2 /* libPods-Audiots Keyboard.a */; };
+		483999975338BC1CDF7CD2FF /* libPods-Audiots Keyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6A15B4CA84ED2046E90064 /* libPods-Audiots Keyboard.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,16 +203,16 @@
 		2DECE4D81C039039000518A9 /* Audiots.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Audiots.entitlements; sourceTree = "<group>"; };
 		2DF0E9D01BE3F5E20043E215 /* AudiotsAvailablePacks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudiotsAvailablePacks.plist; path = Resources/AudiotsAvailablePacks.plist; sourceTree = "<group>"; };
 		2DF0E9FA1BE411070043E215 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		3F710BDD0D758290CC01C085 /* Pods-Audiots Keyboard.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots Keyboard.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots Keyboard/Pods-Audiots Keyboard.adhoc.xcconfig"; sourceTree = "<group>"; };
-		86206266A621DD7644DE106B /* Pods-Audiots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots/Pods-Audiots.debug.xcconfig"; sourceTree = "<group>"; };
-		92DF32C43BA93A54CEC87EFF /* Pods-Audiots Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots Keyboard/Pods-Audiots Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
-		9BE1761ACAFD5C51F3143E95 /* Pods-Audiots Keyboard.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots Keyboard.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots Keyboard/Pods-Audiots Keyboard.distribution.xcconfig"; sourceTree = "<group>"; };
-		9E0B5FD5113CCB8032C3C0B2 /* libPods-Audiots Keyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Audiots Keyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD7796CED47394C0D98A0619 /* Pods-Audiots.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots/Pods-Audiots.adhoc.xcconfig"; sourceTree = "<group>"; };
-		C7B50C2CFB2AEC8103A57EEF /* Pods-Audiots Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots Keyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots Keyboard/Pods-Audiots Keyboard.release.xcconfig"; sourceTree = "<group>"; };
-		CA00278301BDC1D784A8F4E2 /* libPods-Audiots.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Audiots.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D14F058C64EE064C084B949C /* Pods-Audiots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots.release.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots/Pods-Audiots.release.xcconfig"; sourceTree = "<group>"; };
-		EFA98FD557E31E1EFC4A5C6A /* Pods-Audiots.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots/Pods-Audiots.distribution.xcconfig"; sourceTree = "<group>"; };
+		2E6A15B4CA84ED2046E90064 /* libPods-Audiots Keyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Audiots Keyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E70FF047D38D03210A00F4 /* Pods-Audiots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots.release.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots/Pods-Audiots.release.xcconfig"; sourceTree = "<group>"; };
+		5C6FAF901CBD23B736753D8C /* Pods-Audiots.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots/Pods-Audiots.adhoc.xcconfig"; sourceTree = "<group>"; };
+		5F6E711BE40D320C7AB61D2A /* Pods-Audiots Keyboard.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots Keyboard.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots Keyboard/Pods-Audiots Keyboard.adhoc.xcconfig"; sourceTree = "<group>"; };
+		67E92417D3543E644CA668E4 /* Pods-Audiots Keyboard.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots Keyboard.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots Keyboard/Pods-Audiots Keyboard.distribution.xcconfig"; sourceTree = "<group>"; };
+		76098469449B62911756233D /* Pods-Audiots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots/Pods-Audiots.debug.xcconfig"; sourceTree = "<group>"; };
+		A026E51A30C0BBD7E6E02690 /* Pods-Audiots.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots/Pods-Audiots.distribution.xcconfig"; sourceTree = "<group>"; };
+		D31A69393B5218C35B8B0C91 /* Pods-Audiots Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots Keyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots Keyboard/Pods-Audiots Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		E9676E8DF5E84E1D32AC58FC /* libPods-Audiots.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Audiots.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB5384342DC87385697918F /* Pods-Audiots Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiots Keyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Audiots Keyboard/Pods-Audiots Keyboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,7 +224,7 @@
 				2D195EC81C8497C00093DF3F /* Fabric.framework in Frameworks */,
 				2DF0E9FB1BE411070043E215 /* MessageUI.framework in Frameworks */,
 				2D195EC71C8497BD0093DF3F /* Crashlytics.framework in Frameworks */,
-				C0235B837BBE82568DA88FEF /* libPods-Audiots.a in Frameworks */,
+				2BEB1404C43CDCFA044A3BE2 /* libPods-Audiots.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,20 +233,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D195EC91C8497CB0093DF3F /* Crashlytics.framework in Frameworks */,
-				F23E690756DB9BB9B89DD88D /* libPods-Audiots Keyboard.a in Frameworks */,
 				2D195ECA1C8497D10093DF3F /* Fabric.framework in Frameworks */,
+				483999975338BC1CDF7CD2FF /* libPods-Audiots Keyboard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		174E05C93407DF790126B640 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76098469449B62911756233D /* Pods-Audiots.debug.xcconfig */,
+				41E70FF047D38D03210A00F4 /* Pods-Audiots.release.xcconfig */,
+				5C6FAF901CBD23B736753D8C /* Pods-Audiots.adhoc.xcconfig */,
+				A026E51A30C0BBD7E6E02690 /* Pods-Audiots.distribution.xcconfig */,
+				D31A69393B5218C35B8B0C91 /* Pods-Audiots Keyboard.debug.xcconfig */,
+				EDB5384342DC87385697918F /* Pods-Audiots Keyboard.release.xcconfig */,
+				5F6E711BE40D320C7AB61D2A /* Pods-Audiots Keyboard.adhoc.xcconfig */,
+				67E92417D3543E644CA668E4 /* Pods-Audiots Keyboard.distribution.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2168E99A4ECDE334FA38AC9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				2DF0E9FA1BE411070043E215 /* MessageUI.framework */,
-				CA00278301BDC1D784A8F4E2 /* libPods-Audiots.a */,
-				9E0B5FD5113CCB8032C3C0B2 /* libPods-Audiots Keyboard.a */,
+				E9676E8DF5E84E1D32AC58FC /* libPods-Audiots.a */,
+				2E6A15B4CA84ED2046E90064 /* libPods-Audiots Keyboard.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -272,8 +287,8 @@
 				2DCFF6B81BE3DF34008869BF /* Audiots Keyboard */,
 				2DCFF6E51BE3E497008869BF /* AudiotsFramework */,
 				2DCFF6941BE3DE31008869BF /* Products */,
-				DC6D19ECEE4159924F250CC2 /* Pods */,
 				2168E99A4ECDE334FA38AC9D /* Frameworks */,
+				174E05C93407DF790126B640 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -483,21 +498,6 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
-		DC6D19ECEE4159924F250CC2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				86206266A621DD7644DE106B /* Pods-Audiots.debug.xcconfig */,
-				D14F058C64EE064C084B949C /* Pods-Audiots.release.xcconfig */,
-				BD7796CED47394C0D98A0619 /* Pods-Audiots.adhoc.xcconfig */,
-				EFA98FD557E31E1EFC4A5C6A /* Pods-Audiots.distribution.xcconfig */,
-				92DF32C43BA93A54CEC87EFF /* Pods-Audiots Keyboard.debug.xcconfig */,
-				C7B50C2CFB2AEC8103A57EEF /* Pods-Audiots Keyboard.release.xcconfig */,
-				3F710BDD0D758290CC01C085 /* Pods-Audiots Keyboard.adhoc.xcconfig */,
-				9BE1761ACAFD5C51F3143E95 /* Pods-Audiots Keyboard.distribution.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -505,15 +505,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DCFF6AA1BE3DE31008869BF /* Build configuration list for PBXNativeTarget "Audiots" */;
 			buildPhases = (
-				2201AF72151E189B992136E8 /* Check Pods Manifest.lock */,
+				0D990D39043B1D868D7B448D /* Check Pods Manifest.lock */,
 				2DCFF68F1BE3DE31008869BF /* Sources */,
 				2DCFF6901BE3DE31008869BF /* Frameworks */,
 				2DCFF6911BE3DE31008869BF /* Resources */,
 				2DCFF6C51BE3DF34008869BF /* Embed App Extensions */,
 				2DCFF6DE1BE3E25A008869BF /* Embed Frameworks */,
-				F9F8F8BFECCA69CEAC766A6F /* Embed Pods Frameworks */,
-				631570F67DA4012B8BF54749 /* Copy Pods Resources */,
 				2D195EBF1C8492260093DF3F /* Fabric / Crashlytics */,
+				BFC117E21EEC499749B001B4 /* Embed Pods Frameworks */,
+				366E3691B7FFDC4FEA4F43EA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -529,12 +529,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DCFF6C01BE3DF34008869BF /* Build configuration list for PBXNativeTarget "Audiots Keyboard" */;
 			buildPhases = (
-				123F277E275EE86A38C3FC68 /* Check Pods Manifest.lock */,
+				5C1D24B496A2292AD0CD5660 /* Check Pods Manifest.lock */,
 				2DCFF6B31BE3DF34008869BF /* Sources */,
 				2DCFF6B41BE3DF34008869BF /* Frameworks */,
 				2DCFF6B51BE3DF34008869BF /* Resources */,
-				9B7756A87BD9445916144D58 /* Copy Pods Resources */,
 				2D195EC61C8496520093DF3F /* Fabric / Crashlytics */,
+				3329EDE7961AE26F38C85E31 /* Embed Pods Frameworks */,
+				65FE13EEDF3A30FC5308B524 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -660,22 +661,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		123F277E275EE86A38C3FC68 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		2201AF72151E189B992136E8 /* Check Pods Manifest.lock */ = {
+		0D990D39043B1D868D7B448D /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -718,7 +704,22 @@
 			shellPath = /bin/sh;
 			shellScript = "distributionConfig=\"Distribution\"\nif [ \"$distributionConfig\" = \"${CONFIGURATION}\" ]; then\necho \"Running Crashlytics\"\n./Crashlytics.framework/run 9ab292590adaef28f059466534a6b451d21f081b 2853b85fa1e11b7cd1625be04270a6796902205781967e4dd2c58ac83f5d0ff2\nfi";
 		};
-		631570F67DA4012B8BF54749 /* Copy Pods Resources */ = {
+		3329EDE7961AE26F38C85E31 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audiots Keyboard/Pods-Audiots Keyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		366E3691B7FFDC4FEA4F43EA /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -733,7 +734,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audiots/Pods-Audiots-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9B7756A87BD9445916144D58 /* Copy Pods Resources */ = {
+		5C1D24B496A2292AD0CD5660 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		65FE13EEDF3A30FC5308B524 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -748,7 +764,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audiots Keyboard/Pods-Audiots Keyboard-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F9F8F8BFECCA69CEAC766A6F /* Embed Pods Frameworks */ = {
+		BFC117E21EEC499749B001B4 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -926,7 +942,7 @@
 		};
 		2DCFF6AB1BE3DE31008869BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86206266A621DD7644DE106B /* Pods-Audiots.debug.xcconfig */;
+			baseConfigurationReference = 76098469449B62911756233D /* Pods-Audiots.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Audiots/Audiots.entitlements;
@@ -946,7 +962,7 @@
 		};
 		2DCFF6AC1BE3DE31008869BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D14F058C64EE064C084B949C /* Pods-Audiots.release.xcconfig */;
+			baseConfigurationReference = 41E70FF047D38D03210A00F4 /* Pods-Audiots.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Audiots/Audiots.entitlements;
@@ -1005,7 +1021,7 @@
 		};
 		2DCFF6AE1BE3DF0E008869BF /* AdHoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD7796CED47394C0D98A0619 /* Pods-Audiots.adhoc.xcconfig */;
+			baseConfigurationReference = 5C6FAF901CBD23B736753D8C /* Pods-Audiots.adhoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Audiots/Audiots.entitlements;
@@ -1065,7 +1081,7 @@
 		};
 		2DCFF6B21BE3DF1F008869BF /* Distribution */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFA98FD557E31E1EFC4A5C6A /* Pods-Audiots.distribution.xcconfig */;
+			baseConfigurationReference = A026E51A30C0BBD7E6E02690 /* Pods-Audiots.distribution.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Audiots/Audiots.entitlements;
@@ -1085,7 +1101,7 @@
 		};
 		2DCFF6C11BE3DF34008869BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92DF32C43BA93A54CEC87EFF /* Pods-Audiots Keyboard.debug.xcconfig */;
+			baseConfigurationReference = D31A69393B5218C35B8B0C91 /* Pods-Audiots Keyboard.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Audiots Keyboard/Audiots Keyboard.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1105,7 +1121,7 @@
 		};
 		2DCFF6C21BE3DF34008869BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7B50C2CFB2AEC8103A57EEF /* Pods-Audiots Keyboard.release.xcconfig */;
+			baseConfigurationReference = EDB5384342DC87385697918F /* Pods-Audiots Keyboard.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Audiots Keyboard/Audiots Keyboard.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1125,7 +1141,7 @@
 		};
 		2DCFF6C31BE3DF34008869BF /* AdHoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F710BDD0D758290CC01C085 /* Pods-Audiots Keyboard.adhoc.xcconfig */;
+			baseConfigurationReference = 5F6E711BE40D320C7AB61D2A /* Pods-Audiots Keyboard.adhoc.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Audiots Keyboard/Audiots Keyboard.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1145,7 +1161,7 @@
 		};
 		2DCFF6C41BE3DF34008869BF /* Distribution */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BE1761ACAFD5C51F3143E95 /* Pods-Audiots Keyboard.distribution.xcconfig */;
+			baseConfigurationReference = 67E92417D3543E644CA668E4 /* Pods-Audiots Keyboard.distribution.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Audiots Keyboard/Audiots Keyboard.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
