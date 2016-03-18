@@ -237,11 +237,16 @@
 }
 
 -(void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onCreateMovieFinsihed:(NSURL *)movieFileUrl {
-
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[movieFileUrl] applicationActivities:nil];
 
-        [self presentViewController:activityViewController animated:YES completion:nil];
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+            [self presentViewController:activityViewController animated:YES completion:nil];
+        } else {
+            UIPopoverController *popup = [[UIPopoverController alloc] initWithContentViewController:activityViewController];
+            [popup presentPopoverFromRect:CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/4, 0, 0)inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+        }
     });
     
 }
