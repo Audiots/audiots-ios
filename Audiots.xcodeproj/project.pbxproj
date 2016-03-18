@@ -511,9 +511,9 @@
 				2DCFF6911BE3DE31008869BF /* Resources */,
 				2DCFF6C51BE3DF34008869BF /* Embed App Extensions */,
 				2DCFF6DE1BE3E25A008869BF /* Embed Frameworks */,
-				2D195EBF1C8492260093DF3F /* Fabric / Crashlytics */,
 				BFC117E21EEC499749B001B4 /* Embed Pods Frameworks */,
 				366E3691B7FFDC4FEA4F43EA /* Copy Pods Resources */,
+				2D195EBF1C8492260093DF3F /* Fabric / Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -533,7 +533,6 @@
 				2DCFF6B31BE3DF34008869BF /* Sources */,
 				2DCFF6B41BE3DF34008869BF /* Frameworks */,
 				2DCFF6B51BE3DF34008869BF /* Resources */,
-				2D195EC61C8496520093DF3F /* Fabric / Crashlytics */,
 				3329EDE7961AE26F38C85E31 /* Embed Pods Frameworks */,
 				65FE13EEDF3A30FC5308B524 /* Copy Pods Resources */,
 			);
@@ -677,20 +676,6 @@
 			showEnvVarsInLog = 0;
 		};
 		2D195EBF1C8492260093DF3F /* Fabric / Crashlytics */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Fabric / Crashlytics";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "distributionConfig=\"Distribution\"\nif [ \"$distributionConfig\" = \"${CONFIGURATION}\" ]; then\necho \"Running Crashlytics\"\n./Crashlytics.framework/run 9ab292590adaef28f059466534a6b451d21f081b 2853b85fa1e11b7cd1625be04270a6796902205781967e4dd2c58ac83f5d0ff2\nfi";
-		};
-		2D195EC61C8496520093DF3F /* Fabric / Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
