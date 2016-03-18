@@ -252,7 +252,7 @@
 #pragma mark - AudiotsAudioVideoManagerDelegate
 -(void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onCreateMovieFailed:(BOOL)status {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self.view makeToast:@"WRITE FAILED"];
+        [self.view makeToast:@"Failed to generate Audiot."];
     });
 }
 

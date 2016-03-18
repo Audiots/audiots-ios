@@ -13,6 +13,8 @@
 #import "AudiotsCustomEmoticonsCollectionViewCell.h"
 #import "AudiotsCreateCustomAudiotCollectionViewCell.h"
 
+#import <Toast/UIView+Toast.h>
+
 #import <QuartzCore/QuartzCore.h>
 
 @interface AudiotsBrowseViewController ()
@@ -232,7 +234,7 @@
 #pragma mark - AudiotsAudioVideoManagerDelegate
 -(void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onCreateMovieFailed:(BOOL)status {
     dispatch_async(dispatch_get_main_queue(), ^{
-//        [self.view makeToast:@"WRITE FAILED"];
+        [self.view makeToast:@"Failed to generate Audiot."];
     });
 }
 

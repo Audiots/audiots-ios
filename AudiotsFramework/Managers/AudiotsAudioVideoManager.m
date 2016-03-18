@@ -742,36 +742,45 @@ static void *AVPlayerCurrentItemTimedMetadataObservationContext = &AVPlayerCurre
             [[NSFileManager defaultManager] removeItemAtPath:outputFilePath error:nil];
         
         CMTime nextClipStartTime = kCMTimeZero;
-        
-        AVURLAsset* videoAsset = [[AVURLAsset alloc]initWithURL:video_inputFileUrl options:nil];
-        CMTimeRange video_timeRange = CMTimeRangeMake(kCMTimeZero,videoAsset.duration);
-        AVMutableCompositionTrack *a_compositionVideoTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
-        [a_compositionVideoTrack insertTimeRange:video_timeRange ofTrack:[[videoAsset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0] atTime:nextClipStartTime error:nil];
-        
-        //nextClipStartTime = CMTimeAdd(nextClipStartTime, a_timeRange.duration);
-        
-        AVURLAsset* audioAsset = [[AVURLAsset alloc]initWithURL:audio_inputFileUrl options:nil];
-        CMTimeRange audio_timeRange = CMTimeRangeMake(kCMTimeZero, audioAsset.duration);
-        AVMutableCompositionTrack *b_compositionAudioTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
-        [b_compositionAudioTrack insertTimeRange:audio_timeRange ofTrack:[[audioAsset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0] atTime:nextClipStartTime error:nil];
-        
-        
-        
-        AVAssetExportSession* assetExportSession = [[AVAssetExportSession alloc] initWithAsset:mixComposition presetName:AVAssetExportPresetMediumQuality];
-        //assetExportSession.outputFileType = @"com.apple.quicktime-movie";
-        assetExportSession.outputFileType = AVFileTypeMPEG4;
-        //NSLog(@"support file types= %@", [_assetExport supportedFileTypes]);
-        assetExportSession.outputURL = outputFileUrl;
-        
-        [assetExportSession exportAsynchronouslyWithCompletionHandler:^{
+
+        AVURLAsset* videoAsset = [[AVURLAsset alloc]initWithURL:video_inputFileUrl options:nil];        
+        if ([videoAsset tracksWithMediaType:AVMediaTypeVideo] != nil) {
+            CMTimeRange video_timeRange = CMTimeRangeMake(kCMTimeZero,videoAsset.duration);
+            AVMutableCompositionTrack *a_compositionVideoTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
+            [a_compositionVideoTrack insertTimeRange:video_timeRange ofTrack:[[videoAsset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0] atTime:nextClipStartTime error:nil];
+            
+            //nextClipStartTime = CMTimeAdd(nextClipStartTime, a_timeRange.duration);
+            
+            AVURLAsset* audioAsset = [[AVURLAsset alloc]initWithURL:audio_inputFileUrl options:nil];
+            CMTimeRange audio_timeRange = CMTimeRangeMake(kCMTimeZero, audioAsset.duration);
+            AVMutableCompositionTrack *b_compositionAudioTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
+            [b_compositionAudioTrack insertTimeRange:audio_timeRange ofTrack:[[audioAsset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0] atTime:nextClipStartTime error:nil];
+            
+            
+            
+            AVAssetExportSession* assetExportSession = [[AVAssetExportSession alloc] initWithAsset:mixComposition presetName:AVAssetExportPresetMediumQuality];
+            //assetExportSession.outputFileType = @"com.apple.quicktime-movie";
+            assetExportSession.outputFileType = AVFileTypeMPEG4;
+            //NSLog(@"support file types= %@", [_assetExport supportedFileTypes]);
+            assetExportSession.outputURL = outputFileUrl;
+            
+            [assetExportSession exportAsynchronouslyWithCompletionHandler:^{
+                id<AudiotsAudioVideoManagerDelegate> delegate = nil;
+                for (delegate in [self.delegates copy]) {
+                    if (delegate && [delegate respondsToSelector:@selector(AudiotsAudioVideoManager:onCreateMovieFinsihed:)]) {
+                        [delegate AudiotsAudioVideoManager:self onCreateMovieFinsihed:outputFileUrl];
+                    }
+                }
+            }];
+
+        } else {
             id<AudiotsAudioVideoManagerDelegate> delegate = nil;
             for (delegate in [self.delegates copy]) {
-                if (delegate && [delegate respondsToSelector:@selector(AudiotsAudioVideoManager:onCreateMovieFinsihed:)]) {
-                    [delegate AudiotsAudioVideoManager:self onCreateMovieFinsihed:outputFileUrl];
+                if (delegate && [delegate respondsToSelector:@selector(AudiotsAudioVideoManager:onCreateMovieFailed:)]) {
+                    [delegate AudiotsAudioVideoManager:self onCreateMovieFailed:YES];
                 }
             }
-        }];
-
+        }
     }];;
 }
 
