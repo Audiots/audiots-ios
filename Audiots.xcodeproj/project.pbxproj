@@ -535,6 +535,7 @@
 				2DCFF6B51BE3DF34008869BF /* Resources */,
 				3329EDE7961AE26F38C85E31 /* Embed Pods Frameworks */,
 				65FE13EEDF3A30FC5308B524 /* Copy Pods Resources */,
+				271D04A71C9FAEDB00302463 /* Remove Frameworks */,
 			);
 			buildRules = (
 			);
@@ -680,6 +681,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		271D04A71C9FAEDB00302463 /* Remove Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Remove Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi";
 		};
 		2D195EBF1C8492260093DF3F /* Fabric / Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
