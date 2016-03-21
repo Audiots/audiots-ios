@@ -139,6 +139,18 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
+				<string>taco_plain</string>
+				<key>image_play</key>
+				<string>taco_play</string>
+				<key>image_speaker</key>
+				<string>taco_speaker</string>
+				<key>sound_mp3</key>
+				<string>taco_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
 				<string>noodles_plain</string>
 				<key>image_play</key>
 				<string>noodles_play</string>
