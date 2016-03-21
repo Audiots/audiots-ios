@@ -115,6 +115,54 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
+				<string>hamburger_plain</string>
+				<key>image_play</key>
+				<string>hamburger_play</string>
+				<key>image_speaker</key>
+				<string>hamburger_speaker</string>
+				<key>sound_mp3</key>
+				<string>hamburger_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>candy_plain</string>
+				<key>image_play</key>
+				<string>candy_play</string>
+				<key>image_speaker</key>
+				<string>candy_speaker</string>
+				<key>sound_mp3</key>
+				<string>candy_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>noodles_plain</string>
+				<key>image_play</key>
+				<string>noodles_play</string>
+				<key>image_speaker</key>
+				<string>noodles_speaker</string>
+				<key>sound_mp3</key>
+				<string>noodles_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>bobadrink_plain</string>
+				<key>image_play</key>
+				<string>bobadrink_play</string>
+				<key>image_speaker</key>
+				<string>bobadrink_speaker</string>
+				<key>sound_mp3</key>
+				<string>bobadrink_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
 				<string>logo_plain</string>
 				<key>image_play</key>
 				<string>logo_play</string>

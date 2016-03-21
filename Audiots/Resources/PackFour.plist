@@ -307,6 +307,18 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
+				<string>car_plain</string>
+				<key>image_play</key>
+				<string>car_play</string>
+				<key>image_speaker</key>
+				<string>car_speaker</string>
+				<key>sound_mp3</key>
+				<string>car_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
 				<string>contract_plain</string>
 				<key>image_play</key>
 				<string>contract_play</string>
@@ -374,6 +386,18 @@
 				<string>moneybag_speaker</string>
 				<key>sound_mp3</key>
 				<string>moneybag_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>motorcycle_plain</string>
+				<key>image_play</key>
+				<string>motorcycle_play</string>
+				<key>image_speaker</key>
+				<string>motorcycle_speaker</string>
+				<key>sound_mp3</key>
+				<string>motorcycle_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
