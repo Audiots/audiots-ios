@@ -91,9 +91,9 @@
     config.developmentAppKey = @"C5tRTMhAQdasPygzdlJ0NA";
     config.developmentAppSecret = @"NnIc_f5qRAWAJmWvn4Z8zw";
     
-    NSLog(@"App Key: %@", config.appKey);
-    NSLog(@"App Secret: %@", config.appSecret);
-    NSLog(@"Server: %@", config.deviceAPIURL);
+//    NSLog(@"App Key: %@", config.appKey);
+//    NSLog(@"App Secret: %@", config.appSecret);
+//    NSLog(@"Server: %@", config.deviceAPIURL);
     
     
     // Call takeOff (which creates the UAirship singleton)
