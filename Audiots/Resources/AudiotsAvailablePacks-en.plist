@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>objects</key>
+		<array>
+			<dict>
+				<key>packCoverImage</key>
+				<string>smile_plain</string>
+				<key>packName</key>
+				<string>PackOne</string>
+				<key>packType</key>
+				<string>xcassets</string>
+				<key>cellType</key>
+				<string>packSelectionCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>packCoverImage</key>
+				<string>cow_plain</string>
+				<key>packName</key>
+				<string>PackTwo</string>
+				<key>packType</key>
+				<string>xcassets</string>
+				<key>cellType</key>
+				<string>packSelectionCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>packCoverImage</key>
+				<string>hightoptennisshoes_plain</string>
+				<key>packName</key>
+				<string>PackFour</string>
+				<key>packType</key>
+				<string>xcassets</string>
+				<key>cellType</key>
+				<string>packSelectionCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>packCoverImage</key>
+				<string>Create-Audiot</string>
+				<key>packName</key>
+				<string>MyCreations</string>
+				<key>packType</key>
+				<string>custom</string>
+				<key>cellType</key>
+				<string>packSelectionCollectionViewCell</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

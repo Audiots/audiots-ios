@@ -114,7 +114,8 @@
     } forCellReuseIdentifier:@"packSelectionCollectionViewCell"];
     
     if (self.packSelectionDataSource == nil) {
-        self.packSelectionDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"AudiotsAvailablePacks" ofType:@"plist"]];
+        NSString *localAvailablePack = [NSString stringWithFormat:@"AudiotsAvailablePacks-%@", [[NSLocale currentLocale] objectForKey: NSLocaleLanguageCode]];
+        self.packSelectionDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:localAvailablePack ofType:@"plist"]];
     }
 }
 
