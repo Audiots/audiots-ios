@@ -76,13 +76,30 @@
 
 - (IBAction)onRecordAudioButtonTapped:(id)sender {
     if ([[AudiotsAudioVideoManager sharedInstance] isRecording] == NO) {
+        
+        [self changeText:@"Tap the button to stop the recording"];
+        
         NSString *audioFilename = [NSString stringWithFormat:@"%@_%u",[self.selectedEmoticonInfoDictionary valueForKey:@"image_play"], arc4random()];
+
         [[AudiotsAudioVideoManager sharedInstance] recordCustomAudioWithFilename:audioFilename];
         [self.recordAudioButton setImage:[UIImage imageNamed:@"Stop-Button"] forState:UIControlStateNormal];
     } else {
+        [self changeText:@"Tap the record to start"];
         [[AudiotsAudioVideoManager sharedInstance] stopRecording];
         [self.recordAudioButton setImage:[UIImage imageNamed:@"Record-Button"] forState:UIControlStateNormal];
     }
+}
+
+-(void) changeText: (NSString*) updateText{
+    
+    CATransition *animation = [CATransition animation];
+    animation.duration = 1.0;
+    animation.type = kCATransitionFade;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    [self.descriptionLabel.layer addAnimation:animation forKey:@"changeTextTransition"];
+    
+    self.descriptionLabel.text = updateText;
+    
 }
 
 @end

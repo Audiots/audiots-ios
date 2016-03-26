@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *currentEmoticonImageView;
 
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @property (weak, nonatomic) IBOutlet UIButton *recordAudioButton;
 - (IBAction)onRecordAudioButtonTapped:(id)sender;
