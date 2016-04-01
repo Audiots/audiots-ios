@@ -31,7 +31,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self setIsCurrentPackMyCreations:NO];
+    if ([self.selectionPack isEqualToString:@"AudiotsRecordPacks"]) {
+        [self setIsCurrentPackMyCreations:YES];
+    } else {
+        [self setIsCurrentPackMyCreations:NO];
+    }
     
     //Initialize My Creations
     [self initializeMyCreations];
@@ -131,7 +135,8 @@
     
     if (self.packSelectionDataSource == nil) {
         
-        self.packSelectionDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"AudiotsAvailablePacks" ofType:@"plist"]];
+        // load the selected pack
+        self.packSelectionDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:self.selectionPack ofType:@"plist"]];
     }
 }
 

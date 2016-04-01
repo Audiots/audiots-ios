@@ -31,6 +31,18 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
+				<string>jugo-tv-logo-plain</string>
+				<key>image_play</key>
+				<string>jugo-tv-logo-play</string>
+				<key>image_speaker</key>
+				<string>jugo-tv-logo-speaker</string>
+				<key>sound_mp3</key>
+				<string>xxx_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
 				<string>mexican-pesos-plain</string>
 				<key>image_play</key>
 				<string>mexican-pesos-play</string>
@@ -86,6 +98,18 @@
 				<string>soccer_speaker</string>
 				<key>sound_mp3</key>
 				<string>futbot_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>beer_plain</string>
+				<key>image_play</key>
+				<string>beer_play</string>
+				<key>image_speaker</key>
+				<string>beer_speaker</string>
+				<key>sound_mp3</key>
+				<string>beer_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>

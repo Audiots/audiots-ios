@@ -10,6 +10,7 @@
 
 #import "AudiotsFeedbackTableViewCell.h"
 #import "AudiotsRateUsTableViewCell.h"
+#import "AudiotsBrowseViewController.h"
 
 @interface AudiotsHomeTableViewController ()
 @property (strong, nonatomic) MFMailComposeViewController *mailComposeViewController;
@@ -133,6 +134,29 @@
     [self dismissViewControllerAnimated:YES completion:^{
         self.mailComposeViewController = nil;
     }];
+}
+
+#pragma mark - Segue
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+
+    // only show the record or microphone selection when "Record Your Own" is selected
+    if ([[segue identifier] isEqualToString:@"RecordSegueId"])
+    {
+        AudiotsBrowseViewController *vc = [segue destinationViewController];
+
+        [vc setSelectionPack:@"AudiotsRecordPacks"];
+    }
+    
+    // Show all availabel selections
+    if ([[segue identifier] isEqualToString:@"BrowseSegueId"])
+    {
+        // Get reference to the destination view controller
+        AudiotsBrowseViewController *vc = [segue destinationViewController];
+        
+        [vc setSelectionPack:@"AudiotsAvailablePacks"];
+    }
 }
 
 @end

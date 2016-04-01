@@ -20,6 +20,8 @@
 
 @interface AudiotsBrowseViewController : UIViewController <UICollectionViewDelegate, PSDDataSourceDelegate, iCloudDelegate, AudiotsAudioVideoManagerDelegate>
 
+
+@property (nonatomic, strong) NSString *selectionPack;
 @property (nonatomic, strong) PSDPListDataSource *packSelectionDataSource;
 @property (nonatomic, strong) PSDPListDataSource *packEmoticonsDataSource;
 

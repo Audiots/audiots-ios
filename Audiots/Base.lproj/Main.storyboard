@@ -128,7 +128,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Ygx-Yp-ZFS" kind="show" id="iIH-ev-clN"/>
+                                            <segue destination="Ygx-Yp-ZFS" kind="show" identifier="RecordSegueId" id="iIH-ev-clN"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="i3k-hr-pYx">
@@ -138,7 +138,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Facebook or What's App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uq4-9U-GiH">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Facebook or WhatsApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uq4-9U-GiH">
                                                     <rect key="frame" x="8" y="8" width="584" height="47"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                     <color key="textColor" red="0.25490196079999999" green="0.72156862749999995" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -178,7 +178,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Ygx-Yp-ZFS" kind="show" id="5UH-Wy-tEu"/>
+                                            <segue destination="Ygx-Yp-ZFS" kind="show" identifier="BrowseSegueId" id="5UH-Wy-tEu"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xv6-io-Tdv" customClass="AudiotsRateUsTableViewCell">
@@ -2385,7 +2385,7 @@
             </objects>
             <point key="canvasLocation" x="2045" y="76"/>
         </scene>
-        <!--Post on Facebook or What's App-->
+        <!--Post on Facebook or WhatsApp-->
         <scene sceneID="0N2-rT-KMV">
             <objects>
                 <viewController id="NxP-IT-iWr" customClass="AudiotsSendViewController" sceneMemberID="viewController">
@@ -2454,7 +2454,7 @@
                             <constraint firstItem="bwG-6g-yYL" firstAttribute="leading" secondItem="fGa-wW-cPr" secondAttribute="leading" id="m2F-2j-bpB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Post on Facebook or What's App" id="Yiv-wa-C5e"/>
+                    <navigationItem key="navigationItem" title="Post on Facebook or WhatsApp" id="Yiv-wa-C5e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0SY-JI-hv6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2724,7 +2724,7 @@
                                                                 <color key="NSStrokeColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                                             </attributes>
                                                         </fragment>
-                                                        <fragment content=" (or What's App)">
+                                                        <fragment content=" (or WhatsApp)">
                                                             <attributes>
                                                                 <color key="NSColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <font key="NSFont" size="14" name="Helvetica"/>
@@ -2817,6 +2817,6 @@
         <image name="Record-Button" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iIH-ev-clN"/>
+        <segue reference="5UH-Wy-tEu"/>
     </inferredMetricsTieBreakers>
 </document>
