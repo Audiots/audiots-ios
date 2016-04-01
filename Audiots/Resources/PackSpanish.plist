@@ -13,7 +13,7 @@
 				<key>image_speaker</key>
 				<string>arm-muscle-speaker</string>
 				<key>sound_mp3</key>
-				<string>xxx_sound</string>
+				<string>ni_madres_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -25,19 +25,7 @@
 				<key>image_speaker</key>
 				<string>hands-over-monkeys-eyes-speaker</string>
 				<key>sound_mp3</key>
-				<string>xxx_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>jugo-tv-logo-plain</string>
-				<key>image_play</key>
-				<string>jugo-tv-logo-play</string>
-				<key>image_speaker</key>
-				<string>jugo-tv-logo-speaker</string>
-				<key>sound_mp3</key>
-				<string>xxx_sound</string>
+				<string>no_quiero_ver_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -49,7 +37,7 @@
 				<key>image_speaker</key>
 				<string>mexican-pesos-speaker</string>
 				<key>sound_mp3</key>
-				<string>xxx_sound</string>
+				<string>pesos_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -61,19 +49,7 @@
 				<key>image_speaker</key>
 				<string>mexico-flag-speaker</string>
 				<key>sound_mp3</key>
-				<string>xxx_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>offsides-plain</string>
-				<key>image_play</key>
-				<string>offsides-play</string>
-				<key>image_speaker</key>
-				<string>offsides-speaker</string>
-				<key>sound_mp3</key>
-				<string>xxx_sound</string>
+				<string>paisanose_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -85,31 +61,7 @@
 				<key>image_speaker</key>
 				<string>praying-hands-speaker</string>
 				<key>sound_mp3</key>
-				<string>xxx_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>red-card-plain</string>
-				<key>image_play</key>
-				<string>red-card-play</string>
-				<key>image_speaker</key>
-				<string>red-card-speaker</string>
-				<key>sound_mp3</key>
-				<string>xxx_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>us-dollars-plain</string>
-				<key>image_play</key>
-				<string>us-dollars-play</string>
-				<key>image_speaker</key>
-				<string>us-dollars-speaker</string>
-				<key>sound_mp3</key>
-				<string>xxx_sound</string>
+				<string>si_dios_quiere_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -121,7 +73,19 @@
 				<key>image_speaker</key>
 				<string>yellow-card-speaker</string>
 				<key>sound_mp3</key>
-				<string>xxx_sound</string>
+				<string>tarjeta_amarilla_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>soccer_plain</string>
+				<key>image_play</key>
+				<string>soccer_play</string>
+				<key>image_speaker</key>
+				<string>soccer_speaker</string>
+				<key>sound_mp3</key>
+				<string>futbot_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>

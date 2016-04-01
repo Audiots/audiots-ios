@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270A409F1CA6082E001B2E05 /* AudiotsSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270A409E1CA6082E001B2E05 /* AudiotsSendViewController.m */; };
 		276AC67E1CA522D100DB378D /* AudiotsAvailablePacks-en.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC67C1CA522D100DB378D /* AudiotsAvailablePacks-en.plist */; };
 		276AC67F1CA522D100DB378D /* AudiotsAvailablePacks-es.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC67D1CA522D100DB378D /* AudiotsAvailablePacks-es.plist */; };
 		276AC6841CA5D52800DB378D /* PackSpanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6831CA5D52800DB378D /* PackSpanish.plist */; };
@@ -131,6 +132,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		270A409D1CA6082E001B2E05 /* AudiotsSendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudiotsSendViewController.h; path = ViewControllers/AudiotsSendViewController.h; sourceTree = "<group>"; };
+		270A409E1CA6082E001B2E05 /* AudiotsSendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudiotsSendViewController.m; path = ViewControllers/AudiotsSendViewController.m; sourceTree = "<group>"; };
 		276AC67C1CA522D100DB378D /* AudiotsAvailablePacks-en.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AudiotsAvailablePacks-en.plist"; path = "Resources/AudiotsAvailablePacks-en.plist"; sourceTree = "<group>"; };
 		276AC67D1CA522D100DB378D /* AudiotsAvailablePacks-es.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AudiotsAvailablePacks-es.plist"; path = "Resources/AudiotsAvailablePacks-es.plist"; sourceTree = "<group>"; };
 		276AC6831CA5D52800DB378D /* PackSpanish.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackSpanish.plist; path = Resources/PackSpanish.plist; sourceTree = "<group>"; };
@@ -433,6 +436,8 @@
 				2DECE4CC1C0203AE000518A9 /* AudiotsCreateStepOneViewController.m */,
 				2DECE4CE1C0203C8000518A9 /* AudiotsCreateStepTwoViewController.h */,
 				2DECE4CF1C0203C8000518A9 /* AudiotsCreateStepTwoViewController.m */,
+				270A409D1CA6082E001B2E05 /* AudiotsSendViewController.h */,
+				270A409E1CA6082E001B2E05 /* AudiotsSendViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -822,6 +827,7 @@
 				2DC13F021BF24536005E9202 /* AudiotsPackEmoticonsCollectionViewCell.m in Sources */,
 				2DC13EFE1BF24527005E9202 /* AudiotsPackEmoticonsCollectionView.m in Sources */,
 				2DC13EFF1BF24530005E9202 /* AudiotsPackSelectionCollectionView.m in Sources */,
+				270A409F1CA6082E001B2E05 /* AudiotsSendViewController.m in Sources */,
 				2DCFF7111BE3EA0E008869BF /* AudiotsHomeTableViewController.m in Sources */,
 				2DE5BCA21BFA7BA200E59706 /* AudiotsIntroViewController.m in Sources */,
 				2DECE4D41C036BA9000518A9 /* AudiotsCustomEmoticonsCollectionViewCell.m in Sources */,
@@ -1117,7 +1123,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Audiots/Audiots.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

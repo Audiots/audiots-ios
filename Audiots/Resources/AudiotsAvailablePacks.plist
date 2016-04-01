@@ -27,9 +27,9 @@
 			</dict>
 			<dict>
 				<key>packCoverImage</key>
-				<string>pizza_plain</string>
+				<string>hightoptennisshoes_plain</string>
 				<key>packName</key>
-				<string>PackThree</string>
+				<string>PackFour</string>
 				<key>packType</key>
 				<string>xcassets</string>
 				<key>cellType</key>
@@ -37,9 +37,9 @@
 			</dict>
 			<dict>
 				<key>packCoverImage</key>
-				<string>hightoptennisshoes_plain</string>
+				<string>mexico-flag-plain</string>
 				<key>packName</key>
-				<string>PackFour</string>
+				<string>PackSpanish</string>
 				<key>packType</key>
 				<string>xcassets</string>
 				<key>cellType</key>

@@ -131,8 +131,7 @@
     
     if (self.packSelectionDataSource == nil) {
         
-        NSString *localAvailablePack = [NSString stringWithFormat:@"AudiotsAvailablePacks-%@", [[NSLocale currentLocale] objectForKey: NSLocaleLanguageCode]];
-        self.packSelectionDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:localAvailablePack ofType:@"plist"]];
+        self.packSelectionDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"AudiotsAvailablePacks" ofType:@"plist"]];
     }
 }
 
