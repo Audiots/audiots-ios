@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		270A409F1CA6082E001B2E05 /* AudiotsSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270A409E1CA6082E001B2E05 /* AudiotsSendViewController.m */; };
-		276AC67E1CA522D100DB378D /* AudiotsAvailablePacks-en.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC67C1CA522D100DB378D /* AudiotsAvailablePacks-en.plist */; };
-		276AC67F1CA522D100DB378D /* AudiotsAvailablePacks-es.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC67D1CA522D100DB378D /* AudiotsAvailablePacks-es.plist */; };
 		276AC6841CA5D52800DB378D /* PackSpanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6831CA5D52800DB378D /* PackSpanish.plist */; };
 		276AC6851CA5D52800DB378D /* PackSpanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6831CA5D52800DB378D /* PackSpanish.plist */; };
 		276AC6871CA5D53400DB378D /* PackSpanish.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6861CA5D53400DB378D /* PackSpanish.xcassets */; };
 		276AC6881CA5D53400DB378D /* PackSpanish.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6861CA5D53400DB378D /* PackSpanish.xcassets */; };
+		278FE6D81CBC573600218FCC /* PackSeven.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278FE6D71CBC573600218FCC /* PackSeven.xcassets */; };
+		278FE6D91CBC573600218FCC /* PackSeven.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278FE6D71CBC573600218FCC /* PackSeven.xcassets */; };
+		278FE6DB1CBC58D300218FCC /* PackSeven.plist in Resources */ = {isa = PBXBuildFile; fileRef = 278FE6DA1CBC58D300218FCC /* PackSeven.plist */; };
+		278FE6DC1CBC58D300218FCC /* PackSeven.plist in Resources */ = {isa = PBXBuildFile; fileRef = 278FE6DA1CBC58D300218FCC /* PackSeven.plist */; };
+		278FE6DD1CBC5A3900218FCC /* AudiotsRecordPacks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */; };
 		27BA8DE81CA5D93F00CE9C48 /* AudiotsBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFF7091BE3EA0E008869BF /* AudiotsBrowseViewController.m */; };
-		27BA8DE91CA5D94600CE9C48 /* AudiotsAvailablePacks-es.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC67D1CA522D100DB378D /* AudiotsAvailablePacks-es.plist */; };
-		27BA8DEA1CA5DA9D00CE9C48 /* AudiotsAvailablePacks-en.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC67C1CA522D100DB378D /* AudiotsAvailablePacks-en.plist */; };
 		27D4A6DF1C87641A009FAE0E /* PackFour.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6DE1C87641A009FAE0E /* PackFour.plist */; };
 		27D4A6E41C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
 		27D4A6E51C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
@@ -135,10 +136,10 @@
 /* Begin PBXFileReference section */
 		270A409D1CA6082E001B2E05 /* AudiotsSendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudiotsSendViewController.h; path = ViewControllers/AudiotsSendViewController.h; sourceTree = "<group>"; };
 		270A409E1CA6082E001B2E05 /* AudiotsSendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudiotsSendViewController.m; path = ViewControllers/AudiotsSendViewController.m; sourceTree = "<group>"; };
-		276AC67C1CA522D100DB378D /* AudiotsAvailablePacks-en.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AudiotsAvailablePacks-en.plist"; path = "Resources/AudiotsAvailablePacks-en.plist"; sourceTree = "<group>"; };
-		276AC67D1CA522D100DB378D /* AudiotsAvailablePacks-es.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AudiotsAvailablePacks-es.plist"; path = "Resources/AudiotsAvailablePacks-es.plist"; sourceTree = "<group>"; };
 		276AC6831CA5D52800DB378D /* PackSpanish.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackSpanish.plist; path = Resources/PackSpanish.plist; sourceTree = "<group>"; };
 		276AC6861CA5D53400DB378D /* PackSpanish.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackSpanish.xcassets; path = Packs/PackSpanish.xcassets; sourceTree = "<group>"; };
+		278FE6D71CBC573600218FCC /* PackSeven.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PackSeven.xcassets; sourceTree = "<group>"; };
+		278FE6DA1CBC58D300218FCC /* PackSeven.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackSeven.plist; path = Resources/PackSeven.plist; sourceTree = "<group>"; };
 		27D4A6DE1C87641A009FAE0E /* PackFour.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackFour.plist; path = Resources/PackFour.plist; sourceTree = "<group>"; };
 		27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackFour.xcassets; path = Packs/PackFour.xcassets; sourceTree = "<group>"; };
 		27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudiotsRecordPacks.plist; path = Resources/AudiotsRecordPacks.plist; sourceTree = "<group>"; };
@@ -482,8 +483,7 @@
 		2DF0E9CF1BE3F5BE0043E215 /* Property List Files */ = {
 			isa = PBXGroup;
 			children = (
-				276AC67C1CA522D100DB378D /* AudiotsAvailablePacks-en.plist */,
-				276AC67D1CA522D100DB378D /* AudiotsAvailablePacks-es.plist */,
+				278FE6DA1CBC58D300218FCC /* PackSeven.plist */,
 				27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */,
 				2DF0E9D01BE3F5E20043E215 /* AudiotsAvailablePacks.plist */,
 				2D93EC171BFA1F6F00F8AA32 /* PackOne.plist */,
@@ -505,6 +505,7 @@
 				2D9A55C71C232F6800ECB5C0 /* PackThree.xcassets */,
 				2D369CD51C298196005E2629 /* PackLogo.xcassets */,
 				276AC6861CA5D53400DB378D /* PackSpanish.xcassets */,
+				278FE6D71CBC573600218FCC /* PackSeven.xcassets */,
 			);
 			name = Packs;
 			sourceTree = "<group>";
@@ -642,14 +643,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D9A55CE1C2331D800ECB5C0 /* PackThree.plist in Resources */,
+				278FE6D81CBC573600218FCC /* PackSeven.xcassets in Resources */,
 				2DCFF6A61BE3DE31008869BF /* LaunchScreen.storyboard in Resources */,
 				27D4A6DF1C87641A009FAE0E /* PackFour.plist in Resources */,
 				2DECE4D61C036BA9000518A9 /* AudiotsCustomEmoticonsCollectionViewCell.xib in Resources */,
 				2DC13F031BF2453E005E9202 /* AudiotsPackEmoticonsCollectionViewCell.xib in Resources */,
 				2D9A55CB1C2331C800ECB5C0 /* PackTwo.plist in Resources */,
 				276AC6841CA5D52800DB378D /* PackSpanish.plist in Resources */,
-				276AC67F1CA522D100DB378D /* AudiotsAvailablePacks-es.plist in Resources */,
 				2D9A55C81C232F6800ECB5C0 /* PackThree.xcassets in Resources */,
+				278FE6DB1CBC58D300218FCC /* PackSeven.plist in Resources */,
 				2DF0E9D71BE3F5E20043E215 /* AudiotsAvailablePacks.plist in Resources */,
 				2DC13F081BF2454D005E9202 /* AudiotsPackSelectionCollectionViewCell.xib in Resources */,
 				27D4A6E41C8764B9009FAE0E /* PackFour.xcassets in Resources */,
@@ -660,7 +662,6 @@
 				2D4CDD021BF13B2E0010B26F /* MyCreations.plist in Resources */,
 				2DCFF6A11BE3DE31008869BF /* Main.storyboard in Resources */,
 				2D40FAF51BF2943B003579CD /* Settings.bundle in Resources */,
-				276AC67E1CA522D100DB378D /* AudiotsAvailablePacks-en.plist in Resources */,
 				2D93EC181BFA1F6F00F8AA32 /* PackOne.plist in Resources */,
 				276AC6871CA5D53400DB378D /* PackSpanish.xcassets in Resources */,
 				2DC13F0B1BF24555005E9202 /* AudiotsCreateCustomAudiotCollectionViewCell.xib in Resources */,
@@ -673,22 +674,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF0E9F91BE3FF9B0043E215 /* Assets.xcassets in Resources */,
-				27BA8DEA1CA5DA9D00CE9C48 /* AudiotsAvailablePacks-en.plist in Resources */,
 				27D4A6E51C8764B9009FAE0E /* PackFour.xcassets in Resources */,
 				2D9A55C61C232F5A00ECB5C0 /* PackTwo.xcassets in Resources */,
 				2D9A55CF1C2331D800ECB5C0 /* PackThree.plist in Resources */,
 				276AC6881CA5D53400DB378D /* PackSpanish.xcassets in Resources */,
+				278FE6D91CBC573600218FCC /* PackSeven.xcassets in Resources */,
 				2DC13F041BF2453E005E9202 /* AudiotsPackEmoticonsCollectionViewCell.xib in Resources */,
 				2D93EC1C1BFA248100F8AA32 /* PackOne.plist in Resources */,
 				27FB60971C977B88003EED9F /* PackFour.plist in Resources */,
 				2DF0E9F21BE3FF960043E215 /* AudiotsAvailablePacks.plist in Resources */,
-				27BA8DE91CA5D94600CE9C48 /* AudiotsAvailablePacks-es.plist in Resources */,
 				2D9A55CC1C2331C800ECB5C0 /* PackTwo.plist in Resources */,
 				2D369CD71C298196005E2629 /* PackLogo.xcassets in Resources */,
+				278FE6DD1CBC5A3900218FCC /* AudiotsRecordPacks.plist in Resources */,
 				2D4CDD031BF13B340010B26F /* MyCreations.plist in Resources */,
 				2DECE4D71C036BA9000518A9 /* AudiotsCustomEmoticonsCollectionViewCell.xib in Resources */,
 				2D81A1A91C721D6C00A8A769 /* Keyboard.storyboard in Resources */,
 				2DCFF6CA1BE3DF91008869BF /* AudiotsKeyboard.storyboard in Resources */,
+				278FE6DC1CBC58D300218FCC /* PackSeven.plist in Resources */,
 				2D81A1A81C721D6C00A8A769 /* KeyArt.xcassets in Resources */,
 				2D9A55C31C232F4B00ECB5C0 /* PackOne.xcassets in Resources */,
 				276AC6851CA5D52800DB378D /* PackSpanish.plist in Resources */,
