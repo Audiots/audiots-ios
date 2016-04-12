@@ -14,8 +14,6 @@
 		276AC6881CA5D53400DB378D /* PackSpanish.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6861CA5D53400DB378D /* PackSpanish.xcassets */; };
 		278FE6D81CBC573600218FCC /* PackSeven.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278FE6D71CBC573600218FCC /* PackSeven.xcassets */; };
 		278FE6D91CBC573600218FCC /* PackSeven.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278FE6D71CBC573600218FCC /* PackSeven.xcassets */; };
-		278FE6DB1CBC58D300218FCC /* PackSeven.plist in Resources */ = {isa = PBXBuildFile; fileRef = 278FE6DA1CBC58D300218FCC /* PackSeven.plist */; };
-		278FE6DC1CBC58D300218FCC /* PackSeven.plist in Resources */ = {isa = PBXBuildFile; fileRef = 278FE6DA1CBC58D300218FCC /* PackSeven.plist */; };
 		278FE6DD1CBC5A3900218FCC /* AudiotsRecordPacks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */; };
 		27BA8DE81CA5D93F00CE9C48 /* AudiotsBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFF7091BE3EA0E008869BF /* AudiotsBrowseViewController.m */; };
 		27D4A6DF1C87641A009FAE0E /* PackFour.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6DE1C87641A009FAE0E /* PackFour.plist */; };
@@ -139,7 +137,6 @@
 		276AC6831CA5D52800DB378D /* PackSpanish.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackSpanish.plist; path = Resources/PackSpanish.plist; sourceTree = "<group>"; };
 		276AC6861CA5D53400DB378D /* PackSpanish.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackSpanish.xcassets; path = Packs/PackSpanish.xcassets; sourceTree = "<group>"; };
 		278FE6D71CBC573600218FCC /* PackSeven.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PackSeven.xcassets; sourceTree = "<group>"; };
-		278FE6DA1CBC58D300218FCC /* PackSeven.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackSeven.plist; path = Resources/PackSeven.plist; sourceTree = "<group>"; };
 		27D4A6DE1C87641A009FAE0E /* PackFour.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackFour.plist; path = Resources/PackFour.plist; sourceTree = "<group>"; };
 		27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackFour.xcassets; path = Packs/PackFour.xcassets; sourceTree = "<group>"; };
 		27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudiotsRecordPacks.plist; path = Resources/AudiotsRecordPacks.plist; sourceTree = "<group>"; };
@@ -483,7 +480,6 @@
 		2DF0E9CF1BE3F5BE0043E215 /* Property List Files */ = {
 			isa = PBXGroup;
 			children = (
-				278FE6DA1CBC58D300218FCC /* PackSeven.plist */,
 				27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */,
 				2DF0E9D01BE3F5E20043E215 /* AudiotsAvailablePacks.plist */,
 				2D93EC171BFA1F6F00F8AA32 /* PackOne.plist */,
@@ -651,7 +647,6 @@
 				2D9A55CB1C2331C800ECB5C0 /* PackTwo.plist in Resources */,
 				276AC6841CA5D52800DB378D /* PackSpanish.plist in Resources */,
 				2D9A55C81C232F6800ECB5C0 /* PackThree.xcassets in Resources */,
-				278FE6DB1CBC58D300218FCC /* PackSeven.plist in Resources */,
 				2DF0E9D71BE3F5E20043E215 /* AudiotsAvailablePacks.plist in Resources */,
 				2DC13F081BF2454D005E9202 /* AudiotsPackSelectionCollectionViewCell.xib in Resources */,
 				27D4A6E41C8764B9009FAE0E /* PackFour.xcassets in Resources */,
@@ -690,7 +685,6 @@
 				2DECE4D71C036BA9000518A9 /* AudiotsCustomEmoticonsCollectionViewCell.xib in Resources */,
 				2D81A1A91C721D6C00A8A769 /* Keyboard.storyboard in Resources */,
 				2DCFF6CA1BE3DF91008869BF /* AudiotsKeyboard.storyboard in Resources */,
-				278FE6DC1CBC58D300218FCC /* PackSeven.plist in Resources */,
 				2D81A1A81C721D6C00A8A769 /* KeyArt.xcassets in Resources */,
 				2D9A55C31C232F4B00ECB5C0 /* PackOne.xcassets in Resources */,
 				276AC6851CA5D52800DB378D /* PackSpanish.plist in Resources */,

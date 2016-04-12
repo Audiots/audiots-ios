@@ -7,6 +7,42 @@
 		<array>
 			<dict>
 				<key>image_plain</key>
+				<string>taxi-plain</string>
+				<key>image_play</key>
+				<string>taxi-play</string>
+				<key>image_speaker</key>
+				<string>taxi-speaker</string>
+				<key>sound_mp3</key>
+				<string>taxi-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>engagement-ring-plain</string>
+				<key>image_play</key>
+				<string>engagement-ring-play</string>
+				<key>image_speaker</key>
+				<string>engagement-ring-speaker</string>
+				<key>sound_mp3</key>
+				<string>engagement-ring-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>flowers-in-vase-plain</string>
+				<key>image_play</key>
+				<string>flowers-in-vase-play</string>
+				<key>image_speaker</key>
+				<string>flowers-in-vase-speaker</string>
+				<key>sound_mp3</key>
+				<string>flowers-in-vase-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>					
+			<dict>
+				<key>image_plain</key>
 				<string>alarm-clock_plain</string>
 				<key>image_play</key>
 				<string>alarm-clock_play</string>

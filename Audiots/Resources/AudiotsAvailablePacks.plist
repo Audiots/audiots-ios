@@ -47,16 +47,6 @@
 			</dict>
 			<dict>
 				<key>packCoverImage</key>
-				<string>beach-plain</string>
-				<key>packName</key>
-				<string>PackSeven</string>
-				<key>packType</key>
-				<string>xcassets</string>
-				<key>cellType</key>
-				<string>packSelectionCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>packCoverImage</key>
 				<string>Create-Audiot</string>
 				<key>packName</key>
 				<string>MyCreations</string>
