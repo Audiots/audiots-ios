@@ -121,9 +121,9 @@ static void *AVPlayerCurrentItemTimedMetadataObservationContext = &AVPlayerCurre
 
     AVURLAsset *asset = [AVURLAsset URLAssetWithURL:streamUrl options:nil];
 
-    NSError *tracksError = nil;
+    //NSError *tracksError = nil;
 
-    AVKeyValueStatus status = [asset statusOfValueForKey:@"tracks" error:&tracksError];
+    //AVKeyValueStatus status = [asset statusOfValueForKey:@"tracks" error:&tracksError];
 
     /* Tells the asset to load the values of any of the specified keys that are not already loaded. */
     [asset loadValuesAsynchronouslyForKeys:@[@"tracks"] completionHandler:
@@ -299,7 +299,7 @@ static void *AVPlayerCurrentItemTimedMetadataObservationContext = &AVPlayerCurre
                         change:(NSDictionary*)change
                        context:(void*)context
 {
-    __weak AudiotsAudioVideoManager *weakSelf = self;
+    //__weak AudiotsAudioVideoManager *weakSelf = self;
     
     /* AVPlayerItem "status" property value observer. */
     if (context == AVPlayerStatusObservationContext)
@@ -405,7 +405,7 @@ static void *AVPlayerCurrentItemTimedMetadataObservationContext = &AVPlayerCurre
 
 - (void)onAVAudioSessionRouteChange:(NSNotification *)notification {
     NSNumber *routeChangeReason = [[notification userInfo] valueForKey:AVAudioSessionRouteChangeReasonKey];
-    AVAudioSessionRouteDescription *routeDescription = [[notification userInfo] valueForKey:AVAudioSessionRouteChangePreviousRouteKey];
+    //AVAudioSessionRouteDescription *routeDescription = [[notification userInfo] valueForKey:AVAudioSessionRouteChangePreviousRouteKey];
     
     [self.player pause];
     switch ([routeChangeReason intValue]) {

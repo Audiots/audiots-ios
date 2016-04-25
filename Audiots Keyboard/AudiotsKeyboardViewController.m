@@ -281,6 +281,9 @@
     });
 }
 
+- (void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onAudioRecordFinsihed:(NSURL *)recordedAudioFileUrl{}
+- (void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onPreviewSoundFinished:(BOOL)finished{}
+
 #pragma mark - Actions
 
 - (IBAction)onAdvanceKeyboardButtonTapped:(id)sender {
