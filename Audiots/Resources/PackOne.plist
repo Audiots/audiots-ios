@@ -7,18 +7,6 @@
 		<array>
 			<dict>
 				<key>image_plain</key>
-				<string>jimmy-fallon-v2-with-label2-plain</string>
-				<key>image_play</key>
-				<string>jimmy-fallon-v2-with-label2-play</string>
-				<key>image_speaker</key>
-				<string>jimmy-fallon-v2-with-label2-speaker</string>
-				<key>sound_mp3</key>
-				<string>jimmy-fallon-v2-with-label2-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>best-mom-ever-brown-plain</string>
 				<key>image_play</key>
 				<string>best-mom-ever-brown-play</string>
@@ -28,7 +16,7 @@
 				<string>best-mom-ever-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
-			</dict>	
+			</dict>
 			<dict>
 				<key>image_plain</key>
 				<string>best-mom-ever-plain</string>
@@ -40,7 +28,7 @@
 				<string>best-mom-ever-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
-			</dict>			
+			</dict>
 			<dict>
 				<key>image_plain</key>
 				<string>alien_plain</string>
