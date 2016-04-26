@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		270A409F1CA6082E001B2E05 /* AudiotsSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270A409E1CA6082E001B2E05 /* AudiotsSendViewController.m */; };
+		271181D81CCFD7D500285E04 /* PackEight.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2741A6841CCFB30700593BBE /* PackEight.xcassets */; };
+		2741A6851CCFB30700593BBE /* PackEight.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2741A6841CCFB30700593BBE /* PackEight.xcassets */; };
 		276AC6841CA5D52800DB378D /* PackSpanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6831CA5D52800DB378D /* PackSpanish.plist */; };
 		276AC6851CA5D52800DB378D /* PackSpanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6831CA5D52800DB378D /* PackSpanish.plist */; };
 		276AC6871CA5D53400DB378D /* PackSpanish.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6861CA5D53400DB378D /* PackSpanish.xcassets */; };
@@ -134,6 +136,7 @@
 /* Begin PBXFileReference section */
 		270A409D1CA6082E001B2E05 /* AudiotsSendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudiotsSendViewController.h; path = ViewControllers/AudiotsSendViewController.h; sourceTree = "<group>"; };
 		270A409E1CA6082E001B2E05 /* AudiotsSendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudiotsSendViewController.m; path = ViewControllers/AudiotsSendViewController.m; sourceTree = "<group>"; };
+		2741A6841CCFB30700593BBE /* PackEight.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PackEight.xcassets; sourceTree = "<group>"; };
 		276AC6831CA5D52800DB378D /* PackSpanish.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackSpanish.plist; path = Resources/PackSpanish.plist; sourceTree = "<group>"; };
 		276AC6861CA5D53400DB378D /* PackSpanish.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackSpanish.xcassets; path = Packs/PackSpanish.xcassets; sourceTree = "<group>"; };
 		278FE6D71CBC573600218FCC /* PackSeven.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PackSeven.xcassets; sourceTree = "<group>"; };
@@ -502,6 +505,7 @@
 				2D369CD51C298196005E2629 /* PackLogo.xcassets */,
 				276AC6861CA5D53400DB378D /* PackSpanish.xcassets */,
 				278FE6D71CBC573600218FCC /* PackSeven.xcassets */,
+				2741A6841CCFB30700593BBE /* PackEight.xcassets */,
 			);
 			name = Packs;
 			sourceTree = "<group>";
@@ -660,6 +664,7 @@
 				2D93EC181BFA1F6F00F8AA32 /* PackOne.plist in Resources */,
 				276AC6871CA5D53400DB378D /* PackSpanish.xcassets in Resources */,
 				2DC13F0B1BF24555005E9202 /* AudiotsCreateCustomAudiotCollectionViewCell.xib in Resources */,
+				2741A6851CCFB30700593BBE /* PackEight.xcassets in Resources */,
 				2D369CD61C298196005E2629 /* PackLogo.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -690,6 +695,7 @@
 				276AC6851CA5D52800DB378D /* PackSpanish.plist in Resources */,
 				2D9A55C91C232F6800ECB5C0 /* PackThree.xcassets in Resources */,
 				2DC13F0C1BF24556005E9202 /* AudiotsCreateCustomAudiotCollectionViewCell.xib in Resources */,
+				271181D81CCFD7D500285E04 /* PackEight.xcassets in Resources */,
 				2DC13F071BF2454D005E9202 /* AudiotsPackSelectionCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

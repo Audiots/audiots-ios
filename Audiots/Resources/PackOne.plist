@@ -7,6 +7,30 @@
 		<array>
 			<dict>
 				<key>image_plain</key>
+				<string>all-yellow-girl-geek-pigtails-glasses-plain</string>
+				<key>image_play</key>
+				<string>all-yellow-girl-geek-pigtails-glasses-play</string>
+				<key>image_speaker</key>
+				<string>all-yellow-girl-geek-pigtails-glasses-speaker</string>
+				<key>sound_mp3</key>
+				<string>all-yellow-girl-geek-pigtails-glasses-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>superwomen-plain</string>
+				<key>image_play</key>
+				<string>superwomen-play</string>
+				<key>image_speaker</key>
+				<string>superwomen-speaker</string>
+				<key>sound_mp3</key>
+				<string>superwomen-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>					
+			<dict>
+				<key>image_plain</key>
 				<string>best-mom-ever-brown-plain</string>
 				<key>image_play</key>
 				<string>best-mom-ever-brown-play</string>
