@@ -69,7 +69,6 @@
 		2DC13F0D1BF246A6005E9202 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCFF72C1BE3EB07008869BF /* AVFoundation.framework */; };
 		2DCFF6981BE3DE31008869BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFF6971BE3DE31008869BF /* main.m */; };
 		2DCFF69B1BE3DE31008869BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFF69A1BE3DE31008869BF /* AppDelegate.m */; };
-		2DCFF69E1BE3DE31008869BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFF69D1BE3DE31008869BF /* ViewController.m */; };
 		2DCFF6A11BE3DE31008869BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFF69F1BE3DE31008869BF /* Main.storyboard */; };
 		2DCFF6A31BE3DE31008869BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFF6A21BE3DE31008869BF /* Assets.xcassets */; };
 		2DCFF6A61BE3DE31008869BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCFF6A41BE3DE31008869BF /* LaunchScreen.storyboard */; };
@@ -166,8 +165,6 @@
 		2DCFF6971BE3DE31008869BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2DCFF6991BE3DE31008869BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DCFF69A1BE3DE31008869BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2DCFF69C1BE3DE31008869BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2DCFF69D1BE3DE31008869BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2DCFF6A01BE3DE31008869BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DCFF6A21BE3DE31008869BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DCFF6A51BE3DE31008869BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -278,6 +275,9 @@
 		2168E99A4ECDE334FA38AC9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D195EC01C8495220093DF3F /* Crashlytics.framework */,
+				2D195EC11C8495220093DF3F /* Fabric.framework */,
+				2DCFF72C1BE3EB07008869BF /* AVFoundation.framework */,
 				2DF0E9FA1BE411070043E215 /* MessageUI.framework */,
 				E9676E8DF5E84E1D32AC58FC /* libPods-Audiots.a */,
 				2E6A15B4CA84ED2046E90064 /* libPods-Audiots Keyboard.a */,
@@ -299,9 +299,6 @@
 		2DCFF68A1BE3DE31008869BF = {
 			isa = PBXGroup;
 			children = (
-				2D195EC01C8495220093DF3F /* Crashlytics.framework */,
-				2D195EC11C8495220093DF3F /* Fabric.framework */,
-				2DCFF72C1BE3EB07008869BF /* AVFoundation.framework */,
 				2DCFF6951BE3DE31008869BF /* Audiots */,
 				2DCFF6B81BE3DF34008869BF /* Audiots Keyboard */,
 				2DCFF6E51BE3E497008869BF /* AudiotsFramework */,
@@ -331,8 +328,6 @@
 				2DF0E9CE1BE3F5640043E215 /* Resources */,
 				2DCFF6991BE3DE31008869BF /* AppDelegate.h */,
 				2DCFF69A1BE3DE31008869BF /* AppDelegate.m */,
-				2DCFF69C1BE3DE31008869BF /* ViewController.h */,
-				2DCFF69D1BE3DE31008869BF /* ViewController.m */,
 				2DCFF69F1BE3DE31008869BF /* Main.storyboard */,
 				2DCFF6A21BE3DE31008869BF /* Assets.xcassets */,
 				2DCFF6A41BE3DE31008869BF /* LaunchScreen.storyboard */,
@@ -843,7 +838,6 @@
 				2DCFF7131BE3EA0E008869BF /* AudiotsShopViewController.m in Sources */,
 				2DCFF7321BE3ED62008869BF /* AudiotsHomeTableViewHeaderView.m in Sources */,
 				2DECE4D01C0203C8000518A9 /* AudiotsCreateStepTwoViewController.m in Sources */,
-				2DCFF69E1BE3DE31008869BF /* ViewController.m in Sources */,
 				2DCFF7071BE3E9F9008869BF /* AudiotsShopTableViewCell.m in Sources */,
 				2DCFF7101BE3EA0E008869BF /* AudiotsBrowseViewController.m in Sources */,
 				2DCFF7031BE3E9F9008869BF /* AudiotsBrowseTableViewCell.m in Sources */,
