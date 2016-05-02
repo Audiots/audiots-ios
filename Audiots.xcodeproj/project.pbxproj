@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		270A409F1CA6082E001B2E05 /* AudiotsSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270A409E1CA6082E001B2E05 /* AudiotsSendViewController.m */; };
 		271181D81CCFD7D500285E04 /* PackEight.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2741A6841CCFB30700593BBE /* PackEight.xcassets */; };
+		2712E29C1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2712E29B1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.m */; };
 		2741A6851CCFB30700593BBE /* PackEight.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2741A6841CCFB30700593BBE /* PackEight.xcassets */; };
 		276AC6841CA5D52800DB378D /* PackSpanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6831CA5D52800DB378D /* PackSpanish.plist */; };
 		276AC6851CA5D52800DB378D /* PackSpanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6831CA5D52800DB378D /* PackSpanish.plist */; };
 		276AC6871CA5D53400DB378D /* PackSpanish.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6861CA5D53400DB378D /* PackSpanish.xcassets */; };
 		276AC6881CA5D53400DB378D /* PackSpanish.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6861CA5D53400DB378D /* PackSpanish.xcassets */; };
+		277AC8AF1CD8071700627647 /* AudiotsIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 277AC8AC1CD8071700627647 /* AudiotsIAPHelper.m */; };
+		277AC8B01CD8071700627647 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 277AC8AE1CD8071700627647 /* IAPHelper.m */; };
 		278FE6D81CBC573600218FCC /* PackSeven.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278FE6D71CBC573600218FCC /* PackSeven.xcassets */; };
 		278FE6D91CBC573600218FCC /* PackSeven.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278FE6D71CBC573600218FCC /* PackSeven.xcassets */; };
 		278FE6DD1CBC5A3900218FCC /* AudiotsRecordPacks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */; };
@@ -135,9 +138,15 @@
 /* Begin PBXFileReference section */
 		270A409D1CA6082E001B2E05 /* AudiotsSendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudiotsSendViewController.h; path = ViewControllers/AudiotsSendViewController.h; sourceTree = "<group>"; };
 		270A409E1CA6082E001B2E05 /* AudiotsSendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudiotsSendViewController.m; path = ViewControllers/AudiotsSendViewController.m; sourceTree = "<group>"; };
+		2712E29A1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudiotsInAppTableViewController.h; path = ViewControllers/AudiotsInAppTableViewController.h; sourceTree = "<group>"; };
+		2712E29B1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudiotsInAppTableViewController.m; path = ViewControllers/AudiotsInAppTableViewController.m; sourceTree = "<group>"; };
 		2741A6841CCFB30700593BBE /* PackEight.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PackEight.xcassets; sourceTree = "<group>"; };
 		276AC6831CA5D52800DB378D /* PackSpanish.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackSpanish.plist; path = Resources/PackSpanish.plist; sourceTree = "<group>"; };
 		276AC6861CA5D53400DB378D /* PackSpanish.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackSpanish.xcassets; path = Packs/PackSpanish.xcassets; sourceTree = "<group>"; };
+		277AC8AB1CD8071700627647 /* AudiotsIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiotsIAPHelper.h; sourceTree = "<group>"; };
+		277AC8AC1CD8071700627647 /* AudiotsIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiotsIAPHelper.m; sourceTree = "<group>"; };
+		277AC8AD1CD8071700627647 /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
+		277AC8AE1CD8071700627647 /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
 		278FE6D71CBC573600218FCC /* PackSeven.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PackSeven.xcassets; sourceTree = "<group>"; };
 		27D4A6DE1C87641A009FAE0E /* PackFour.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackFour.plist; path = Resources/PackFour.plist; sourceTree = "<group>"; };
 		27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackFour.xcassets; path = Packs/PackFour.xcassets; sourceTree = "<group>"; };
@@ -285,6 +294,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		277AC8AA1CD8071700627647 /* In-App Purchases */ = {
+			isa = PBXGroup;
+			children = (
+				277AC8AB1CD8071700627647 /* AudiotsIAPHelper.h */,
+				277AC8AC1CD8071700627647 /* AudiotsIAPHelper.m */,
+				277AC8AD1CD8071700627647 /* IAPHelper.h */,
+				277AC8AE1CD8071700627647 /* IAPHelper.m */,
+			);
+			path = "In-App Purchases";
+			sourceTree = "<group>";
+		};
 		2D81A1A31C721D2F00A8A769 /* iOS Keyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +345,7 @@
 				2DCFF72F1BE3ED4E008869BF /* Views */,
 				2DCFF6F81BE3E72E008869BF /* TableViewCells */,
 				2DCFF6F71BE3E618008869BF /* ViewControllers */,
+				277AC8AA1CD8071700627647 /* In-App Purchases */,
 				2DF0E9CE1BE3F5640043E215 /* Resources */,
 				2DCFF6991BE3DE31008869BF /* AppDelegate.h */,
 				2DCFF69A1BE3DE31008869BF /* AppDelegate.m */,
@@ -436,6 +457,8 @@
 				2DECE4CF1C0203C8000518A9 /* AudiotsCreateStepTwoViewController.m */,
 				270A409D1CA6082E001B2E05 /* AudiotsSendViewController.h */,
 				270A409E1CA6082E001B2E05 /* AudiotsSendViewController.m */,
+				2712E29A1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.h */,
+				2712E29B1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -826,8 +849,10 @@
 				2DCFF7051BE3E9F9008869BF /* AudiotsIntroTableViewCell.m in Sources */,
 				2DCFF7061BE3E9F9008869BF /* AudiotsRateUsTableViewCell.m in Sources */,
 				2DC13F021BF24536005E9202 /* AudiotsPackEmoticonsCollectionViewCell.m in Sources */,
+				277AC8B01CD8071700627647 /* IAPHelper.m in Sources */,
 				2DC13EFE1BF24527005E9202 /* AudiotsPackEmoticonsCollectionView.m in Sources */,
 				2DC13EFF1BF24530005E9202 /* AudiotsPackSelectionCollectionView.m in Sources */,
+				2712E29C1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.m in Sources */,
 				270A409F1CA6082E001B2E05 /* AudiotsSendViewController.m in Sources */,
 				2DCFF7111BE3EA0E008869BF /* AudiotsHomeTableViewController.m in Sources */,
 				2DE5BCA21BFA7BA200E59706 /* AudiotsIntroViewController.m in Sources */,
@@ -838,6 +863,7 @@
 				2DCFF7131BE3EA0E008869BF /* AudiotsShopViewController.m in Sources */,
 				2DCFF7321BE3ED62008869BF /* AudiotsHomeTableViewHeaderView.m in Sources */,
 				2DECE4D01C0203C8000518A9 /* AudiotsCreateStepTwoViewController.m in Sources */,
+				277AC8AF1CD8071700627647 /* AudiotsIAPHelper.m in Sources */,
 				2DCFF7071BE3E9F9008869BF /* AudiotsShopTableViewCell.m in Sources */,
 				2DCFF7101BE3EA0E008869BF /* AudiotsBrowseViewController.m in Sources */,
 				2DCFF7031BE3E9F9008869BF /* AudiotsBrowseTableViewCell.m in Sources */,

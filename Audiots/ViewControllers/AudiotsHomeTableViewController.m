@@ -42,7 +42,7 @@
     NSInteger numberOfRows = 0;
     switch (section) {
         case 0:
-            numberOfRows = 7;
+            numberOfRows = 8;
             break;
             
         default:
