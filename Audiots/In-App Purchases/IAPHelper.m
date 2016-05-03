@@ -75,7 +75,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 }
 
 - (void)buyProduct:(SKProduct *)product {
-    NSLog(@"Buying %@...", product.productIdentifier);
+    //NSLog(@"Buying %@...", product.productIdentifier);
     SKPayment * payment = [SKPayment paymentWithProduct:product];
     
     [[SKPaymentQueue defaultQueue] addPayment:payment];
@@ -89,7 +89,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 
 - (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response {
     
-    NSLog(@"Loaded list of products...");
+    //NSLog(@"Loaded list of products...");
     _productsRequest = nil;
     
     NSArray * skProducts = response.products;
@@ -123,20 +123,21 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
                 [self failedTransaction:transaction];
                 break;
             case SKPaymentTransactionStateRestored:
-                [self restoreTransaction:transaction]; default:
+                [self restoreTransaction:transaction];
+            default:
             break; }
     };
 }
 
 - (void)completeTransaction:(SKPaymentTransaction *)transaction {
     NSLog(@"completeTransaction...");
-    [self provideContentForProductIdentifier:transaction.payment.productIdentifier];
+    [self provideContentForProductIdentifier:transaction.payment.productIdentifier withTransactionState:transaction.transactionState];
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }
 
 - (void)restoreTransaction:(SKPaymentTransaction *)transaction {
     NSLog(@"restoreTransaction...");
-    [self provideContentForProductIdentifier:transaction.originalTransaction.payment.productIdentifier];
+    [self provideContentForProductIdentifier:transaction.originalTransaction.payment.productIdentifier withTransactionState:transaction.transactionState];
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }
 
@@ -150,7 +151,7 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
 }
 
 // Add new method
-- (void)provideContentForProductIdentifier:(NSString *)productIdentifier {
+- (void)provideContentForProductIdentifier:(NSString *)productIdentifier withTransactionState: (SKPaymentTransactionState) state {
     
     [_purchasedProductIdentifiers addObject:productIdentifier];
     [_userDefault setBool:YES forKey:productIdentifier];

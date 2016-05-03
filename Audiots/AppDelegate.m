@@ -126,8 +126,8 @@
 }
 
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    NSString *str = [NSString stringWithFormat:@"Device Token=%@",deviceToken];
-    NSLog(@"%@", str);
+    //NSString *str = [NSString stringWithFormat:@"Device Token=%@",deviceToken];
+    //NSLog(@"%@", str);
 }
 
 - (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err {
