@@ -42,6 +42,10 @@
                                              selector:@selector(receiveNotification:)
                                                  name:IAPHelperProductPurchasedNotification
                                                object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveNotification:)
+                                                 name:IAPHelperProductRestoredNotification
+                                               object:nil];
     
     [self updateView];
     
@@ -76,8 +80,16 @@
         NSLog (@"Successfully received the IAPHelperProductPurchasedNotification notification!");
         
         [self updateView];
-        
     }
+    
+    if ([[notification name] isEqualToString:IAPHelperProductRestoredNotification]){
+        NSLog (@"Successfully received the IAPHelperProductRestoredNotification notification!");
+        
+        [self showAlertWithTitle:@"Restore" andMessage:@"Successfully restored previous purchases."];
+
+    }
+    
+   
 }
 
 #pragma mark - Table view data source
@@ -147,6 +159,22 @@
 - (IBAction)restoreAction:(id)sender {
     
     [[AudiotsIAPHelper sharedInstance] restoreCompletedTransactions];
+}
+
+- (void) showAlertWithTitle: (NSString*) title andMessage: (NSString*) message {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"OK"
+                                                     style:UIAlertActionStyleDefault
+                                                   handler:^(UIAlertAction * _Nonnull action) {
+                                                       [self updateView];
+                                                    }];
+    
+    [alertController addAction:okButton];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+    
 }
 
 @end

@@ -9,6 +9,7 @@
 #import "IAPHelper.h"
 
 NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurchasedNotification";
+NSString *const IAPHelperProductRestoredNotification = @"IAPHelperProductRestoreNotification";
 
 @interface IAPHelper () <SKProductsRequestDelegate, SKPaymentTransactionObserver>
 @end
@@ -157,7 +158,16 @@ NSString *const IAPHelperProductPurchasedNotification = @"IAPHelperProductPurcha
     [_userDefault setBool:YES forKey:productIdentifier];
     [_userDefault synchronize];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:IAPHelperProductPurchasedNotification object:productIdentifier userInfo:nil];
+    switch (state) {
+        case SKPaymentTransactionStatePurchased:
+            [[NSNotificationCenter defaultCenter] postNotificationName:IAPHelperProductPurchasedNotification object:productIdentifier userInfo:nil];
+            break;
+        case SKPaymentTransactionStateRestored:
+            [[NSNotificationCenter defaultCenter] postNotificationName:IAPHelperProductRestoredNotification object:productIdentifier userInfo:nil];
+            break;
+        default:
+            break;
+    }
 }
      
 @end
