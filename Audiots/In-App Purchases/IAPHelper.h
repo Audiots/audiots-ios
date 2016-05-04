@@ -25,4 +25,6 @@ typedef void (^RequestProductsCompletionHandler)(BOOL success, NSArray * product
 
 - (void)provideContentForProductIdentifier:(NSString *)productIdentifier withTransactionState: (SKPaymentTransactionState) state;
 
+-(void) reload;
+
 @end

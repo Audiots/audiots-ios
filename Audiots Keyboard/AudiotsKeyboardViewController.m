@@ -7,6 +7,7 @@
 //
 
 #import "AudiotsKeyboardViewController.h"
+#import "AudiotsIAPHelper.h"
 
 #import "AudiotsPackSelectionCollectionViewCell.h"
 #import "AudiotsPackEmoticonsCollectionViewCell.h"
@@ -43,6 +44,8 @@
     [super viewWillAppear:animated];
     
     [[AudiotsAudioVideoManager sharedInstance] addDelegate:self];
+    
+    [[AudiotsIAPHelper sharedInstance] reload];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
@@ -113,9 +116,27 @@
         [cell.packCoverEmoticonImageView setImage:[UIImage imageNamed:[menuItemDictionary valueForKey:@"packCoverImage"]]];
     } forCellReuseIdentifier:@"packSelectionCollectionViewCell"];
     
-    if (self.packSelectionDataSource == nil) {
-        self.packSelectionDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"AudiotsAvailablePacks" ofType:@"plist"]];
+    [self setSelectionDataSource];
+    
+}
+
+-(BOOL) isPremiumPurchased {
+    
+    return  [[AudiotsIAPHelper sharedInstance] productPurchased:@"com.4_girls_tech.audiots.inapp.premium"];
+}
+
+-(void) setSelectionDataSource {
+    
+    NSString *selectionPack = @"AudiotsAvailablePacks";
+    if (self.isPremiumPurchased){
+        selectionPack = @"AudiotsAvailablePacksPremium";
     }
+    
+    self.packSelectionDataSource = nil;
+    
+    // load the selected pack
+    self.packSelectionDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:selectionPack ofType:@"plist"]];
+    
 }
 
 - (void)initializePackEmoticonsCollectionView {

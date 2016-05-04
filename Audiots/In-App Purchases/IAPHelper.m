@@ -36,26 +36,32 @@ NSString *const IAPHelperProductRestoredNotification = @"IAPHelperProductRestore
         // Store product identifiers
         _productIdentifiers = productIdentifiers;
         
-        
-        // Check for previously purchased products
-        _purchasedProductIdentifiers = [NSMutableSet set];
-        
-        // This will check to see which products have been purchased or not (based on the values saved in NSUserDefaults) and keep track of the product identifiers that have been purchased in a list.
-        for (NSString * productIdentifier in _productIdentifiers) {
-            
-            BOOL productPurchased = [_userDefault boolForKey:productIdentifier];
-            if (productPurchased) {
-                [_purchasedProductIdentifiers addObject:productIdentifier];
-                NSLog(@"Previously purchased: %@", productIdentifier);
-            } else {
-                NSLog(@"Not purchased: %@", productIdentifier); }
-        }
-        
+        [self reload];
+
         // Add self as transaction observer
         [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     }
     
     return self;
+}
+
+
+-(void) reload {
+    
+    // Check for previously purchased products
+    _purchasedProductIdentifiers = [NSMutableSet set];
+    
+    // This will check to see which products have been purchased or not (based on the values saved in NSUserDefaults) and keep track of the product identifiers that have been purchased in a list.
+    for (NSString * productIdentifier in _productIdentifiers) {
+        
+        BOOL productPurchased = [_userDefault boolForKey:productIdentifier];
+        if (productPurchased) {
+            [_purchasedProductIdentifiers addObject:productIdentifier];
+            NSLog(@"Previously purchased: %@", productIdentifier);
+        } else {
+            NSLog(@"Not purchased: %@", productIdentifier); }
+    }
+    
 }
 
 - (void)requestProductsWithCompletionHandler:(RequestProductsCompletionHandler)completionHandler {
@@ -118,7 +124,14 @@ NSString *const IAPHelperProductRestoredNotification = @"IAPHelperProductRestore
         switch (transaction.transactionState)
         {
             case SKPaymentTransactionStatePurchased:
-                [self completeTransaction:transaction];
+                
+                if (transaction.downloads != nil && transaction.downloads.count > 0) {
+                    
+                    [[SKPaymentQueue defaultQueue] startDownloads:transaction.downloads];
+                    
+                } else {
+                    [self completeTransaction:transaction];
+                }
                 break;
             case SKPaymentTransactionStateFailed:
                 [self failedTransaction:transaction];
@@ -151,6 +164,38 @@ NSString *const IAPHelperProductRestoredNotification = @"IAPHelperProductRestore
     [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
 }
 
+- (void)paymentQueue:(SKPaymentQueue *)queue updatedDownloads:(NSArray<SKDownload *> *)downloads {
+    
+    for (SKDownload *download in downloads) {
+        
+        switch (download.downloadState) {
+            case SKDownloadStateActive:
+                NSLog(@"Download progress: %f", download.progress);
+                NSLog(@"Time remaining: %f", download.timeRemaining);
+                break;
+            case SKDownloadStateFinished:
+                NSLog(@"Download is finished, content is available");
+                NSLog(@"Content URL: %@", download.contentURL);
+                break;
+            case SKDownloadStateFailed:
+                NSLog(@"Download Failed");
+                break;
+            case SKDownloadStateCancelled:
+                NSLog(@"Download was cancelled");
+                break;
+            case SKDownloadStatePaused:
+                NSLog(@"Download Paused");
+                break;
+            case SKDownloadStateWaiting:
+                NSLog(@"Download is inactive, waiting to be downloaded");
+                break;
+            default:
+                break;
+        }
+    }
+    
+}
+
 // Add new method
 - (void)provideContentForProductIdentifier:(NSString *)productIdentifier withTransactionState: (SKPaymentTransactionState) state {
     
@@ -169,5 +214,22 @@ NSString *const IAPHelperProductRestoredNotification = @"IAPHelperProductRestore
             break;
     }
 }
-     
+
+-(void) saveDownloadContent: (SKDownload *) download {
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    
+    NSURL* storeUrl = [fileManager containerURLForSecurityApplicationGroupIdentifier:@"group.com.4-girls-tech.audiots"];
+    NSString *myCreationsPlistPath = [[storeUrl path] stringByAppendingPathComponent:@"MyCreations.plist"];
+    
+    if ([fileManager fileExistsAtPath:myCreationsPlistPath] == NO) {
+        NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"MyCreations" ofType:@"plist"];
+        [fileManager copyItemAtPath:resourcePath toPath:myCreationsPlistPath error:&error];
+    }
+    
+    NSString *targetFolder = [storeUrl path];
+    
+    [self completeTransaction:download.transaction];
+}
 @end
