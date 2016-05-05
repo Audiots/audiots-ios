@@ -27,4 +27,7 @@ typedef void (^RequestProductsCompletionHandler)(BOOL success, NSArray * product
 
 -(void) reload;
 
+-(BOOL) statusChanged;
+-(void) setStatusChanged: (BOOL) status;
+
 @end

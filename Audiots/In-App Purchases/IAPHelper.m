@@ -26,6 +26,28 @@ NSString *const IAPHelperProductRestoredNotification = @"IAPHelperProductRestore
     NSUserDefaults *_userDefault;
 }
 
+/**
+ *  Set statusChanged bit
+ *
+ *  @return <#return value description#>
+ */
+-(BOOL) statusChanged{
+    NSLog(@"Get statusChanged: %@", [_userDefault boolForKey:@"StatusChanged"] ? @"YES" : @"NO");
+    return [_userDefault boolForKey:@"StatusChanged"];
+}
+
+/**
+ *  Set the statusChanged bit when Purchase or Restore is made
+ *
+ *  @param status description
+ */
+-(void) setStatusChanged: (BOOL) status {
+    NSLog(@"Set statusChanged: %@", status ? @"YES" : @"NO" );
+    [_userDefault setBool:status forKey:@"StatusChanged"];
+    [_userDefault synchronize];
+}
+
+
 
 - (id)initWithProductIdentifiers:(NSSet *)productIdentifiers {
     
@@ -202,6 +224,9 @@ NSString *const IAPHelperProductRestoredNotification = @"IAPHelperProductRestore
     [_purchasedProductIdentifiers addObject:productIdentifier];
     [_userDefault setBool:YES forKey:productIdentifier];
     [_userDefault synchronize];
+    
+    // update the NSUserDefault so the keyboard need to know that it needs to update
+    [self setStatusChanged:YES];
     
     switch (state) {
         case SKPaymentTransactionStatePurchased:
