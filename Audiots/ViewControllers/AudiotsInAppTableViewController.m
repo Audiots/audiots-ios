@@ -16,7 +16,8 @@
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UITextView *descriptionLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @property (weak, nonatomic) IBOutlet UIButton *buyButton;
 
@@ -99,7 +100,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 2;
 }
 
 
@@ -126,12 +127,12 @@
                 
                 [_priceFormatter setLocale:product.priceLocale];
                 
-                NSLog(@"Buy %@",  [_priceFormatter stringFromNumber:product.price]);
                 _titleLabel.text = product.localizedTitle;
                 _descriptionLabel.text = product.localizedDescription;
                 
+                
                 if (self.isPremiumPurchased) {
-                    [_buyButton setTitle:@"Purchased" forState:UIControlStateNormal];
+                    [_buyButton setTitle:@"Paid" forState:UIControlStateNormal];
 
                 } else {
                     
