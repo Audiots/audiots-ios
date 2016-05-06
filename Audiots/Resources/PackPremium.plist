@@ -7,11 +7,11 @@
 		<array>
 			<dict>
 				<key>image_plain</key>
-				<string>blackberry-hint-plain</string>
+				<string>Pink Smiley</string>
 				<key>image_play</key>
-				<string>blackberry-hint-play</string>
+				<string>Pink Smiley</string>
 				<key>image_speaker</key>
-				<string>blackberry-hint-speaker</string>
+				<string>Pink Smiley</string>
 				<key>sound_mp3</key>
 				<string>Hint_BlackberryPour-sound</string>
 				<key>cellType</key>
@@ -19,61 +19,13 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>cherry-hint-fizz-v2-plain</string>
+				<string>SPCA</string>
 				<key>image_play</key>
-				<string>cherry-hint-fizz-v2-play</string>
+				<string>SPCA</string>
 				<key>image_speaker</key>
-				<string>cherry-hint-fizz-v2-speaker</string>
+				<string>SPCA</string>
 				<key>sound_mp3</key>
 				<string>Hint_CherryFizz-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>green-apple-hint-v2-plain</string>
-				<key>image_play</key>
-				<string>green-apple-hint-v2-play</string>
-				<key>image_speaker</key>
-				<string>green-apple-hint-v2-speaker</string>
-				<key>sound_mp3</key>
-				<string>Hint_CrispApplePour-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>Peach-Hint_Fizz2-plain</string>
-				<key>image_play</key>
-				<string>Peach-Hint_Fizz2_play</string>
-				<key>image_speaker</key>
-				<string>Peach_hint_fizz_speaker2</string>
-				<key>sound_mp3</key>
-				<string>Hint_PeachPour-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>pineapple-hint-v2-plain</string>
-				<key>image_play</key>
-				<string>pineapple-hint-v2-play</string>
-				<key>image_speaker</key>
-				<string>pineapple-hint-v2-speaker</string>
-				<key>sound_mp3</key>
-				<string>Hint_PineapplePour-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>watermelon-hint1-plain</string>
-				<key>image_play</key>
-				<string>watermelon-hint1-play</string>
-				<key>image_speaker</key>
-				<string>watermelon-hint1-speaker</string>
-				<key>sound_mp3</key>
-				<string>Hint_WatermelonPour-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>

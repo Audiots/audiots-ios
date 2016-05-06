@@ -45,7 +45,20 @@
     
     [[AudiotsAudioVideoManager sharedInstance] addDelegate:self];
     
-    [[AudiotsIAPHelper sharedInstance] reload];
+     //if statusChanged, then we need to update the collectionview
+    if ([[AudiotsIAPHelper sharedInstance] statusChanged]){
+
+        // 1 - load the new changes
+        [[AudiotsIAPHelper sharedInstance] reload];
+        // 2 - set new datasource
+        [self setSelectionDataSource];
+        // 3 - reload the collectionview
+        [self.packSelectionCollectionView reloadData];
+
+        // 4 - reset when done
+        [[AudiotsIAPHelper sharedInstance] setStatusChanged:NO];
+    }
+
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
