@@ -7,6 +7,54 @@
 		<array>
 			<dict>
 				<key>image_plain</key>
+				<string>amelia-ge-plain</string>
+				<key>image_play</key>
+				<string>amelia-ge-play</string>
+				<key>image_speaker</key>
+				<string>amelia-ge-speaker</string>
+				<key>sound_mp3</key>
+				<string>amelia-ge-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>atom-ge-plain</string>
+				<key>image_play</key>
+				<string>atom-ge-play</string>
+				<key>image_speaker</key>
+				<string>atom-ge-speaker</string>
+				<key>sound_mp3</key>
+				<string>atom-ge-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>lovelace-ge-plain</string>
+				<key>image_play</key>
+				<string>lovelace-ge-play</string>
+				<key>image_speaker</key>
+				<string>lovelace-ge-speaker</string>
+				<key>sound_mp3</key>
+				<string>lovelace-ge-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>mars-ge-plain</string>
+				<key>image_play</key>
+				<string>mars-ge-play</string>
+				<key>image_speaker</key>
+				<string>mars-ge-speaker</string>
+				<key>sound_mp3</key>
+				<string>mars-ge-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
 				<string>all-yellow-girl-geek-pigtails-glasses-plain</string>
 				<key>image_play</key>
 				<string>all-yellow-girl-geek-pigtails-glasses-play</string>
@@ -629,6 +677,54 @@
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>mexican-pesos-plain</string>
+				<key>image_play</key>
+				<string>mexican-pesos-play</string>
+				<key>image_speaker</key>
+				<string>mexican-pesos-speaker</string>
+				<key>sound_mp3</key>
+				<string>pesos_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>mexico-flag-plain</string>
+				<key>image_play</key>
+				<string>mexico-flag-play</string>
+				<key>image_speaker</key>
+				<string>mexico-flag-speaker</string>
+				<key>sound_mp3</key>
+				<string>paisanose_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>yellow-card-plain</string>
+				<key>image_play</key>
+				<string>yellow-card-play</string>
+				<key>image_speaker</key>
+				<string>yellow-card-speaker</string>
+				<key>sound_mp3</key>
+				<string>tarjeta_amarilla_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>soccer_plain</string>
+				<key>image_play</key>
+				<string>soccer_play</string>
+				<key>image_speaker</key>
+				<string>soccer_speaker</string>
+				<key>sound_mp3</key>
+				<string>futbot_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
 			<dict>
 				<key>image_plain</key>
 				<string>logo_plain</string>

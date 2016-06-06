@@ -355,6 +355,42 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
+				<string>praying-hands-plain</string>
+				<key>image_play</key>
+				<string>praying-hands-play</string>
+				<key>image_speaker</key>
+				<string>praying-hands-speaker</string>
+				<key>sound_mp3</key>
+				<string>si_dios_quiere_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>arm-muscle-plain</string>
+				<key>image_play</key>
+				<string>arm-muscle-play</string>
+				<key>image_speaker</key>
+				<string>arm-muscle-speaker</string>
+				<key>sound_mp3</key>
+				<string>ni_madres_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>hands-over-monkeys-eyes-plain</string>
+				<key>image_play</key>
+				<string>hands-over-monkeys-eyes-play</string>
+				<key>image_speaker</key>
+				<string>hands-over-monkeys-eyes-speaker</string>
+				<key>sound_mp3</key>
+				<string>no_quiero_ver_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
 				<string>logo_plain</string>
 				<key>image_play</key>
 				<string>logo_play</string>
