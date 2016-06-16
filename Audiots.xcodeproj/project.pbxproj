@@ -26,6 +26,7 @@
 		2795E4211D1314DD008CC5EF /* PackNine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2795E4201D1314DD008CC5EF /* PackNine.xcassets */; };
 		2795E4231D1314E8008CC5EF /* PackPremium.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2795E4221D1314E8008CC5EF /* PackPremium.xcassets */; };
 		2795E4251D1314F7008CC5EF /* PackSeven.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2795E4241D1314F7008CC5EF /* PackSeven.xcassets */; };
+		2795E4271D13175B008CC5EF /* PackFive.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2795E4261D13175B008CC5EF /* PackFive.plist */; };
 		27BA8DE81CA5D93F00CE9C48 /* AudiotsBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFF7091BE3EA0E008869BF /* AudiotsBrowseViewController.m */; };
 		27D4A6DF1C87641A009FAE0E /* PackFour.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6DE1C87641A009FAE0E /* PackFour.plist */; };
 		27D4A6E41C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
@@ -158,6 +159,7 @@
 		2795E4201D1314DD008CC5EF /* PackNine.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackNine.xcassets; path = Packs/PackNine.xcassets; sourceTree = "<group>"; };
 		2795E4221D1314E8008CC5EF /* PackPremium.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackPremium.xcassets; path = Packs/PackPremium.xcassets; sourceTree = "<group>"; };
 		2795E4241D1314F7008CC5EF /* PackSeven.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackSeven.xcassets; path = Packs/PackSeven.xcassets; sourceTree = "<group>"; };
+		2795E4261D13175B008CC5EF /* PackFive.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackFive.plist; path = Resources/PackFive.plist; sourceTree = "<group>"; };
 		27D4A6DE1C87641A009FAE0E /* PackFour.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackFour.plist; path = Resources/PackFour.plist; sourceTree = "<group>"; };
 		27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackFour.xcassets; path = Packs/PackFour.xcassets; sourceTree = "<group>"; };
 		27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudiotsRecordPacks.plist; path = Resources/AudiotsRecordPacks.plist; sourceTree = "<group>"; };
@@ -511,6 +513,7 @@
 		2DF0E9CF1BE3F5BE0043E215 /* Property List Files */ = {
 			isa = PBXGroup;
 			children = (
+				2795E4261D13175B008CC5EF /* PackFive.plist */,
 				2DF0E9D01BE3F5E20043E215 /* AudiotsAvailablePacks.plist */,
 				271DE4001CDA80780013C973 /* AudiotsAvailablePacksPremium.plist */,
 				27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */,
@@ -690,6 +693,7 @@
 				27D4A6E41C8764B9009FAE0E /* PackFour.xcassets in Resources */,
 				27DC00AF1CAECEB6002D72A5 /* AudiotsRecordPacks.plist in Resources */,
 				2D9A55C21C232F4B00ECB5C0 /* PackOne.xcassets in Resources */,
+				2795E4271D13175B008CC5EF /* PackFive.plist in Resources */,
 				2DCFF6A31BE3DE31008869BF /* Assets.xcassets in Resources */,
 				2D9A55C51C232F5A00ECB5C0 /* PackTwo.xcassets in Resources */,
 				2D4CDD021BF13B2E0010B26F /* MyCreations.plist in Resources */,

@@ -37,6 +37,16 @@
 			</dict>
 			<dict>
 				<key>packCoverImage</key>
+				<string>get-well-soon-card-plain</string>
+				<key>packName</key>
+				<string>PackFive</string>
+				<key>packType</key>
+				<string>xcassets</string>
+				<key>cellType</key>
+				<string>packSelectionCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>packCoverImage</key>
 				<string>Create-Audiot</string>
 				<key>packName</key>
 				<string>MyCreations</string>
