@@ -7,25 +7,49 @@
 		<array>
 			<dict>
 				<key>image_plain</key>
-				<string>Pink Smiley</string>
+				<string>cat-1-plain</string>
 				<key>image_play</key>
-				<string>Pink Smiley</string>
+				<string>cat-1-play</string>
 				<key>image_speaker</key>
-				<string>Pink Smiley</string>
+				<string>cat-1-speaker</string>
 				<key>sound_mp3</key>
-				<string>Hint_BlackberryPour-sound</string>
+				<string>cat-1-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>SPCA</string>
+				<string>cat-2-plain</string>
 				<key>image_play</key>
-				<string>SPCA</string>
+				<string>cat-2-play</string>
 				<key>image_speaker</key>
-				<string>SPCA</string>
+				<string>cat-2-speaker</string>
 				<key>sound_mp3</key>
-				<string>Hint_CherryFizz-sound</string>
+				<string>cat-2-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>dog-1-plain</string>
+				<key>image_play</key>
+				<string>dog-1-play</string>
+				<key>image_speaker</key>
+				<string>dog-1-speaker</string>
+				<key>sound_mp3</key>
+				<string>dog-1-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>dog-2-plain</string>
+				<key>image_play</key>
+				<string>dog-2-play</string>
+				<key>image_speaker</key>
+				<string>dog-2-speaker</string>
+				<key>sound_mp3</key>
+				<string>dog-2-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
