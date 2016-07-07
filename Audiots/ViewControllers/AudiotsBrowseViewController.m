@@ -20,6 +20,9 @@
 
 @interface AudiotsBrowseViewController ()
 @property (nonatomic, assign) BOOL isCurrentPackMyCreations;
+
+@property (nonatomic, assign) BOOL isDeleteMode;
+
 @end
 
 @implementation AudiotsBrowseViewController
@@ -32,11 +35,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+
     if ([self.selectionPack isEqualToString:@"AudiotsRecordPacks"]) {
         [self setIsCurrentPackMyCreations:YES];
     } else {
         [self setIsCurrentPackMyCreations:NO];
     }
+
+    [self setIsDeleteMode: NO];
+
     
     //Initialize My Creations
     [self initializeMyCreations];
@@ -51,7 +58,16 @@
     [self initializePackSelectionCollectionView];
     [self initializePackEmoticonsCollectionView];
     
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receivedDeleteNotification:)
+                                                 name:@"DeleteCustomCell"
+                                               object:nil];
+    
 }
+
+
+
 
 -(void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
@@ -71,6 +87,8 @@
     [super viewWillDisappear:animated];
     
     [[AudiotsAudioVideoManager sharedInstance] removeDelegate:self];
+    
+        [[NSNotificationCenter defaultCenter] removeObserver:@"DeleteCustomCell"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -182,13 +200,170 @@
     } forCellReuseIdentifier:@"createCustomAudiotCollectionViewCell"];
 
     [self.packEmoticonsCollectionView registerCellConfigureBlock:^(AudiotsCustomEmoticonsCollectionViewCell *cell, NSDictionary *menuItemDictionary) {
+        
+        UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressGestureAction:)];
+        
+        [cell addGestureRecognizer:longPress];
+        
         [cell setEmoticonInfoDictionary:menuItemDictionary];
         [cell.emoticonImageView setImage:[UIImage imageNamed:[menuItemDictionary valueForKey:@"image_play"]]];
+        
+        
     } forCellReuseIdentifier:@"customEmoticonsCollectionViewCell"];
 
     if (self.packEmoticonsDataSource == nil) {
         self.packEmoticonsDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[(NSDictionary*)[self.packSelectionDataSource objectAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]] valueForKey:@"packName"] ofType:@"plist"]];
     }
+}
+
+
+
+#pragma mark - Delete Emoji Cell
+
+- (void)longPressGestureAction:(UIGestureRecognizer *)recognizer {
+    
+    
+    // we want to start the shaking animation right away
+    if ( recognizer.state == UIGestureRecognizerStateBegan ) {
+        
+        //CGPoint point = [recognizer locationInView:self.packEmoticonsCollectionView];
+        
+        //NSIndexPath *indexPath = [self.packEmoticonsCollectionView indexPathForItemAtPoint:point];
+        
+        
+        //AudiotsCustomEmoticonsCollectionViewCell *cell = (AudiotsCustomEmoticonsCollectionViewCell*) recognizer.view;
+        
+        //NSDictionary  *info = cell.emoticonInfoDictionary;
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"StartShake" object:self];
+        
+        [self setIsDeleteMode:YES];
+        
+        //[self displayDelete:info atIndex:indexPath];
+    }
+    
+}
+
+
+- (void) receivedDeleteNotification:(NSNotification *) notification
+{
+    
+    if ([[notification name] isEqualToString:@"DeleteCustomCell"]) {
+        
+        AudiotsCustomEmoticonsCollectionViewCell *cell = (AudiotsCustomEmoticonsCollectionViewCell*) notification.object;
+        
+        NSDictionary  *info = cell.emoticonInfoDictionary;
+        
+        NSIndexPath *indexPath = [self.packEmoticonsCollectionView indexPathForCell:cell];
+        
+        [self showAlertOnDeleteItem:info atIndex:indexPath];
+    }
+    
+}
+
+-(void) reloadEmoticonsDataSource {
+    
+    NSURL* storeUrl = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.4-girls-tech.audiots"];
+    NSString *myCreationsPlistPath = [[storeUrl path] stringByAppendingPathComponent:@"MyCreations.plist"];
+    self.packEmoticonsDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:myCreationsPlistPath];
+    
+}
+
+
+-(void) removeItemAt: (NSIndexPath*) indexPath {
+    
+    [self.packEmoticonsCollectionView performBatchUpdates:^{
+        
+        // can't use deleteItemsAtIndexPaths for static datasource.  we need to change to dynamic datasource.
+        //[self.packEmoticonsCollectionView deleteItemsAtIndexPaths:@[indexPath]];
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+}
+
+-(void) showAlertOnDeleteItem:(NSDictionary*) info atIndex: (NSIndexPath*) indexPath {
+    
+    UIAlertController * alert=   [UIAlertController
+                                  alertControllerWithTitle:@"Delete Your Custom Emoji"
+                                  message:@"Deleting emoji will also delete the audio file."
+                                  preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* deleteButton = [UIAlertAction
+                                   actionWithTitle:@"Delete"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action)
+                                   {
+                                       [self deleteEmojiResource:info];
+                                       [self reloadEmoticonsDataSource];
+                                       
+                                       //[self removeItemAt:indexPath];
+                                       [[NSNotificationCenter defaultCenter] postNotificationName:@"StopShake" object:self];
+                                       [self setIsDeleteMode:NO];
+                                   }];
+    
+    UIAlertAction* cancelButton = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction * action)
+                                   {
+                                       [[NSNotificationCenter defaultCenter] postNotificationName:@"StopShake" object:self];
+                                       [self setIsDeleteMode:NO];
+                                   }];
+    
+    [alert addAction:deleteButton];
+    [alert addAction:cancelButton];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+-(void) deleteEmojiResource:(NSDictionary*) currentInfo {
+    
+    NSURL* storeUrl = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.4-girls-tech.audiots"];
+    NSString *myCreationsPlistPath = [[storeUrl path] stringByAppendingPathComponent:@"MyCreations.plist"];
+    
+    NSMutableArray *rootArray = [NSMutableArray arrayWithContentsOfFile:myCreationsPlistPath];
+    NSDictionary *objectsDictionary = [rootArray objectAtIndex:0];
+    NSMutableArray *objectsArray = [objectsDictionary valueForKey:@"objects"];
+    
+    BOOL found = NO;
+    
+    for (int i=0; i < objectsArray.count; i++) {
+        
+        NSDictionary *item = [objectsArray objectAtIndex:i];
+        
+        if ([item[@"cellType"] caseInsensitiveCompare:@"customEmoticonsCollectionViewCell"] == NSOrderedSame) {
+            
+            if ([currentInfo isEqualToDictionary:item]){
+                [objectsArray removeObject:item];
+                found = YES;
+                break;
+            }
+        }
+    }
+    
+    if (found) {
+    
+        [objectsDictionary setValue:objectsArray forKey:@"objects"];
+        [rootArray arrayByAddingObject:objectsDictionary];
+        
+        //Update MyCreations file
+        [rootArray writeToFile:myCreationsPlistPath atomically:YES];
+        
+        NSString *filePath = currentInfo[@"sound_file_path"];
+        NSError *error;
+        
+        if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+            
+            BOOL success = [[NSFileManager defaultManager] removeItemAtPath:filePath error:&error];
+            
+            if (success){
+                NSLog(@"success deleting file: %@", filePath);
+            }
+        }
+    }
+    
 }
 
 #pragma mark - DataSources
@@ -216,29 +391,39 @@
     if (collectionView == self.packSelectionCollectionView) {
         if ([[(NSDictionary*)[self.packSelectionDataSource objectAtIndexPath:indexPath] valueForKey:@"packType"] isEqualToString:@"xcassets"]) {
             [self setIsCurrentPackMyCreations:NO];
-            self.packEmoticonsDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[(NSDictionary*)[self.packSelectionDataSource objectAtIndexPath:indexPath] valueForKey:@"packName"]
-                                                                                                                              ofType:@"plist"]];
+            self.packEmoticonsDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[(NSDictionary*)[self.packSelectionDataSource objectAtIndexPath:indexPath] valueForKey:@"packName"] ofType:@"plist"]];
+            
         } else if ([[(NSDictionary*)[self.packSelectionDataSource objectAtIndexPath:indexPath] valueForKey:@"packType"] isEqualToString:@"custom"]) {
             [self setIsCurrentPackMyCreations:YES];
             NSURL* storeUrl = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.4-girls-tech.audiots"];
             NSString *myCreationsPlistPath = [[storeUrl path] stringByAppendingPathComponent:@"MyCreations.plist"];
+            
             self.packEmoticonsDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:myCreationsPlistPath];
         }
     } else if (collectionView == self.packEmoticonsCollectionView) {
         NSDictionary *emoticonInfoDictionary = [(AudiotsPackEmoticonsCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath] emoticonInfoDictionary];
-
+        
         if ([[(NSDictionary*)[self.packEmoticonsDataSource objectAtIndexPath:indexPath] valueForKey:@"cellType"] isEqualToString:@"createCustomAudiotCollectionViewCell"]) {
+            
             [self performSegueWithIdentifier:@"showCreateStepOne" sender:nil];
+            
         } else if ([[emoticonInfoDictionary valueForKey:@"cellType"] isEqualToString:@"packEmoticonsCollectionViewCell"]) {
             NSString *audioFileName = [emoticonInfoDictionary objectForKey:@"sound_mp3"];
             NSString *imageFileName = [emoticonInfoDictionary objectForKey:@"image_play"];
             
             [[AudiotsAudioVideoManager sharedInstance] createMovieWithAudioFileName:audioFileName andImageArray:@[[UIImage imageNamed:imageFileName]]];
+            
         } else if ([[emoticonInfoDictionary valueForKey:@"cellType"] isEqualToString:@"customEmoticonsCollectionViewCell"]) {
-            NSString *audioFilePath = [emoticonInfoDictionary objectForKey:@"sound_file_path"];
-            NSString *imageFileName = [emoticonInfoDictionary objectForKey:@"image_play"];
+            
+            if(self.isDeleteMode) {
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"StopShake" object:self];
+                [self setIsDeleteMode:NO];
+            } else {
+                NSString *audioFilePath = [emoticonInfoDictionary objectForKey:@"sound_file_path"];
+                NSString *imageFileName = [emoticonInfoDictionary objectForKey:@"image_play"];
 
-            [[AudiotsAudioVideoManager sharedInstance] createMovieWithFilePath:audioFilePath andImageArray:@[[UIImage imageNamed:imageFileName]]];
+                [[AudiotsAudioVideoManager sharedInstance] createMovieWithFilePath:audioFilePath andImageArray:@[[UIImage imageNamed:imageFileName]]];
+            }
         }
     }
 }

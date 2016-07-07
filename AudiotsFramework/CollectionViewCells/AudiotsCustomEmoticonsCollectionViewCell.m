@@ -10,11 +10,95 @@
 
 #import "AudiotsAudioVideoManager.h"
 
+@interface AudiotsCustomEmoticonsCollectionViewCell ()
+
+-(void) startShake;
+-(void) stopShake;
+
+@property (nonatomic, strong) CABasicAnimation *animation;
+
+@property (weak, nonatomic) IBOutlet UIImageView *deleteImage;
+
+@end
+
 @implementation AudiotsCustomEmoticonsCollectionViewCell
+
 
 - (void)awakeFromNib {
     // Initialization code
+    //NSLog(@"awakeFromNib");
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveStartNotification:)
+                                                 name:@"StartShake"
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveStopNotification:)
+                                                 name:@"StopShake"
+                                               object:nil];
+    
+    _animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+
+    //[self.deleteImage setHidden:YES];
+    
+    [self.deleteImage setAlpha:0.0];
+    self.deleteImage.clipsToBounds = YES;
+    self.deleteImage.layer.cornerRadius = 12.5;
+    
 }
+
+-(void) FadeIn {
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options: UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [self.deleteImage setAlpha:1.0];
+                     }
+                     completion:^(BOOL finished){
+                         //NSLog(@"Done!");
+                     }];
+    
+}
+
+-(void) FadeOut {
+    [UIView animateWithDuration:0.5
+                          delay:0.5
+                        options: UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [self.deleteImage setAlpha:0.0];
+                     }
+                     completion:^(BOOL finished){
+                         //NSLog(@"Done!");
+                     }];
+    
+}
+
+- (void) receiveStartNotification:(NSNotification *) notification
+{
+    // [notification name] should always be @"TestNotification"
+    // unless you use this method for observation of other notifications
+    // as well.
+    
+    if ([[notification name] isEqualToString:@"StartShake"]) {
+        
+        [self startShake];
+    }
+    
+}
+
+- (void) receiveStopNotification:(NSNotification *) notification
+{
+    // [notification name] should always be @"TestNotification"
+    // unless you use this method for observation of other notifications
+    // as well.
+    
+    if ([[notification name] isEqualToString:@"StopShake"]) {
+        [self stopShake];
+    }
+    
+}
+
+
 
 //-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
 //    UIView *view = [self.emoticonPreviewButton hitTest:[self.emoticonPreviewButton convertPoint:point fromView:self] withEvent:event];
@@ -50,6 +134,8 @@
     [[AudiotsAudioVideoManager sharedInstance] startStreamWithURL:audio_inputFileUrl];
 }
 
+
+
 #pragma mark - AudiotsAudioVideoManagerDelegate
 
 -(void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onPreviewSoundFinished:(BOOL)finished {
@@ -63,5 +149,30 @@
 - (void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onCreateMovieFinsihed:(NSURL *)movieFileUrl{}
 - (void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onCreateMovieFailed:(BOOL)status{}
 - (void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onAudioRecordFinsihed:(NSURL *)recordedAudioFileUrl{}
+
+
+-(void) startShake {
+    
+    [self FadeIn];
+    _animation.fromValue = @(0.0);
+    _animation.toValue =  @(M_PI/25);
+    _animation.duration = 0.2;
+    _animation.repeatCount = 1000;
+    _animation.autoreverses = true;
+    
+    
+    [self.layer addAnimation:_animation forKey:@"iconShake"];
+}
+
+- (void) stopShake {
+    
+    [self FadeOut];
+    [self.layer removeAnimationForKey:@"iconShake"];
+}
+
+- (IBAction)deleteAction:(id)sender {
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"DeleteCustomCell" object:self];
+}
 
 @end

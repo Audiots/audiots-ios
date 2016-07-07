@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10102" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10080"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -25,6 +25,24 @@
                             <action selector="onPreviewButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="4Mf-3j-pIH"/>
                         </connections>
                     </button>
+                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="X-close" translatesAutoresizingMaskIntoConstraints="NO" id="PjF-pQ-XPA" userLabel="Delete Image">
+                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                        <color key="backgroundColor" red="0.81863839285714279" green="0.81863839285714279" blue="0.81863839285714279" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="Grr-A3-Tx0"/>
+                            <constraint firstAttribute="height" constant="25" id="fKc-DY-Yx3"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhN-z8-Edb" userLabel="Delete Button">
+                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="H4p-SF-viw"/>
+                            <constraint firstAttribute="height" constant="30" id="sbi-hA-msn"/>
+                        </constraints>
+                        <connections>
+                            <action selector="deleteAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="oRZ-Fv-Sz4"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
@@ -33,13 +51,21 @@
                 <constraint firstItem="mfz-TP-H3w" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3hd-gi-tnF"/>
                 <constraint firstAttribute="bottom" secondItem="3Q8-bP-c1t" secondAttribute="bottom" id="5mT-Md-ul6"/>
                 <constraint firstItem="3Q8-bP-c1t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HXA-vi-QEi"/>
+                <constraint firstItem="PjF-pQ-XPA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Y4F-sI-kIL"/>
+                <constraint firstItem="IhN-z8-Edb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YJj-0N-5pj"/>
+                <constraint firstItem="PjF-pQ-XPA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Zet-ED-Ees"/>
                 <constraint firstItem="3Q8-bP-c1t" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="m2C-78-cNK"/>
                 <constraint firstAttribute="trailing" secondItem="mfz-TP-H3w" secondAttribute="trailing" id="ydi-xP-caJ"/>
+                <constraint firstItem="IhN-z8-Edb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zKg-e8-cVb"/>
             </constraints>
             <connections>
+                <outlet property="deleteImage" destination="PjF-pQ-XPA" id="fYR-WL-2l8"/>
                 <outlet property="emoticonImageView" destination="3Q8-bP-c1t" id="smN-bx-ONQ"/>
                 <outlet property="emoticonPreviewButton" destination="mfz-TP-H3w" id="3Y1-xG-9Ba"/>
             </connections>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="X-close" width="128" height="128"/>
+    </resources>
 </document>
