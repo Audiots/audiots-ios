@@ -20,7 +20,14 @@
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
 	<array>
-		<dict/>
+			<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>audiots</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>com.4-girls-tech.audiots</string>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>54</string>

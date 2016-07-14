@@ -15,7 +15,7 @@
 				<key>sound_mp3</key>
 				<string>cat-1-sound</string>
 				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
 			</dict>
 			<dict>
 				<key>image_plain</key>
@@ -27,7 +27,7 @@
 				<key>sound_mp3</key>
 				<string>cat-2-sound</string>
 				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
 			</dict>
 			<dict>
 				<key>image_plain</key>
@@ -39,7 +39,7 @@
 				<key>sound_mp3</key>
 				<string>dog-1-sound</string>
 				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
 			</dict>
 			<dict>
 				<key>image_plain</key>
@@ -51,8 +51,224 @@
 				<key>sound_mp3</key>
 				<string>dog-2-sound</string>
 				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
 			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>cat1-plain</string>
+				<key>image_play</key>
+				<string>cat1-play</string>
+				<key>image_speaker</key>
+				<string>cat1-speaker</string>
+				<key>sound_mp3</key>
+				<string>cat1-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>cat2-plain</string>
+				<key>image_play</key>
+				<string>cat2-play</string>
+				<key>image_speaker</key>
+				<string>cat2-speaker</string>
+				<key>sound_mp3</key>
+				<string>cat2-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>cat3-plain</string>
+				<key>image_play</key>
+				<string>cat3-play</string>
+				<key>image_speaker</key>
+				<string>cat3-speaker</string>
+				<key>sound_mp3</key>
+				<string>cat3-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>cat4-plain</string>
+				<key>image_play</key>
+				<string>cat4-play</string>
+				<key>image_speaker</key>
+				<string>cat4-speaker</string>
+				<key>sound_mp3</key>
+				<string>cat4-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>cat5-plain</string>
+				<key>image_play</key>
+				<string>cat5-play</string>
+				<key>image_speaker</key>
+				<string>cat5-speaker</string>
+				<key>sound_mp3</key>
+				<string>cat5-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>cat6-plain</string>
+				<key>image_play</key>
+				<string>cat6-play</string>
+				<key>image_speaker</key>
+				<string>cat6-speaker</string>
+				<key>sound_mp3</key>
+				<string>cat6-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>cat7-plain</string>
+				<key>image_play</key>
+				<string>cat7-play</string>
+				<key>image_speaker</key>
+				<string>cat7-speaker</string>
+				<key>sound_mp3</key>
+				<string>cat7-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>cat8-plain</string>
+				<key>image_play</key>
+				<string>cat8-play</string>
+				<key>image_speaker</key>
+				<string>cat8-speaker</string>
+				<key>sound_mp3</key>
+				<string>cat8-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>cat9-plain</string>
+				<key>image_play</key>
+				<string>cat9-play</string>
+				<key>image_speaker</key>
+				<string>cat9-speaker</string>
+				<key>sound_mp3</key>
+				<string>cat9-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>cat10-plain</string>
+				<key>image_play</key>
+				<string>cat10-play</string>
+				<key>image_speaker</key>
+				<string>cat10-speaker</string>
+				<key>sound_mp3</key>
+				<string>cat10-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>		
+			<dict>
+				<key>image_plain</key>
+				<string>dog1-plain</string>
+				<key>image_play</key>
+				<string>dog1-play</string>
+				<key>image_speaker</key>
+				<string>dog1-speaker</string>
+				<key>sound_mp3</key>
+				<string>dog1-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>					
+			<dict>
+				<key>image_plain</key>
+				<string>dog2-plain</string>
+				<key>image_play</key>
+				<string>dog2-play</string>
+				<key>image_speaker</key>
+				<string>dog2-speaker</string>
+				<key>sound_mp3</key>
+				<string>dog2-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>					
+			<dict>
+				<key>image_plain</key>
+				<string>dog3-plain</string>
+				<key>image_play</key>
+				<string>dog3-play</string>
+				<key>image_speaker</key>
+				<string>dog3-speaker</string>
+				<key>sound_mp3</key>
+				<string>dog3-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>					
+			<dict>
+				<key>image_plain</key>
+				<string>dog4-plain</string>
+				<key>image_play</key>
+				<string>dog4-play</string>
+				<key>image_speaker</key>
+				<string>dog4-speaker</string>
+				<key>sound_mp3</key>
+				<string>dog4-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>					
+			<dict>
+				<key>image_plain</key>
+				<string>dog5-plain</string>
+				<key>image_play</key>
+				<string>dog5-play</string>
+				<key>image_speaker</key>
+				<string>dog5-speaker</string>
+				<key>sound_mp3</key>
+				<string>dog5-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>					
+			<dict>
+				<key>image_plain</key>
+				<string>dog6-plain</string>
+				<key>image_play</key>
+				<string>dog6-play</string>
+				<key>image_speaker</key>
+				<string>dog6-speaker</string>
+				<key>sound_mp3</key>
+				<string>dog6-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>					
+			<dict>
+				<key>image_plain</key>
+				<string>dog7-plain</string>
+				<key>image_play</key>
+				<string>dog7-play</string>
+				<key>image_speaker</key>
+				<string>dog7-speaker</string>
+				<key>sound_mp3</key>
+				<string>dog7-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>					
+			<dict>
+				<key>image_plain</key>
+				<string>dog8-plain</string>
+				<key>image_play</key>
+				<string>dog8-play</string>
+				<key>image_speaker</key>
+				<string>dog8-speaker</string>
+				<key>sound_mp3</key>
+				<string>dog8-sound</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>					
 		</array>
 	</dict>
 </array>

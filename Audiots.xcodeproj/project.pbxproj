@@ -38,6 +38,10 @@
 		27D4A6E51C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
 		27DC00AF1CAECEB6002D72A5 /* AudiotsRecordPacks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */; };
 		27FB60971C977B88003EED9F /* PackFour.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6DE1C87641A009FAE0E /* PackFour.plist */; };
+		27FC6B281D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FC6B271D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m */; };
+		27FC6B291D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FC6B271D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m */; };
+		27FC6B2B1D354F2E00559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FC6B2A1D354F2E00559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.xib */; };
+		27FC6B2C1D354F2E00559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FC6B2A1D354F2E00559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.xib */; };
 		2BEB1404C43CDCFA044A3BE2 /* libPods-Audiots.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9676E8DF5E84E1D32AC58FC /* libPods-Audiots.a */; };
 		2D195EC71C8497BD0093DF3F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D195EC01C8495220093DF3F /* Crashlytics.framework */; };
 		2D195EC81C8497C00093DF3F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D195EC11C8495220093DF3F /* Fabric.framework */; };
@@ -168,6 +172,9 @@
 		27D4A6DE1C87641A009FAE0E /* PackFour.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackFour.plist; path = Resources/PackFour.plist; sourceTree = "<group>"; };
 		27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackFour.xcassets; path = Packs/PackFour.xcassets; sourceTree = "<group>"; };
 		27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudiotsRecordPacks.plist; path = Resources/AudiotsRecordPacks.plist; sourceTree = "<group>"; };
+		27FC6B261D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudiotsPackPremiumEmoticonsCollectionViewCell.h; path = CollectionViewCells/AudiotsPackPremiumEmoticonsCollectionViewCell.h; sourceTree = "<group>"; };
+		27FC6B271D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudiotsPackPremiumEmoticonsCollectionViewCell.m; path = CollectionViewCells/AudiotsPackPremiumEmoticonsCollectionViewCell.m; sourceTree = "<group>"; };
+		27FC6B2A1D354F2E00559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AudiotsPackPremiumEmoticonsCollectionViewCell.xib; path = CollectionViewCells/AudiotsPackPremiumEmoticonsCollectionViewCell.xib; sourceTree = "<group>"; };
 		2D195EC01C8495220093DF3F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		2D195EC11C8495220093DF3F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		2D369CD51C298196005E2629 /* PackLogo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackLogo.xcassets; path = Packs/PackLogo.xcassets; sourceTree = "<group>"; };
@@ -433,6 +440,9 @@
 				2DCFF7141BE3EA33008869BF /* AudiotsPackEmoticonsCollectionViewCell.h */,
 				2DCFF7151BE3EA33008869BF /* AudiotsPackEmoticonsCollectionViewCell.m */,
 				2DCFF7161BE3EA33008869BF /* AudiotsPackEmoticonsCollectionViewCell.xib */,
+				27FC6B261D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.h */,
+				27FC6B271D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m */,
+				27FC6B2A1D354F2E00559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.xib */,
 				2DCFF7171BE3EA33008869BF /* AudiotsPackSelectionCollectionViewCell.h */,
 				2DCFF7181BE3EA33008869BF /* AudiotsPackSelectionCollectionViewCell.m */,
 				2DCFF7191BE3EA33008869BF /* AudiotsPackSelectionCollectionViewCell.xib */,
@@ -709,6 +719,7 @@
 				276AC6871CA5D53400DB378D /* PackSpanish.xcassets in Resources */,
 				2DC13F0B1BF24555005E9202 /* AudiotsCreateCustomAudiotCollectionViewCell.xib in Resources */,
 				271DE4011CDA80780013C973 /* AudiotsAvailablePacksPremium.plist in Resources */,
+				27FC6B2B1D354F2E00559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.xib in Resources */,
 				2D369CD61C298196005E2629 /* PackLogo.xcassets in Resources */,
 				271DE3FE1CDA7BB30013C973 /* PackPremium.plist in Resources */,
 			);
@@ -745,6 +756,7 @@
 				2D9A55C91C232F6800ECB5C0 /* PackThree.xcassets in Resources */,
 				2DC13F0C1BF24556005E9202 /* AudiotsCreateCustomAudiotCollectionViewCell.xib in Resources */,
 				271DE4021CDA80780013C973 /* AudiotsAvailablePacksPremium.plist in Resources */,
+				27FC6B2C1D354F2E00559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.xib in Resources */,
 				2DC13F071BF2454D005E9202 /* AudiotsPackSelectionCollectionViewCell.xib in Resources */,
 				271DE3FF1CDA7BB30013C973 /* PackPremium.plist in Resources */,
 			);
@@ -883,6 +895,7 @@
 				2DC13F021BF24536005E9202 /* AudiotsPackEmoticonsCollectionViewCell.m in Sources */,
 				277AC8B01CD8071700627647 /* IAPHelper.m in Sources */,
 				2DC13EFE1BF24527005E9202 /* AudiotsPackEmoticonsCollectionView.m in Sources */,
+				27FC6B281D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m in Sources */,
 				2DC13EFF1BF24530005E9202 /* AudiotsPackSelectionCollectionView.m in Sources */,
 				2712E29C1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.m in Sources */,
 				270A409F1CA6082E001B2E05 /* AudiotsSendViewController.m in Sources */,
@@ -915,6 +928,7 @@
 				27BA8DE81CA5D93F00CE9C48 /* AudiotsBrowseViewController.m in Sources */,
 				271DE4031CDAAF850013C973 /* AudiotsIAPHelper.m in Sources */,
 				271DE4041CDAAF890013C973 /* IAPHelper.m in Sources */,
+				27FC6B291D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m in Sources */,
 				2DC13F011BF24536005E9202 /* AudiotsPackEmoticonsCollectionViewCell.m in Sources */,
 				2DC13F0A1BF24551005E9202 /* AudiotsCreateCustomAudiotCollectionViewCell.m in Sources */,
 				2DC13F061BF24549005E9202 /* AudiotsPackSelectionCollectionViewCell.m in Sources */,

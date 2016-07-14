@@ -12,4 +12,6 @@
 
 + (AudiotsIAPHelper *)sharedInstance;
 
+- (BOOL) isPremiumPurchased;
+
 @end

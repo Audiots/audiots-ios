@@ -20,4 +20,10 @@
     return sharedInstance;
 }
 
+
+-(BOOL) isPremiumPurchased {
+    
+    return [self productPurchased:@"com.4_girls_tech.audiots.inapp.premium"];
+}
+
 @end

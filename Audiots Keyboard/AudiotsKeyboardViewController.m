@@ -13,6 +13,8 @@
 #import "AudiotsPackEmoticonsCollectionViewCell.h"
 #import "AudiotsCustomEmoticonsCollectionViewCell.h"
 #import "AudiotsCreateCustomAudiotCollectionViewCell.h"
+#import "AudiotsPackPremiumEmoticonsCollectionViewCell.h"
+
 
 #import <Toast/UIView+Toast.h>
 
@@ -133,17 +135,17 @@
     
 }
 
--(BOOL) isPremiumPurchased {
-    
-    return  [[AudiotsIAPHelper sharedInstance] productPurchased:@"com.4_girls_tech.audiots.inapp.premium"];
-}
 
 -(void) setSelectionDataSource {
     
+    
+    // always load premium for now
     NSString *selectionPack = @"AudiotsAvailablePacks";
-    if (self.isPremiumPurchased){
-        selectionPack = @"AudiotsAvailablePacksPremium";
-    }
+    
+    
+//    if ([[AudiotsIAPHelper sharedInstance] isPremiumPurchased]){
+//        selectionPack = @"AudiotsAvailablePacksPremium";
+//    }
     
     self.packSelectionDataSource = nil;
     
@@ -162,6 +164,9 @@
     [self.packEmoticonsCollectionView registerNib:[UINib nibWithNibName:@"AudiotsPackEmoticonsCollectionViewCell" bundle:[NSBundle bundleForClass:[AudiotsPackEmoticonsCollectionViewCell class]]]
                        forCellWithReuseIdentifier:@"packEmoticonsCollectionViewCell"];
     
+    [self.packEmoticonsCollectionView registerNib:[UINib nibWithNibName:@"AudiotsPackPremiumEmoticonsCollectionViewCell" bundle:[NSBundle bundleForClass:[AudiotsPackEmoticonsCollectionViewCell class]]]
+                       forCellWithReuseIdentifier:@"packPremiumEmoticonsCollectionViewCell"];
+    
     [self.packEmoticonsCollectionView registerNib:[UINib nibWithNibName:@"AudiotsCreateCustomAudiotCollectionViewCell" bundle:[NSBundle bundleForClass:[AudiotsCreateCustomAudiotCollectionViewCell class]]]
                        forCellWithReuseIdentifier:@"createCustomAudiotCollectionViewCell"];
     
@@ -173,6 +178,13 @@
         [cell setEmoticonInfoDictionary:menuItemDictionary];
         [cell.emoticonImageView setImage:[UIImage imageNamed:[menuItemDictionary valueForKey:@"image_play"]]];
     } forCellReuseIdentifier:@"packEmoticonsCollectionViewCell"];
+    
+    [self.packEmoticonsCollectionView registerCellConfigureBlock:^(AudiotsPackPremiumEmoticonsCollectionViewCell *cell, NSDictionary *menuItemDictionary) {
+        [cell setEmoticonInfoDictionary:menuItemDictionary];
+        [cell.emoticonImageView setImage:[UIImage imageNamed:[menuItemDictionary valueForKey:@"image_play"]]];
+        [cell.lockImageView setHidden: [[AudiotsIAPHelper sharedInstance] isPremiumPurchased]];
+        
+    } forCellReuseIdentifier:@"packPremiumEmoticonsCollectionViewCell"];
     
     [self.packEmoticonsCollectionView registerCellConfigureBlock:^(AudiotsCreateCustomAudiotCollectionViewCell *cell, NSDictionary *menuItemDictionary) {
         [cell setAudiotInfoDictionary:menuItemDictionary];
@@ -270,6 +282,21 @@
                     [self.view makeToast:@"Please enable Full Access."];
                 });
             }
+        }  else if ([[emoticonInfoDictionary valueForKey:@"cellType"] isEqualToString:@"packPremiumEmoticonsCollectionViewCell"]) {
+            
+            if ([[AudiotsIAPHelper sharedInstance] isPremiumPurchased]){
+                NSString *audioFileName = [emoticonInfoDictionary objectForKey:@"sound_mp3"];
+                NSString *imageFileName = [emoticonInfoDictionary objectForKey:@"image_play"];
+                
+                [[AudiotsAudioVideoManager sharedInstance] createMovieWithAudioFileName:audioFileName andImageArray:@[[UIImage imageNamed:imageFileName]]];
+
+            } else {
+                
+                [self showToastMessage:@"To unlock the content, please open Audiots app and purchase Audiots4Good content."];
+                
+            }
+            
+            
         } else if ([[emoticonInfoDictionary valueForKey:@"cellType"] isEqualToString:@"createCustomAudiotCollectionViewCell"]) {
         }
     }
@@ -295,6 +322,16 @@
     UIPasteboard *pasteBoard=[UIPasteboard generalPasteboard];
     [pasteBoard setData:data forPasteboardType:@"com.apple.quicktime-movie"];
     
+    [self showToastMessage:@"Copied. Tap text field and select paste."];
+}
+
+- (void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onAudioRecordFinsihed:(NSURL *)recordedAudioFileUrl{}
+- (void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onPreviewSoundFinished:(BOOL)finished{}
+
+#pragma mark - Toast message
+
+-(void) showToastMessage: (NSString*) message {
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         CSToastStyle *notificationStyle = [[CSToastStyle alloc] initWithDefaultStyle];
         [notificationStyle setBackgroundColor:[UIColor colorWithRed:65.0/255.0 green:184.0/255.0 blue:175.0/255.0 alpha:1.0]];
@@ -303,7 +340,7 @@
         [notificationStyle setTitleColor:[UIColor whiteColor]];
         [notificationStyle setMaxWidthPercentage:0.9f];
 
-        [self.view makeToast:@"Copied. Tap text field and select paste."
+        [self.view makeToast:message
                     duration:5.0
                     position:CSToastPositionBottom
                        title:nil
@@ -315,8 +352,6 @@
     });
 }
 
-- (void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onAudioRecordFinsihed:(NSURL *)recordedAudioFileUrl{}
-- (void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onPreviewSoundFinished:(BOOL)finished{}
 
 #pragma mark - Actions
 

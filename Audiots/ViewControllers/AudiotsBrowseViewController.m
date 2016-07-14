@@ -13,6 +13,8 @@
 #import "AudiotsPackEmoticonsCollectionViewCell.h"
 #import "AudiotsCustomEmoticonsCollectionViewCell.h"
 #import "AudiotsCreateCustomAudiotCollectionViewCell.h"
+#import "AudiotsPackPremiumEmoticonsCollectionViewCell.h"
+#import "AudiotsInAppTableViewController.h"
 
 #import <Toast/UIView+Toast.h>
 
@@ -156,18 +158,16 @@
     
 }
 
--(BOOL) isPremiumPurchased {
-    
-    return  [[AudiotsIAPHelper sharedInstance] productPurchased:@"com.4_girls_tech.audiots.inapp.premium"];
-}
 
 -(void) setSelectionDataSource {
     
-    if (self.isPremiumPurchased){
-        self.selectionPack = @"AudiotsAvailablePacksPremium";
-    } else {
-        self.selectionPack = @"AudiotsAvailablePacks";
-    }
+    
+    // always load premium for now
+    self.selectionPack = @"AudiotsAvailablePacks";
+    
+//    if ([[AudiotsIAPHelper sharedInstance] isPremiumPurchased]){
+//        self.selectionPack = @"AudiotsAvailablePacksPremium";
+//    }
     
     self.packSelectionDataSource = nil;
         
@@ -184,6 +184,9 @@
     [self.packEmoticonsCollectionView registerNib:[UINib nibWithNibName:@"AudiotsPackEmoticonsCollectionViewCell" bundle:[NSBundle bundleForClass:[AudiotsPackEmoticonsCollectionViewCell class]]]
                        forCellWithReuseIdentifier:@"packEmoticonsCollectionViewCell"];
 
+    [self.packEmoticonsCollectionView registerNib:[UINib nibWithNibName:@"AudiotsPackPremiumEmoticonsCollectionViewCell" bundle:[NSBundle bundleForClass:[AudiotsPackEmoticonsCollectionViewCell class]]]
+                       forCellWithReuseIdentifier:@"packPremiumEmoticonsCollectionViewCell"];
+    
     [self.packEmoticonsCollectionView registerNib:[UINib nibWithNibName:@"AudiotsCreateCustomAudiotCollectionViewCell" bundle:[NSBundle bundleForClass:[AudiotsCreateCustomAudiotCollectionViewCell class]]]
                        forCellWithReuseIdentifier:@"createCustomAudiotCollectionViewCell"];
     
@@ -195,6 +198,13 @@
         [cell.emoticonImageView setImage:[UIImage imageNamed:[menuItemDictionary valueForKey:@"image_play"]]];
     } forCellReuseIdentifier:@"packEmoticonsCollectionViewCell"];
 
+    [self.packEmoticonsCollectionView registerCellConfigureBlock:^(AudiotsPackPremiumEmoticonsCollectionViewCell *cell, NSDictionary *menuItemDictionary) {
+        [cell setEmoticonInfoDictionary:menuItemDictionary];
+        [cell.emoticonImageView setImage:[UIImage imageNamed:[menuItemDictionary valueForKey:@"image_play"]]];
+        [cell.lockImageView setHidden:[[AudiotsIAPHelper sharedInstance] isPremiumPurchased]];
+    } forCellReuseIdentifier:@"packPremiumEmoticonsCollectionViewCell"];
+
+    
     [self.packEmoticonsCollectionView registerCellConfigureBlock:^(AudiotsCreateCustomAudiotCollectionViewCell *cell, NSDictionary *menuItemDictionary) {
         [cell setAudiotInfoDictionary:menuItemDictionary];
     } forCellReuseIdentifier:@"createCustomAudiotCollectionViewCell"];
@@ -226,22 +236,10 @@
     // we want to start the shaking animation right away
     if ( recognizer.state == UIGestureRecognizerStateBegan ) {
         
-        //CGPoint point = [recognizer locationInView:self.packEmoticonsCollectionView];
-        
-        //NSIndexPath *indexPath = [self.packEmoticonsCollectionView indexPathForItemAtPoint:point];
-        
-        
-        //AudiotsCustomEmoticonsCollectionViewCell *cell = (AudiotsCustomEmoticonsCollectionViewCell*) recognizer.view;
-        
-        //NSDictionary  *info = cell.emoticonInfoDictionary;
-        
         [[NSNotificationCenter defaultCenter] postNotificationName:@"StartShake" object:self];
         
         [self setIsDeleteMode:YES];
-        
-        //[self displayDelete:info atIndex:indexPath];
     }
-    
 }
 
 
@@ -389,6 +387,7 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (collectionView == self.packSelectionCollectionView) {
+        
         if ([[(NSDictionary*)[self.packSelectionDataSource objectAtIndexPath:indexPath] valueForKey:@"packType"] isEqualToString:@"xcassets"]) {
             [self setIsCurrentPackMyCreations:NO];
             self.packEmoticonsDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[(NSDictionary*)[self.packSelectionDataSource objectAtIndexPath:indexPath] valueForKey:@"packName"] ofType:@"plist"]];
@@ -424,8 +423,55 @@
 
                 [[AudiotsAudioVideoManager sharedInstance] createMovieWithFilePath:audioFilePath andImageArray:@[[UIImage imageNamed:imageFileName]]];
             }
+        } else if ([[emoticonInfoDictionary valueForKey:@"cellType"] isEqualToString:@"packPremiumEmoticonsCollectionViewCell"]) {
+            
+            if ([[AudiotsIAPHelper sharedInstance] isPremiumPurchased]) {
+
+                NSString *audioFileName = [emoticonInfoDictionary objectForKey:@"sound_mp3"];
+                NSString *imageFileName = [emoticonInfoDictionary objectForKey:@"image_play"];
+                
+                [[AudiotsAudioVideoManager sharedInstance] createMovieWithAudioFileName:audioFileName andImageArray:@[[UIImage imageNamed:imageFileName]]];
+                
+            } else {
+                
+                [self showAlertPremiumContent];
+
+            }
+
+            
         }
     }
+}
+
+-(void) showAlertPremiumContent {
+    
+    UIAlertController * alert=   [UIAlertController
+                                  alertControllerWithTitle:@"Premium Content"
+                                  message:@"To unlock, purchase is required.  Would you to continue? "
+                                  preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* continueButton = [UIAlertAction
+                                   actionWithTitle:@"Continue"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action)
+                                   {
+                                       AudiotsInAppTableViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"sbInAppPurchase"];
+                                       
+                                       [self.navigationController pushViewController:vc animated:YES];
+                                   }];
+    
+    UIAlertAction* cancelButton = [UIAlertAction
+                                   actionWithTitle:@"Cancel"
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction * action)
+                                   {
+
+                                   }];
+    
+    [alert addAction:continueButton];
+    [alert addAction:cancelButton];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 #pragma mark - iCloudDelegate
