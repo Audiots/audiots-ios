@@ -45,18 +45,6 @@
 				<key>packTitleName</key>
 				<string>Audiots</string>
 				<key>packCoverImage</key>
-				<string>hightoptennisshoes_plain</string>
-				<key>packName</key>
-				<string>PackFour</string>
-				<key>packType</key>
-				<string>xcassets</string>
-				<key>cellType</key>
-				<string>packSelectionCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>packTitleName</key>
-				<string>Audiots</string>
-				<key>packCoverImage</key>
 				<string>happy-birthday-card-plain</string>
 				<key>packName</key>
 				<string>PackFive</string>
