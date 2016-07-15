@@ -6,6 +6,8 @@
 		<key>objects</key>
 		<array>
 			<dict>
+				<key>packTitleName</key>
+				<string>Audiots 4 Good</string>
 				<key>packCoverImage</key>
 				<string>Pink Smiley</string>
 				<key>packName</key>
@@ -16,6 +18,8 @@
 				<string>packSelectionCollectionViewCell</string>
 			</dict>
 			<dict>
+				<key>packTitleName</key>
+				<string>Audiots</string>
 				<key>packCoverImage</key>
 				<string>smile_plain</string>
 				<key>packName</key>
@@ -26,6 +30,8 @@
 				<string>packSelectionCollectionViewCell</string>
 			</dict>
 			<dict>
+				<key>packTitleName</key>
+				<string>Audiots</string>
 				<key>packCoverImage</key>
 				<string>cow_plain</string>
 				<key>packName</key>
@@ -36,6 +42,8 @@
 				<string>packSelectionCollectionViewCell</string>
 			</dict>
 			<dict>
+				<key>packTitleName</key>
+				<string>Audiots</string>
 				<key>packCoverImage</key>
 				<string>hightoptennisshoes_plain</string>
 				<key>packName</key>
@@ -46,6 +54,8 @@
 				<string>packSelectionCollectionViewCell</string>
 			</dict>
 			<dict>
+				<key>packTitleName</key>
+				<string>Audiots</string>
 				<key>packCoverImage</key>
 				<string>happy-birthday-card-plain</string>
 				<key>packName</key>
@@ -56,6 +66,8 @@
 				<string>packSelectionCollectionViewCell</string>
 			</dict>
 			<dict>
+				<key>packTitleName</key>
+				<string>Record Your Own</string>
 				<key>packCoverImage</key>
 				<string>Create-Audiot</string>
 				<key>packName</key>

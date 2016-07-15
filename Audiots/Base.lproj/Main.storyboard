@@ -1579,7 +1579,7 @@
             </objects>
             <point key="canvasLocation" x="3552" y="-846"/>
         </scene>
-        <!--Record Your Own-->
+        <!--Audiots Browse View Controller-->
         <scene sceneID="0Ku-Uz-S3H">
             <objects>
                 <viewController id="Ygx-Yp-ZFS" customClass="AudiotsBrowseViewController" sceneMemberID="viewController">
@@ -1644,7 +1644,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Record Your Own" id="dED-4l-ZvT"/>
+                    <navigationItem key="navigationItem" id="dED-4l-ZvT"/>
                     <connections>
                         <outlet property="packEmoticonsCollectionView" destination="2sY-S6-zaW" id="Zn5-MY-hhH"/>
                         <outlet property="packSelectionCollectionView" destination="mhR-QN-dbA" id="lum-tY-eva"/>
@@ -1765,7 +1765,7 @@
             </objects>
             <point key="canvasLocation" x="-86" y="651"/>
         </scene>
-        <!--Shop-->
+        <!--Audiots In App Table View Controller-->
         <scene sceneID="dVz-k0-WN7">
             <objects>
                 <tableViewController storyboardIdentifier="sbInAppPurchase" id="H43-fC-K8S" customClass="AudiotsInAppTableViewController" sceneMemberID="viewController">
@@ -1867,7 +1867,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Shop" id="b5g-fr-gVl"/>
+                    <navigationItem key="navigationItem" id="b5g-fr-gVl"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="buyButton" destination="lxS-CY-Nsu" id="C4L-Cz-Oe5"/>

@@ -156,6 +156,13 @@
     
     [self setSelectionDataSource];
     
+    
+    // set default index
+    NSIndexPath *indexPath = [[NSIndexPath alloc]init];
+    indexPath = [NSIndexPath indexPathForItem:0 inSection:0];
+    
+    self.navigationItem.title = [[self.packSelectionDataSource objectAtIndexPath:indexPath] valueForKey:@"packTitleName"];
+    
 }
 
 
@@ -389,10 +396,16 @@
     if (collectionView == self.packSelectionCollectionView) {
         
         if ([[(NSDictionary*)[self.packSelectionDataSource objectAtIndexPath:indexPath] valueForKey:@"packType"] isEqualToString:@"xcassets"]) {
+            
+            self.navigationItem.title = [[self.packSelectionDataSource objectAtIndexPath:indexPath] valueForKey:@"packTitleName"];
+            
             [self setIsCurrentPackMyCreations:NO];
             self.packEmoticonsDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[(NSDictionary*)[self.packSelectionDataSource objectAtIndexPath:indexPath] valueForKey:@"packName"] ofType:@"plist"]];
             
         } else if ([[(NSDictionary*)[self.packSelectionDataSource objectAtIndexPath:indexPath] valueForKey:@"packType"] isEqualToString:@"custom"]) {
+            
+            self.navigationItem.title = [[self.packSelectionDataSource objectAtIndexPath:indexPath] valueForKey:@"packTitleName"];
+            
             [self setIsCurrentPackMyCreations:YES];
             NSURL* storeUrl = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.4-girls-tech.audiots"];
             NSString *myCreationsPlistPath = [[storeUrl path] stringByAppendingPathComponent:@"MyCreations.plist"];
