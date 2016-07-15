@@ -52,31 +52,7 @@
 				<string>dog-2-sound</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>cat1-plain</string>
-				<key>image_play</key>
-				<string>cat1-play</string>
-				<key>image_speaker</key>
-				<string>cat1-speaker</string>
-				<key>sound_mp3</key>
-				<string>cat1-sound</string>
-				<key>cellType</key>
-				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>			
-			<dict>
-				<key>image_plain</key>
-				<string>cat2-plain</string>
-				<key>image_play</key>
-				<string>cat2-play</string>
-				<key>image_speaker</key>
-				<string>cat2-speaker</string>
-				<key>sound_mp3</key>
-				<string>cat2-sound</string>
-				<key>cellType</key>
-				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>			
+			</dict>		
 			<dict>
 				<key>image_plain</key>
 				<string>cat3-plain</string>
@@ -184,19 +160,7 @@
 				<string>dog1-sound</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>					
-			<dict>
-				<key>image_plain</key>
-				<string>dog2-plain</string>
-				<key>image_play</key>
-				<string>dog2-play</string>
-				<key>image_speaker</key>
-				<string>dog2-speaker</string>
-				<key>sound_mp3</key>
-				<string>dog2-sound</string>
-				<key>cellType</key>
-				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>					
+			</dict>									
 			<dict>
 				<key>image_plain</key>
 				<string>dog3-plain</string>
@@ -208,19 +172,7 @@
 				<string>dog3-sound</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>					
-			<dict>
-				<key>image_plain</key>
-				<string>dog4-plain</string>
-				<key>image_play</key>
-				<string>dog4-play</string>
-				<key>image_speaker</key>
-				<string>dog4-speaker</string>
-				<key>sound_mp3</key>
-				<string>dog4-sound</string>
-				<key>cellType</key>
-				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>					
+			</dict>								
 			<dict>
 				<key>image_plain</key>
 				<string>dog5-plain</string>
