@@ -32,6 +32,7 @@
 		2795E42A1D13637E008CC5EF /* PackNine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2795E4201D1314DD008CC5EF /* PackNine.xcassets */; };
 		2795E42B1D136380008CC5EF /* PackEight.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2795E41E1D1314D3008CC5EF /* PackEight.xcassets */; };
 		2795E42C1D1363D9008CC5EF /* PackFive.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2795E4261D13175B008CC5EF /* PackFive.plist */; };
+		27A1596B1D429D6D00942478 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A1596A1D429D6D00942478 /* StoreKit.framework */; };
 		27BA8DE81CA5D93F00CE9C48 /* AudiotsBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFF7091BE3EA0E008869BF /* AudiotsBrowseViewController.m */; };
 		27D4A6DF1C87641A009FAE0E /* PackFour.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6DE1C87641A009FAE0E /* PackFour.plist */; };
 		27D4A6E41C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
@@ -169,6 +170,7 @@
 		2795E4221D1314E8008CC5EF /* PackPremium.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackPremium.xcassets; path = Packs/PackPremium.xcassets; sourceTree = "<group>"; };
 		2795E4241D1314F7008CC5EF /* PackSeven.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackSeven.xcassets; path = Packs/PackSeven.xcassets; sourceTree = "<group>"; };
 		2795E4261D13175B008CC5EF /* PackFive.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackFive.plist; path = Resources/PackFive.plist; sourceTree = "<group>"; };
+		27A1596A1D429D6D00942478 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		27D4A6DE1C87641A009FAE0E /* PackFour.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackFour.plist; path = Resources/PackFour.plist; sourceTree = "<group>"; };
 		27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackFour.xcassets; path = Packs/PackFour.xcassets; sourceTree = "<group>"; };
 		27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudiotsRecordPacks.plist; path = Resources/AudiotsRecordPacks.plist; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				2DC13F0D1BF246A6005E9202 /* AVFoundation.framework in Frameworks */,
 				2D195EC81C8497C00093DF3F /* Fabric.framework in Frameworks */,
 				2DF0E9FB1BE411070043E215 /* MessageUI.framework in Frameworks */,
+				27A1596B1D429D6D00942478 /* StoreKit.framework in Frameworks */,
 				2D195EC71C8497BD0093DF3F /* Crashlytics.framework in Frameworks */,
 				2BEB1404C43CDCFA044A3BE2 /* libPods-Audiots.a in Frameworks */,
 			);
@@ -308,6 +311,7 @@
 		2168E99A4ECDE334FA38AC9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27A1596A1D429D6D00942478 /* StoreKit.framework */,
 				2D195EC01C8495220093DF3F /* Crashlytics.framework */,
 				2D195EC11C8495220093DF3F /* Fabric.framework */,
 				2DCFF72C1BE3EB07008869BF /* AVFoundation.framework */,
@@ -644,6 +648,9 @@
 								enabled = 1;
 							};
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
 								enabled = 1;
 							};
 							com.apple.Push = {
