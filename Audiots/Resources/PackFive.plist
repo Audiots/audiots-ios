@@ -125,6 +125,30 @@
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>best-mom-ever-brown-plain</string>
+				<key>image_play</key>
+				<string>best-mom-ever-brown-play</string>
+				<key>image_speaker</key>
+				<string>best-mom-ever-brown-speaker</string>
+				<key>sound_mp3</key>
+				<string>best-mom-ever-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>best-mom-ever-plain</string>
+				<key>image_play</key>
+				<string>best-mom-ever-play</string>
+				<key>image_speaker</key>
+				<string>best-mom-ever-speaker</string>
+				<key>sound_mp3</key>
+				<string>best-mom-ever-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
 		</array>
 	</dict>
 </array>
