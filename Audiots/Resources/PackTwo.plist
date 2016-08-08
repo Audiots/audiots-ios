@@ -391,6 +391,54 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
+				<string>blackberry-hint-plain</string>
+				<key>image_play</key>
+				<string>blackberry-hint-play</string>
+				<key>image_speaker</key>
+				<string>blackberry-hint-speaker</string>
+				<key>sound_mp3</key>
+				<string>Hint_BlackberryPour-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>watermelon-hint-fizz-plain</string>
+				<key>image_play</key>
+				<string>watermelon-hint-fizz-play</string>
+				<key>image_speaker</key>
+				<string>watermelon-hint-fizz-speaker</string>
+				<key>sound_mp3</key>
+				<string>Hint_WatermelonFizz-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>cherry-hint-fizz-v2-plain</string>
+				<key>image_play</key>
+				<string>cherry-hint-fizz-v2-play</string>
+				<key>image_speaker</key>
+				<string>cherry-hint-fizz-v2-speaker</string>
+				<key>sound_mp3</key>
+				<string>Hint_CherryFizz-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>green-apple-hint-v2-plain</string>
+				<key>image_play</key>
+				<string>green-apple-hint-v2-play</string>
+				<key>image_speaker</key>
+				<string>green-apple-hint-v2-speaker</string>
+				<key>sound_mp3</key>
+				<string>Hint_CrispApplePour-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
 				<string>guitar_plain</string>
 				<key>image_play</key>
 				<string>guitar_play</string>
