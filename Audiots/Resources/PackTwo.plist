@@ -376,19 +376,7 @@
 				<string>guitar_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>hair-spray_plain</string>
-				<key>image_play</key>
-				<string>hair-spray_play</string>
-				<key>image_speaker</key>
-				<string>hair-spray_speaker</string>
-				<key>sound_mp3</key>
-				<string>hair-spray_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>		
+			</dict>	
 			<dict>
 				<key>image_plain</key>
 				<string>meeting_plain</string>
@@ -487,18 +475,6 @@
 			</dict>		
 			<dict>
 				<key>image_plain</key>
-				<string>soccer_plain</string>
-				<key>image_play</key>
-				<string>soccer_play</string>
-				<key>image_speaker</key>
-				<string>soccer_speaker</string>
-				<key>sound_mp3</key>
-				<string>soccer_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>team-cheer_plain</string>
 				<key>image_play</key>
 				<string>team-cheer_play</string>
@@ -532,19 +508,7 @@
 				<string>car_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>contract_plain</string>
-				<key>image_play</key>
-				<string>contract_play</string>
-				<key>image_speaker</key>
-				<string>contract_speaker</string>
-				<key>sound_mp3</key>
-				<string>contract_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>			
+			</dict>		
 			<dict>
 				<key>image_plain</key>
 				<string>hammer_plain</string>
@@ -566,18 +530,6 @@
 				<string>hightoptennisshoes_speaker</string>
 				<key>sound_mp3</key>
 				<string>hightoptennisshoes_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>lipstick_plain</string>
-				<key>image_play</key>
-				<string>lipstick_play</string>
-				<key>image_speaker</key>
-				<string>lipstick_speaker</string>
-				<key>sound_mp3</key>
-				<string>lipstick_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -626,18 +578,6 @@
 				<string>motorcycle_speaker</string>
 				<key>sound_mp3</key>
 				<string>motorcycle_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>pot-of-gold_plain</string>
-				<key>image_play</key>
-				<string>pot-of-gold_play</string>
-				<key>image_speaker</key>
-				<string>pot-of-gold_speaker</string>
-				<key>sound_mp3</key>
-				<string>pot-of-gold_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -712,19 +652,7 @@
 				<string>tarjeta_amarilla_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>soccer_plain</string>
-				<key>image_play</key>
-				<string>soccer_play</string>
-				<key>image_speaker</key>
-				<string>soccer_speaker</string>
-				<key>sound_mp3</key>
-				<string>futbot_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>				
+			</dict>		
 			<dict>
 				<key>image_plain</key>
 				<string>owl-plain</string>
@@ -1112,114 +1040,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>blackberry-hint-plain</string>
-				<key>image_play</key>
-				<string>blackberry-hint-play</string>
-				<key>image_speaker</key>
-				<string>blackberry-hint-speaker</string>
-				<key>sound_mp3</key>
-				<string>Hint_BlackberryPour-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>blackberry-hint-fizz-plain</string>
-				<key>image_play</key>
-				<string>blackberry-hint-fizz-play</string>
-				<key>image_speaker</key>
-				<string>blackberry-hint-fizz-speaker</string>
-				<key>sound_mp3</key>
-				<string>Hint_BlackberryFizz-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>cherry-hint-fizz-v2-plain</string>
-				<key>image_play</key>
-				<string>cherry-hint-fizz-v2-play</string>
-				<key>image_speaker</key>
-				<string>cherry-hint-fizz-v2-speaker</string>
-				<key>sound_mp3</key>
-				<string>Hint_CherryFizz-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>green-apple-hint-v2-plain</string>
-				<key>image_play</key>
-				<string>green-apple-hint-v2-play</string>
-				<key>image_speaker</key>
-				<string>green-apple-hint-v2-speaker</string>
-				<key>sound_mp3</key>
-				<string>Hint_CrispApplePour-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>Peach-Hint_Fizz2-plain</string>
-				<key>image_play</key>
-				<string>Peach-Hint_Fizz2_play</string>
-				<key>image_speaker</key>
-				<string>Peach_hint_fizz_speaker2</string>
-				<key>sound_mp3</key>
-				<string>Hint_PeachPour-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>peach-hint-v2-plain</string>
-				<key>image_play</key>
-				<string>peach-hint-v2-play</string>
-				<key>image_speaker</key>
-				<string>peach-hint-v2-speaker</string>
-				<key>sound_mp3</key>
-				<string>Hint_PeachPour-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>pineapple-hint-v2-plain</string>
-				<key>image_play</key>
-				<string>pineapple-hint-v2-play</string>
-				<key>image_speaker</key>
-				<string>pineapple-hint-v2-speaker</string>
-				<key>sound_mp3</key>
-				<string>Hint_PineapplePour-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>watermelon-hint1-plain</string>
-				<key>image_play</key>
-				<string>watermelon-hint1-play</string>
-				<key>image_speaker</key>
-				<string>watermelon-hint1-speaker</string>
-				<key>sound_mp3</key>
-				<string>Hint_WatermelonPour-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>watermelon-hint-fizz-plain</string>
-				<key>image_play</key>
-				<string>watermelon-hint-fizz-play</string>
-				<key>image_speaker</key>
-				<string>watermelon-hint-fizz-speaker</string>
-				<key>sound_mp3</key>
-				<string>Hint_WatermelonFizz-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>banana_plain</string>
 				<key>image_play</key>
 				<string>banana_play</string>
@@ -1263,18 +1083,6 @@
 				<string>bottle_speaker</string>
 				<key>sound_mp3</key>
 				<string>bottle_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>champange_plain</string>
-				<key>image_play</key>
-				<string>champange_play</string>
-				<key>image_speaker</key>
-				<string>champange_speaker</string>
-				<key>sound_mp3</key>
-				<string>champange_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
