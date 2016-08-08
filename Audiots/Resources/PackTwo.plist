@@ -7,18 +7,6 @@
 		<array>
 			<dict>
 				<key>image_plain</key>
-				<string>amelia-ge-plain</string>
-				<key>image_play</key>
-				<string>amelia-ge-play</string>
-				<key>image_speaker</key>
-				<string>amelia-ge-speaker</string>
-				<key>sound_mp3</key>
-				<string>amelia-ge-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>	
-			<dict>
-				<key>image_plain</key>
 				<string>atom-ge-plain</string>
 				<key>image_play</key>
 				<string>atom-ge-play</string>
@@ -31,18 +19,6 @@
 			</dict>	
 			<dict>
 				<key>image_plain</key>
-				<string>lovelace-ge-plain</string>
-				<key>image_play</key>
-				<string>lovelace-ge-play</string>
-				<key>image_speaker</key>
-				<string>lovelace-ge-speaker</string>
-				<key>sound_mp3</key>
-				<string>lovelace-ge-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>	
-			<dict>
-				<key>image_plain</key>
 				<string>mars-ge-plain</string>
 				<key>image_play</key>
 				<string>mars-ge-play</string>
@@ -50,18 +26,6 @@
 				<string>mars-ge-speaker</string>
 				<key>sound_mp3</key>
 				<string>mars-ge-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>	
-			<dict>
-				<key>image_plain</key>
-				<string>all-yellow-girl-geek-pigtails-glasses-plain</string>
-				<key>image_play</key>
-				<string>all-yellow-girl-geek-pigtails-glasses-play</string>
-				<key>image_speaker</key>
-				<string>all-yellow-girl-geek-pigtails-glasses-speaker</string>
-				<key>sound_mp3</key>
-				<string>all-yellow-girl-geek-pigtails-glasses-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>			
@@ -113,78 +77,7 @@
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>			
-			<dict>
-				<key>image_plain</key>
-				<string>girl-basketball-darker-plain</string>
-				<key>image_play</key>
-				<string>girl-basketball-darker-play</string>
-				<key>image_speaker</key>
-				<string>girl-basketball-darker-speaker</string>
-				<key>sound_mp3</key>
-				<string>girl-basketball-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>			
-			<dict>
-				<key>image_plain</key>
-				<string>girl-basketball-darkest-plain</string>
-				<key>image_play</key>
-				<string>girl-basketball-darkest-play</string>
-				<key>image_speaker</key>
-				<string>girl-basketball-darkest-speaker</string>
-				<key>sound_mp3</key>
-				<string>girl-basketball-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>			
-			<dict>
-				<key>image_plain</key>
-				<string>girl-basketball-white-plain</string>
-				<key>image_play</key>
-				<string>girl-basketball-white-play</string>
-				<key>image_speaker</key>
-				<string>girl-basketball-white-speaker</string>
-				<key>sound_mp3</key>
-				<string>girl-basketball-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>	
-			<dict>
-				<key>image_plain</key>
-				<string>girl-softball-darker-plain</string>
-				<key>image_play</key>
-				<string>girl-softball-darker-play</string>
-				<key>image_speaker</key>
-				<string>girl-softball-darker-speaker</string>
-				<key>sound_mp3</key>
-				<string>girl-softball-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>	
-			<dict>
-				<key>image_plain</key>
-				<string>girl-softball-darkest-plain</string>
-				<key>image_play</key>
-				<string>girl-softball-darkest-play</string>
-				<key>image_speaker</key>
-				<string>girl-softball-darkest-speaker</string>
-				<key>sound_mp3</key>
-				<string>girl-softball-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>	
-			<dict>
-				<key>image_plain</key>
-				<string>girl-softball-white-plain</string>
-				<key>image_play</key>
-				<string>girl-softball-white-play</string>
-				<key>image_speaker</key>
-				<string>girl-softball-white-speaker</string>
-				<key>sound_mp3</key>
-				<string>girl-softball-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>	
+
 			<dict>
 				<key>image_plain</key>
 				<string>taxi-plain</string>
@@ -434,18 +327,6 @@
 				<string>plane_speaker</string>
 				<key>sound_mp3</key>
 				<string>plane_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>poop_plain</string>
-				<key>image_play</key>
-				<string>poop_play</string>
-				<key>image_speaker</key>
-				<string>poop_speaker</string>
-				<key>sound_mp3</key>
-				<string>poop_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -975,18 +856,6 @@
 				<string>squirrel_speaker</string>
 				<key>sound_mp3</key>
 				<string>squirrel_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>surf_plain</string>
-				<key>image_play</key>
-				<string>surf_play</string>
-				<key>image_speaker</key>
-				<string>surf_speaker</string>
-				<key>sound_mp3</key>
-				<string>surf_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>

@@ -4,40 +4,52 @@
 <array>
 	<dict>
 		<key>objects</key>
-		<array>				
-			<dict>
+		<array>		
+				<dict>
 				<key>image_plain</key>
-				<string>best-mom-ever-brown-plain</string>
+				<string>kiss_plain</string>
 				<key>image_play</key>
-				<string>best-mom-ever-brown-play</string>
+				<string>kiss_play</string>
 				<key>image_speaker</key>
-				<string>best-mom-ever-brown-speaker</string>
+				<string>kiss_speaker</string>
 				<key>sound_mp3</key>
-				<string>best-mom-ever-sound</string>
+				<string>kiss_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>best-mom-ever-plain</string>
+				<string>lips_plain</string>
 				<key>image_play</key>
-				<string>best-mom-ever-play</string>
+				<string>lips_play</string>
 				<key>image_speaker</key>
-				<string>best-mom-ever-speaker</string>
+				<string>lips_speaker</string>
 				<key>sound_mp3</key>
-				<string>best-mom-ever-sound</string>
+				<string>lips_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>alien_plain</string>
+				<string>poop_plain</string>
 				<key>image_play</key>
-				<string>alien_play</string>
+				<string>poop_play</string>
 				<key>image_speaker</key>
-				<string>alien_speaker</string>
+				<string>poop_speaker</string>
 				<key>sound_mp3</key>
-				<string>alien_sound</string>
+				<string>poop_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>burp_plain</string>
+				<key>image_play</key>
+				<string>burp_play</string>
+				<key>image_speaker</key>
+				<string>burp_speaker</string>
+				<key>sound_mp3</key>
+				<string>burp_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -67,30 +79,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>baby_plain</string>
-				<key>image_play</key>
-				<string>baby_play</string>
-				<key>image_speaker</key>
-				<string>baby_speaker</string>
-				<key>sound_mp3</key>
-				<string>baby_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>bad-hair_plain</string>
-				<key>image_play</key>
-				<string>bad-hair_play</string>
-				<key>image_speaker</key>
-				<string>bad-hair_speaker</string>
-				<key>sound_mp3</key>
-				<string>bad-hair_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>braces_plain</string>
 				<key>image_play</key>
 				<string>braces_play</string>
@@ -101,6 +89,42 @@
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>omg_plain</string>
+				<key>image_play</key>
+				<string>omg_play</string>
+				<key>image_speaker</key>
+				<string>omg_speaker</string>
+				<key>sound_mp3</key>
+				<string>omg_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>heart_plain</string>
+				<key>image_play</key>
+				<string>heart_play</string>
+				<key>image_speaker</key>
+				<string>heart_speaker</string>
+				<key>sound_mp3</key>
+				<string>heart_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>heart-struck_plain</string>
+				<key>image_play</key>
+				<string>heart-struck_play</string>
+				<key>image_speaker</key>
+				<string>heart-struck_speaker</string>
+				<key>sound_mp3</key>
+				<string>heart-struck_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>			
 			<dict>
 				<key>image_plain</key>
 				<string>broken-heart_plain</string>
@@ -115,42 +139,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>burp_plain</string>
-				<key>image_play</key>
-				<string>burp_play</string>
-				<key>image_speaker</key>
-				<string>burp_speaker</string>
-				<key>sound_mp3</key>
-				<string>burp_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>clapping_plain</string>
-				<key>image_play</key>
-				<string>clapping_play</string>
-				<key>image_speaker</key>
-				<string>clapping_speaker</string>
-				<key>sound_mp3</key>
-				<string>clapping_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>cry_plain</string>
-				<key>image_play</key>
-				<string>cry_play</string>
-				<key>image_speaker</key>
-				<string>cry_speaker</string>
-				<key>sound_mp3</key>
-				<string>cry_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>fist-bump_plain</string>
 				<key>image_play</key>
 				<string>fist-bump_play</string>
@@ -158,6 +146,18 @@
 				<string>fist-bump_speaker</string>
 				<key>sound_mp3</key>
 				<string>fist-bump_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>bestie_plain</string>
+				<key>image_play</key>
+				<string>bestie_play</string>
+				<key>image_speaker</key>
+				<string>bestie_speaker</string>
+				<key>sound_mp3</key>
+				<string>bestie_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -187,73 +187,13 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>heart_plain</string>
+				<string>rofl_plain</string>
 				<key>image_play</key>
-				<string>heart_play</string>
+				<string>rofl_play</string>
 				<key>image_speaker</key>
-				<string>heart_speaker</string>
+				<string>rofl_speaker</string>
 				<key>sound_mp3</key>
-				<string>heart_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>heart-struck_plain</string>
-				<key>image_play</key>
-				<string>heart-struck_play</string>
-				<key>image_speaker</key>
-				<string>heart-struck_speaker</string>
-				<key>sound_mp3</key>
-				<string>heart-struck_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>kiss_plain</string>
-				<key>image_play</key>
-				<string>kiss_play</string>
-				<key>image_speaker</key>
-				<string>kiss_speaker</string>
-				<key>sound_mp3</key>
-				<string>kiss_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>lips_plain</string>
-				<key>image_play</key>
-				<string>lips_play</string>
-				<key>image_speaker</key>
-				<string>lips_speaker</string>
-				<key>sound_mp3</key>
-				<string>lips_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>lol_plain</string>
-				<key>image_play</key>
-				<string>lol_play</string>
-				<key>image_speaker</key>
-				<string>lol_speaker</string>
-				<key>sound_mp3</key>
-				<string>lol_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>omg_plain</string>
-				<key>image_play</key>
-				<string>omg_play</string>
-				<key>image_speaker</key>
-				<string>omg_speaker</string>
-				<key>sound_mp3</key>
-				<string>omg_sound</string>
+				<string>rofl_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -271,54 +211,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>sleep_plain</string>
-				<key>image_play</key>
-				<string>sleep_play</string>
-				<key>image_speaker</key>
-				<string>sleep_speaker</string>
-				<key>sound_mp3</key>
-				<string>sleep_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>smile_plain</string>
-				<key>image_play</key>
-				<string>smile_play</string>
-				<key>image_speaker</key>
-				<string>smile_speaker</string>
-				<key>sound_mp3</key>
-				<string>smile_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>bestie_plain</string>
-				<key>image_play</key>
-				<string>bestie_play</string>
-				<key>image_speaker</key>
-				<string>bestie_speaker</string>
-				<key>sound_mp3</key>
-				<string>bestie_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>rofl_plain</string>
-				<key>image_play</key>
-				<string>rofl_play</string>
-				<key>image_speaker</key>
-				<string>rofl_speaker</string>
-				<key>sound_mp3</key>
-				<string>rofl_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>wink_plain</string>
 				<key>image_play</key>
 				<string>wink_play</string>
@@ -331,16 +223,64 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>crossfingers_plain</string>
+				<string>sleep_plain</string>
 				<key>image_play</key>
-				<string>crossfingers_play</string>
+				<string>sleep_play</string>
 				<key>image_speaker</key>
-				<string>crossfingers_speaker</string>
+				<string>sleep_speaker</string>
 				<key>sound_mp3</key>
-				<string>crossfingers_sound</string>
+				<string>sleep_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>lol_plain</string>
+				<key>image_play</key>
+				<string>lol_play</string>
+				<key>image_speaker</key>
+				<string>lol_speaker</string>
+				<key>sound_mp3</key>
+				<string>lol_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>alien_plain</string>
+				<key>image_play</key>
+				<string>alien_play</string>
+				<key>image_speaker</key>
+				<string>alien_speaker</string>
+				<key>sound_mp3</key>
+				<string>alien_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>lovelace-ge-plain</string>
+				<key>image_play</key>
+				<string>lovelace-ge-play</string>
+				<key>image_speaker</key>
+				<string>lovelace-ge-speaker</string>
+				<key>sound_mp3</key>
+				<string>lovelace-ge-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>amelia-ge-plain</string>
+				<key>image_play</key>
+				<string>amelia-ge-play</string>
+				<key>image_speaker</key>
+				<string>amelia-ge-speaker</string>
+				<key>sound_mp3</key>
+				<string>amelia-ge-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
 			<dict>
 				<key>image_plain</key>
 				<string>praying-hands-plain</string>
@@ -365,6 +305,127 @@
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
+
+			<dict>
+				<key>image_plain</key>
+				<string>crossfingers_plain</string>
+				<key>image_play</key>
+				<string>crossfingers_play</string>
+				<key>image_speaker</key>
+				<string>crossfingers_speaker</string>
+				<key>sound_mp3</key>
+				<string>crossfingers_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>bad-hair_plain</string>
+				<key>image_play</key>
+				<string>bad-hair_play</string>
+				<key>image_speaker</key>
+				<string>bad-hair_speaker</string>
+				<key>sound_mp3</key>
+				<string>bad-hair_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>all-yellow-girl-geek-pigtails-glasses-plain</string>
+				<key>image_play</key>
+				<string>all-yellow-girl-geek-pigtails-glasses-play</string>
+				<key>image_speaker</key>
+				<string>all-yellow-girl-geek-pigtails-glasses-speaker</string>
+				<key>sound_mp3</key>
+				<string>all-yellow-girl-geek-pigtails-glasses-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>girl-basketball-darker-plain</string>
+				<key>image_play</key>
+				<string>girl-basketball-darker-play</string>
+				<key>image_speaker</key>
+				<string>girl-basketball-darker-speaker</string>
+				<key>sound_mp3</key>
+				<string>girl-basketball-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>girl-basketball-darkest-plain</string>
+				<key>image_play</key>
+				<string>girl-basketball-darkest-play</string>
+				<key>image_speaker</key>
+				<string>girl-basketball-darkest-speaker</string>
+				<key>sound_mp3</key>
+				<string>girl-basketball-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>girl-basketball-white-plain</string>
+				<key>image_play</key>
+				<string>girl-basketball-white-play</string>
+				<key>image_speaker</key>
+				<string>girl-basketball-white-speaker</string>
+				<key>sound_mp3</key>
+				<string>girl-basketball-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>girl-softball-darker-plain</string>
+				<key>image_play</key>
+				<string>girl-softball-darker-play</string>
+				<key>image_speaker</key>
+				<string>girl-softball-darker-speaker</string>
+				<key>sound_mp3</key>
+				<string>girl-softball-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>girl-softball-darkest-plain</string>
+				<key>image_play</key>
+				<string>girl-softball-darkest-play</string>
+				<key>image_speaker</key>
+				<string>girl-softball-darkest-speaker</string>
+				<key>sound_mp3</key>
+				<string>girl-softball-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>girl-softball-white-plain</string>
+				<key>image_play</key>
+				<string>girl-softball-white-play</string>
+				<key>image_speaker</key>
+				<string>girl-softball-white-speaker</string>
+				<key>sound_mp3</key>
+				<string>girl-softball-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>surf_plain</string>
+				<key>image_play</key>
+				<string>surf_play</string>
+				<key>image_speaker</key>
+				<string>surf_speaker</string>
+				<key>sound_mp3</key>
+				<string>surf_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>			
 			<dict>
 				<key>image_plain</key>
 				<string>logo_plain</string>
