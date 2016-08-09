@@ -317,6 +317,18 @@
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>logo_plain</string>
+				<key>image_play</key>
+				<string>logo_play</string>
+				<key>image_speaker</key>
+				<string>logo_speaker</string>
+				<key>sound_mp3</key>
+				<string>logo_pack_one_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
 		</array>
 	</dict>
 </array>
