@@ -21,6 +21,8 @@
 		276AC6881CA5D53400DB378D /* PackSpanish.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6861CA5D53400DB378D /* PackSpanish.xcassets */; };
 		277AC8AF1CD8071700627647 /* AudiotsIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 277AC8AC1CD8071700627647 /* AudiotsIAPHelper.m */; };
 		277AC8B01CD8071700627647 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 277AC8AE1CD8071700627647 /* IAPHelper.m */; };
+		27838A6A1D637F78006A1DE8 /* JimmyFallon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27838A691D637F78006A1DE8 /* JimmyFallon.xcassets */; };
+		27838A6B1D637F78006A1DE8 /* JimmyFallon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27838A691D637F78006A1DE8 /* JimmyFallon.xcassets */; };
 		278FE6DD1CBC5A3900218FCC /* AudiotsRecordPacks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */; };
 		2795E41F1D1314D3008CC5EF /* PackEight.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2795E41E1D1314D3008CC5EF /* PackEight.xcassets */; };
 		2795E4211D1314DD008CC5EF /* PackNine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2795E4201D1314DD008CC5EF /* PackNine.xcassets */; };
@@ -165,6 +167,7 @@
 		277AC8AC1CD8071700627647 /* AudiotsIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiotsIAPHelper.m; sourceTree = "<group>"; };
 		277AC8AD1CD8071700627647 /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
 		277AC8AE1CD8071700627647 /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
+		27838A691D637F78006A1DE8 /* JimmyFallon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = JimmyFallon.xcassets; path = Packs/JimmyFallon.xcassets; sourceTree = "<group>"; };
 		2795E41E1D1314D3008CC5EF /* PackEight.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackEight.xcassets; path = Packs/PackEight.xcassets; sourceTree = "<group>"; };
 		2795E4201D1314DD008CC5EF /* PackNine.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackNine.xcassets; path = Packs/PackNine.xcassets; sourceTree = "<group>"; };
 		2795E4221D1314E8008CC5EF /* PackPremium.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackPremium.xcassets; path = Packs/PackPremium.xcassets; sourceTree = "<group>"; };
@@ -560,6 +563,7 @@
 				276AC6861CA5D53400DB378D /* PackSpanish.xcassets */,
 				2D9A55C71C232F6800ECB5C0 /* PackThree.xcassets */,
 				2D9A55C41C232F5A00ECB5C0 /* PackTwo.xcassets */,
+				27838A691D637F78006A1DE8 /* JimmyFallon.xcassets */,
 			);
 			name = Packs;
 			sourceTree = "<group>";
@@ -710,6 +714,7 @@
 				276AC6841CA5D52800DB378D /* PackSpanish.plist in Resources */,
 				2D9A55C81C232F6800ECB5C0 /* PackThree.xcassets in Resources */,
 				2795E4211D1314DD008CC5EF /* PackNine.xcassets in Resources */,
+				27838A6A1D637F78006A1DE8 /* JimmyFallon.xcassets in Resources */,
 				2DF0E9D71BE3F5E20043E215 /* AudiotsAvailablePacks.plist in Resources */,
 				2DC13F081BF2454D005E9202 /* AudiotsPackSelectionCollectionViewCell.xib in Resources */,
 				27D4A6E41C8764B9009FAE0E /* PackFour.xcassets in Resources */,
@@ -747,6 +752,7 @@
 				2D93EC1C1BFA248100F8AA32 /* PackOne.plist in Resources */,
 				27FB60971C977B88003EED9F /* PackFour.plist in Resources */,
 				2DF0E9F21BE3FF960043E215 /* AudiotsAvailablePacks.plist in Resources */,
+				27838A6B1D637F78006A1DE8 /* JimmyFallon.xcassets in Resources */,
 				2D9A55CC1C2331C800ECB5C0 /* PackTwo.plist in Resources */,
 				2D369CD71C298196005E2629 /* PackLogo.xcassets in Resources */,
 				278FE6DD1CBC5A3900218FCC /* AudiotsRecordPacks.plist in Resources */,
