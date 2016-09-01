@@ -8,6 +8,10 @@
 
 #import "IAPHelper.h"
 
+
+extern NSString * const kInAppIdPremium;
+extern NSString * const kInAppIdSeeJane;
+
 @interface AudiotsIAPHelper : IAPHelper
 
 + (AudiotsIAPHelper *)sharedInstance;

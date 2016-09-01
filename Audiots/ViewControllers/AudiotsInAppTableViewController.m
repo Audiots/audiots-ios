@@ -16,10 +16,15 @@
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
-
 @property (weak, nonatomic) IBOutlet UIButton *buyButton;
+
+
+// See Jane
+@property (weak, nonatomic) IBOutlet UILabel *sjTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *sjDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UIButton *sjBuyButton;
+
 
 @end
 
@@ -38,6 +43,13 @@
     [_priceFormatter setFormatterBehavior:NSNumberFormatterBehavior10_4];
     [_priceFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
     
+    
+    
+//    _buyButton.layer.cornerRadius = 10; // this value vary as per your desire
+//    _buyButton.clipsToBounds = YES;
+//    
+//    _sjBuyButton.layer.cornerRadius = 10; // this value vary as per your desire
+//    _sjBuyButton.clipsToBounds = YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(receiveNotification:)
@@ -100,17 +112,12 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 3;
 }
 
 
 
 #pragma mark - Helpers
-
--(BOOL) isPremiumPurchased {
-    
-    return [[AudiotsIAPHelper sharedInstance] productPurchased:@"com.4_girls_tech.audiots.inapp.premium"];
-}
 
 /**
  *  Update view for purchase and restore
@@ -121,26 +128,45 @@
         if (success) {
             _products = products;
             
-            if (_products.count > 0) {
+            for (SKProduct * product in _products) {
                 
-                SKProduct * product = (SKProduct *) _products[0]; // assume that there is only one
-                
-                [_priceFormatter setLocale:product.priceLocale];
-                
-                _titleLabel.text = product.localizedTitle;
-                _descriptionLabel.text = product.localizedDescription;
-                
-                
-                if (self.isPremiumPurchased) {
-                    [_buyButton setTitle:@"Paid" forState:UIControlStateNormal];
-
-                } else {
+                if ([product.productIdentifier isEqualToString:kInAppIdPremium]) {
+                    // premium
+                    [_priceFormatter setLocale:product.priceLocale];
                     
-                    [_buyButton setTitle:[NSString stringWithFormat:@"Buy %@",  [_priceFormatter stringFromNumber:product.price]] forState:UIControlStateNormal];
+                    _titleLabel.text = product.localizedTitle;
+                    _descriptionLabel.text = product.localizedDescription;
+                    
+                    
+                    if ([[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdPremium]) {
+                        [_buyButton setTitle:@"Paid" forState:UIControlStateNormal];
+                        
+                    } else {
+                        
+                        [_buyButton setTitle:[NSString stringWithFormat:@"%@",  [_priceFormatter stringFromNumber:product.price]] forState:UIControlStateNormal];
+                    }
+                    [_buyButton sizeToFit];
+                } else if ([product.productIdentifier isEqualToString:kInAppIdSeeJane]) {
+                    // see jane
+                    [_priceFormatter setLocale:product.priceLocale];
+                    
+                    _sjTitleLabel.text = product.localizedTitle;
+                    _sjDescriptionLabel.text = product.localizedDescription;
+                    
+                    
+                    if ([[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdPremium]) {
+                        [_sjBuyButton setTitle:@"Paid" forState:UIControlStateNormal];
+                        
+                    } else {
+                        
+                        [_sjBuyButton setTitle:[NSString stringWithFormat:@"%@",  [_priceFormatter stringFromNumber:product.price]] forState:UIControlStateNormal];
+                    }
+                    [_sjBuyButton sizeToFit];
+                    
                 }
-                [_buyButton sizeToFit];
                 
             }
+            
         }
     }];
     
@@ -148,7 +174,7 @@
 
 - (IBAction)buyAction:(id)sender {
 
-    if (!self.isPremiumPurchased) {
+    if (![[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdPremium]) {
         if (_products.count > 0) {
             SKProduct *product = _products[0];
             
@@ -157,6 +183,20 @@
         }
     }
 }
+
+- (IBAction)sjBuyAction:(id)sender {
+    if (![[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdSeeJane]) {
+        if (_products.count > 0) {
+            SKProduct *product = _products[1];
+            
+            NSLog(@"Buying %@...", product.productIdentifier);
+            [[AudiotsIAPHelper sharedInstance] buyProduct:product];
+        }
+    }
+    
+}
+
+
 - (IBAction)restoreAction:(id)sender {
     
     [[AudiotsIAPHelper sharedInstance] restoreCompletedTransactions];

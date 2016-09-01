@@ -10,11 +10,14 @@
 
 @implementation AudiotsIAPHelper
 
+NSString * const kInAppIdPremium = @"com.4_girls_tech.audiots.inapp.premium";
+NSString * const kInAppIdSeeJane = @"com.4_girls_tech.audiots.inapp.seejane";
 
 + (AudiotsIAPHelper *)sharedInstance { static dispatch_once_t once;
     static AudiotsIAPHelper * sharedInstance; dispatch_once(&once, ^{
         NSSet * productIdentifiers = [NSSet setWithObjects:
-                                      @"com.4_girls_tech.audiots.inapp.premium",
+                                      kInAppIdPremium,
+                                      kInAppIdSeeJane,
                                       nil];
         sharedInstance = [[self alloc] initWithProductIdentifiers:productIdentifiers]; });
     return sharedInstance;

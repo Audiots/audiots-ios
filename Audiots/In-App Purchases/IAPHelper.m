@@ -124,7 +124,7 @@ NSString *const IAPHelperProductRestoredNotification = @"IAPHelperProductRestore
     NSArray * skProducts = response.products;
     
     for (SKProduct * skProduct in skProducts) {
-        NSLog(@"Found product: %@ %@ %0.2f", skProduct.productIdentifier, skProduct.localizedTitle, skProduct.price.floatValue);
+        NSLog(@"Found product: ID: \"%@\" Title: \"%@\" Pricing: $%0.2f", skProduct.productIdentifier, skProduct.localizedTitle, skProduct.price.floatValue);
     }
     _completionHandler(YES, skProducts);
     _completionHandler = nil;
