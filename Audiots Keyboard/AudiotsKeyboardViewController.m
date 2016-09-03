@@ -29,6 +29,30 @@
 
 @implementation AudiotsKeyboardViewController
 
+
+- (void)updateViewConstraints {
+    [super updateViewConstraints];
+    // Add custom view sizing constraints here
+    if (self.view.frame.size.width == 0 || self.view.frame.size.height == 0)
+        return;
+
+    // in iOS 10, the keyboard window is expand to full window height.
+    // We want the keyboard window to be a fix height.
+    if (([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)) {
+
+        CGFloat height = 216;
+        NSLayoutConstraint *heightConstraint = [NSLayoutConstraint constraintWithItem: self.view
+                                     attribute: NSLayoutAttributeHeight
+                                     relatedBy: NSLayoutRelationEqual
+                                        toItem: nil
+                                     attribute: NSLayoutAttributeNotAnAttribute
+                                    multiplier: 0.0 
+                                      constant: height];
+        [self.view addConstraint: heightConstraint];
+    }
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
