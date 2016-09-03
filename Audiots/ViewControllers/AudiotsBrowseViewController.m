@@ -19,6 +19,8 @@
 #import <Toast/UIView+Toast.h>
 
 #import <QuartzCore/QuartzCore.h>
+#import "NSDictionary+Helper.h"
+
 
 @interface AudiotsBrowseViewController ()
 @property (nonatomic, assign) BOOL isCurrentPackMyCreations;
@@ -206,9 +208,20 @@
     } forCellReuseIdentifier:@"packEmoticonsCollectionViewCell"];
 
     [self.packEmoticonsCollectionView registerCellConfigureBlock:^(AudiotsPackPremiumEmoticonsCollectionViewCell *cell, NSDictionary *menuItemDictionary) {
+        
         [cell setEmoticonInfoDictionary:menuItemDictionary];
         [cell.emoticonImageView setImage:[UIImage imageNamed:[menuItemDictionary valueForKey:@"image_play"]]];
-        [cell.lockImageView setHidden:[[AudiotsIAPHelper sharedInstance] isPremiumPurchased]];
+        
+        BOOL hideLock = YES;
+        
+        NSString *inAppBundleIdStr = [menuItemDictionary safeObjectForKey:@"in_app_bundle_id"];
+        if (inAppBundleIdStr != nil) {
+            hideLock = [[AudiotsIAPHelper sharedInstance] productPurchased:inAppBundleIdStr];
+        }
+        
+        [cell.lockImageView setHidden:hideLock];
+        
+        
     } forCellReuseIdentifier:@"packPremiumEmoticonsCollectionViewCell"];
 
     
@@ -229,6 +242,8 @@
     } forCellReuseIdentifier:@"customEmoticonsCollectionViewCell"];
 
     if (self.packEmoticonsDataSource == nil) {
+        
+        // get the list of emojis from the first item of packSelectionDataSource
         self.packEmoticonsDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[(NSDictionary*)[self.packSelectionDataSource objectAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]] valueForKey:@"packName"] ofType:@"plist"]];
     }
 }
@@ -438,18 +453,26 @@
             }
         } else if ([[emoticonInfoDictionary valueForKey:@"cellType"] isEqualToString:@"packPremiumEmoticonsCollectionViewCell"]) {
             
-            if ([[AudiotsIAPHelper sharedInstance] isPremiumPurchased]) {
-
-                NSString *audioFileName = [emoticonInfoDictionary objectForKey:@"sound_mp3"];
-                NSString *imageFileName = [emoticonInfoDictionary objectForKey:@"image_play"];
+            
+            NSString *inAppBundleIdStr = [emoticonInfoDictionary safeObjectForKey:@"in_app_bundle_id"];
+            if (inAppBundleIdStr != nil) {
                 
-                [[AudiotsAudioVideoManager sharedInstance] createMovieWithAudioFileName:audioFileName andImageArray:@[[UIImage imageNamed:imageFileName]]];
+                if ([[AudiotsIAPHelper sharedInstance] productPurchased:inAppBundleIdStr]) {
+                    
+                    NSString *audioFileName = [emoticonInfoDictionary objectForKey:@"sound_mp3"];
+                    NSString *imageFileName = [emoticonInfoDictionary objectForKey:@"image_play"];
+                    
+                    [[AudiotsAudioVideoManager sharedInstance] createMovieWithAudioFileName:audioFileName andImageArray:@[[UIImage imageNamed:imageFileName]]];
+                    
+                } else {
+                    
+                    [self showAlertPremiumContent];
+                    
+                }
                 
-            } else {
-                
-                [self showAlertPremiumContent];
-
             }
+            
+
 
             
         }

@@ -15,6 +15,8 @@
 		271DE4021CDA80780013C973 /* AudiotsAvailablePacksPremium.plist in Resources */ = {isa = PBXBuildFile; fileRef = 271DE4001CDA80780013C973 /* AudiotsAvailablePacksPremium.plist */; };
 		271DE4031CDAAF850013C973 /* AudiotsIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 277AC8AC1CD8071700627647 /* AudiotsIAPHelper.m */; };
 		271DE4041CDAAF890013C973 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 277AC8AE1CD8071700627647 /* IAPHelper.m */; };
+		271F19731D78A4C80040FB74 /* NSDictionary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F19721D78A4C80040FB74 /* NSDictionary+Helper.m */; };
+		271F19741D78A4C80040FB74 /* NSDictionary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F19721D78A4C80040FB74 /* NSDictionary+Helper.m */; };
 		276AC6841CA5D52800DB378D /* PackSpanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6831CA5D52800DB378D /* PackSpanish.plist */; };
 		276AC6851CA5D52800DB378D /* PackSpanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6831CA5D52800DB378D /* PackSpanish.plist */; };
 		276AC6871CA5D53400DB378D /* PackSpanish.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6861CA5D53400DB378D /* PackSpanish.xcassets */; };
@@ -23,6 +25,8 @@
 		277AC8B01CD8071700627647 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 277AC8AE1CD8071700627647 /* IAPHelper.m */; };
 		27838A6A1D637F78006A1DE8 /* JimmyFallon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27838A691D637F78006A1DE8 /* JimmyFallon.xcassets */; };
 		27838A6B1D637F78006A1DE8 /* JimmyFallon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27838A691D637F78006A1DE8 /* JimmyFallon.xcassets */; };
+		2785EF5A1D7B3D7600692EC7 /* SeeJane.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2785EF591D7B3D7600692EC7 /* SeeJane.xcassets */; };
+		2785EF5B1D7B3D7600692EC7 /* SeeJane.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2785EF591D7B3D7600692EC7 /* SeeJane.xcassets */; };
 		278FE6DD1CBC5A3900218FCC /* AudiotsRecordPacks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */; };
 		2795E41F1D1314D3008CC5EF /* PackEight.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2795E41E1D1314D3008CC5EF /* PackEight.xcassets */; };
 		2795E4211D1314DD008CC5EF /* PackNine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2795E4201D1314DD008CC5EF /* PackNine.xcassets */; };
@@ -161,6 +165,8 @@
 		2712E29B1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudiotsInAppTableViewController.m; path = ViewControllers/AudiotsInAppTableViewController.m; sourceTree = "<group>"; };
 		271DE3FD1CDA7BB30013C973 /* PackPremium.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackPremium.plist; path = Resources/PackPremium.plist; sourceTree = "<group>"; };
 		271DE4001CDA80780013C973 /* AudiotsAvailablePacksPremium.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudiotsAvailablePacksPremium.plist; path = Resources/AudiotsAvailablePacksPremium.plist; sourceTree = "<group>"; };
+		271F19711D78A4C80040FB74 /* NSDictionary+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Helper.h"; path = "Categories/NSDictionary+Helper.h"; sourceTree = "<group>"; };
+		271F19721D78A4C80040FB74 /* NSDictionary+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Helper.m"; path = "Categories/NSDictionary+Helper.m"; sourceTree = "<group>"; };
 		276AC6831CA5D52800DB378D /* PackSpanish.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackSpanish.plist; path = Resources/PackSpanish.plist; sourceTree = "<group>"; };
 		276AC6861CA5D53400DB378D /* PackSpanish.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackSpanish.xcassets; path = Packs/PackSpanish.xcassets; sourceTree = "<group>"; };
 		277AC8AB1CD8071700627647 /* AudiotsIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiotsIAPHelper.h; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 		277AC8AD1CD8071700627647 /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
 		277AC8AE1CD8071700627647 /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
 		27838A691D637F78006A1DE8 /* JimmyFallon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = JimmyFallon.xcassets; path = Packs/JimmyFallon.xcassets; sourceTree = "<group>"; };
+		2785EF591D7B3D7600692EC7 /* SeeJane.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = SeeJane.xcassets; path = Packs/SeeJane.xcassets; sourceTree = "<group>"; };
 		2795E41E1D1314D3008CC5EF /* PackEight.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackEight.xcassets; path = Packs/PackEight.xcassets; sourceTree = "<group>"; };
 		2795E4201D1314DD008CC5EF /* PackNine.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackNine.xcassets; path = Packs/PackNine.xcassets; sourceTree = "<group>"; };
 		2795E4221D1314E8008CC5EF /* PackPremium.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackPremium.xcassets; path = Packs/PackPremium.xcassets; sourceTree = "<group>"; };
@@ -564,6 +571,7 @@
 				2D9A55C71C232F6800ECB5C0 /* PackThree.xcassets */,
 				2D9A55C41C232F5A00ECB5C0 /* PackTwo.xcassets */,
 				27838A691D637F78006A1DE8 /* JimmyFallon.xcassets */,
+				2785EF591D7B3D7600692EC7 /* SeeJane.xcassets */,
 			);
 			name = Packs;
 			sourceTree = "<group>";
@@ -571,6 +579,8 @@
 		2DF0EA021BEB94AA0043E215 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				271F19711D78A4C80040FB74 /* NSDictionary+Helper.h */,
+				271F19721D78A4C80040FB74 /* NSDictionary+Helper.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -710,6 +720,7 @@
 				2795E4231D1314E8008CC5EF /* PackPremium.xcassets in Resources */,
 				2DC13F031BF2453E005E9202 /* AudiotsPackEmoticonsCollectionViewCell.xib in Resources */,
 				2795E4251D1314F7008CC5EF /* PackSeven.xcassets in Resources */,
+				2785EF5A1D7B3D7600692EC7 /* SeeJane.xcassets in Resources */,
 				2D9A55CB1C2331C800ECB5C0 /* PackTwo.plist in Resources */,
 				276AC6841CA5D52800DB378D /* PackSpanish.plist in Resources */,
 				2D9A55C81C232F6800ECB5C0 /* PackThree.xcassets in Resources */,
@@ -748,6 +759,7 @@
 				2D9A55C61C232F5A00ECB5C0 /* PackTwo.xcassets in Resources */,
 				2D9A55CF1C2331D800ECB5C0 /* PackThree.plist in Resources */,
 				276AC6881CA5D53400DB378D /* PackSpanish.xcassets in Resources */,
+				2785EF5B1D7B3D7600692EC7 /* SeeJane.xcassets in Resources */,
 				2DC13F041BF2453E005E9202 /* AudiotsPackEmoticonsCollectionViewCell.xib in Resources */,
 				2D93EC1C1BFA248100F8AA32 /* PackOne.plist in Resources */,
 				27FB60971C977B88003EED9F /* PackFour.plist in Resources */,
@@ -909,6 +921,7 @@
 				277AC8B01CD8071700627647 /* IAPHelper.m in Sources */,
 				2DC13EFE1BF24527005E9202 /* AudiotsPackEmoticonsCollectionView.m in Sources */,
 				27FC6B281D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m in Sources */,
+				271F19731D78A4C80040FB74 /* NSDictionary+Helper.m in Sources */,
 				2DC13EFF1BF24530005E9202 /* AudiotsPackSelectionCollectionView.m in Sources */,
 				2712E29C1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.m in Sources */,
 				270A409F1CA6082E001B2E05 /* AudiotsSendViewController.m in Sources */,
@@ -940,6 +953,7 @@
 				2DECE4D51C036BA9000518A9 /* AudiotsCustomEmoticonsCollectionViewCell.m in Sources */,
 				27BA8DE81CA5D93F00CE9C48 /* AudiotsBrowseViewController.m in Sources */,
 				271DE4031CDAAF850013C973 /* AudiotsIAPHelper.m in Sources */,
+				271F19741D78A4C80040FB74 /* NSDictionary+Helper.m in Sources */,
 				271DE4041CDAAF890013C973 /* IAPHelper.m in Sources */,
 				27FC6B291D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m in Sources */,
 				2DC13F011BF24536005E9202 /* AudiotsPackEmoticonsCollectionViewCell.m in Sources */,

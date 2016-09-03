@@ -126,8 +126,11 @@ NSString *const IAPHelperProductRestoredNotification = @"IAPHelperProductRestore
     for (SKProduct * skProduct in skProducts) {
         NSLog(@"Found product: ID: \"%@\" Title: \"%@\" Pricing: $%0.2f", skProduct.productIdentifier, skProduct.localizedTitle, skProduct.price.floatValue);
     }
-    _completionHandler(YES, skProducts);
-    _completionHandler = nil;
+    
+    if (_completionHandler != nil) {
+        _completionHandler(YES, skProducts);
+        _completionHandler = nil;
+    }
 }
 
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error {
