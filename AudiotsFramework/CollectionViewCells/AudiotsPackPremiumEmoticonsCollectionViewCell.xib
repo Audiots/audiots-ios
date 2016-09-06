@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -26,7 +26,7 @@
                         </connections>
                     </button>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="TqD-1X-ho2">
-                        <rect key="frame" x="62" y="62" width="30" height="30"/>
+                        <rect key="frame" x="62" y="0.0" width="30" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="H1j-ON-xPj"/>
                             <constraint firstAttribute="width" constant="30" id="y6b-1S-J1G"/>
@@ -42,8 +42,8 @@
                 <constraint firstAttribute="trailing" secondItem="Er8-eL-JJJ" secondAttribute="trailing" id="RMm-eZ-fay"/>
                 <constraint firstAttribute="trailing" secondItem="IXg-Yk-Y05" secondAttribute="trailing" id="THb-K0-lIq"/>
                 <constraint firstAttribute="bottom" secondItem="Er8-eL-JJJ" secondAttribute="bottom" id="aM1-m9-nBS"/>
+                <constraint firstItem="TqD-1X-ho2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bNb-3h-aBh"/>
                 <constraint firstItem="Er8-eL-JJJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="euN-Xf-gZO"/>
-                <constraint firstAttribute="bottom" secondItem="TqD-1X-ho2" secondAttribute="bottom" id="wIv-Xh-Dx8"/>
             </constraints>
             <connections>
                 <outlet property="emoticonImageView" destination="Er8-eL-JJJ" id="JQL-IE-dLr"/>
