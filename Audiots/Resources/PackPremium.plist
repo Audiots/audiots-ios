@@ -441,6 +441,20 @@
 			</dict>			
 			<dict>
 				<key>image_plain</key>
+				<string>sj-teal-girl-director-plain</string>
+				<key>image_play</key>
+				<string>sj-teal-girl-director-play</string>
+				<key>image_speaker</key>
+				<string>sj-teal-girl-director-speaker</string>
+				<key>sound_mp3</key>
+				<string>sj-teal-girl-director-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
 				<string>sj-teal-girl-director2-plain</string>
 				<key>image_play</key>
 				<string>sj-teal-girl-director2-play</string>
