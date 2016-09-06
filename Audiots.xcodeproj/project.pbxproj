@@ -44,6 +44,7 @@
 		27D4A6E41C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
 		27D4A6E51C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
 		27DC00AF1CAECEB6002D72A5 /* AudiotsRecordPacks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */; };
+		27F88CC21D7F7E2800189C68 /* AudiotsKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFF6C71BE3DF7C008869BF /* AudiotsKeyboardViewController.m */; };
 		27FB60971C977B88003EED9F /* PackFour.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6DE1C87641A009FAE0E /* PackFour.plist */; };
 		27FC6B281D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FC6B271D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m */; };
 		27FC6B291D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FC6B271D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m */; };
@@ -165,8 +166,8 @@
 		2712E29B1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudiotsInAppTableViewController.m; path = ViewControllers/AudiotsInAppTableViewController.m; sourceTree = "<group>"; };
 		271DE3FD1CDA7BB30013C973 /* PackPremium.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackPremium.plist; path = Resources/PackPremium.plist; sourceTree = "<group>"; };
 		271DE4001CDA80780013C973 /* AudiotsAvailablePacksPremium.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudiotsAvailablePacksPremium.plist; path = Resources/AudiotsAvailablePacksPremium.plist; sourceTree = "<group>"; };
-		271F19711D78A4C80040FB74 /* NSDictionary+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Helper.h"; path = "Categories/NSDictionary+Helper.h"; sourceTree = "<group>"; };
-		271F19721D78A4C80040FB74 /* NSDictionary+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Helper.m"; path = "Categories/NSDictionary+Helper.m"; sourceTree = "<group>"; };
+		271F19711D78A4C80040FB74 /* NSDictionary+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Helper.h"; path = "../Audiots/Categories/NSDictionary+Helper.h"; sourceTree = "<group>"; };
+		271F19721D78A4C80040FB74 /* NSDictionary+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Helper.m"; path = "../Audiots/Categories/NSDictionary+Helper.m"; sourceTree = "<group>"; };
 		276AC6831CA5D52800DB378D /* PackSpanish.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackSpanish.plist; path = Resources/PackSpanish.plist; sourceTree = "<group>"; };
 		276AC6861CA5D53400DB378D /* PackSpanish.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackSpanish.xcassets; path = Packs/PackSpanish.xcassets; sourceTree = "<group>"; };
 		277AC8AB1CD8071700627647 /* AudiotsIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiotsIAPHelper.h; sourceTree = "<group>"; };
@@ -579,8 +580,6 @@
 		2DF0EA021BEB94AA0043E215 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				271F19711D78A4C80040FB74 /* NSDictionary+Helper.h */,
-				271F19721D78A4C80040FB74 /* NSDictionary+Helper.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -588,6 +587,8 @@
 		2DF0EA071BEB957E0043E215 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				271F19711D78A4C80040FB74 /* NSDictionary+Helper.h */,
+				271F19721D78A4C80040FB74 /* NSDictionary+Helper.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -938,6 +939,7 @@
 				2DCFF7071BE3E9F9008869BF /* AudiotsShopTableViewCell.m in Sources */,
 				2DCFF7101BE3EA0E008869BF /* AudiotsBrowseViewController.m in Sources */,
 				2DCFF7031BE3E9F9008869BF /* AudiotsBrowseTableViewCell.m in Sources */,
+				27F88CC21D7F7E2800189C68 /* AudiotsKeyboardViewController.m in Sources */,
 				2DCFF69B1BE3DE31008869BF /* AppDelegate.m in Sources */,
 				2DCFF6981BE3DE31008869BF /* main.m in Sources */,
 				2DCFF7041BE3E9F9008869BF /* AudiotsFeedbackTableViewCell.m in Sources */,

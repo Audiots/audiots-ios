@@ -19,6 +19,7 @@
 #import <Toast/UIView+Toast.h>
 
 #import <QuartzCore/QuartzCore.h>
+#import "NSDictionary+Helper.h"
 
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
@@ -206,7 +207,15 @@
     [self.packEmoticonsCollectionView registerCellConfigureBlock:^(AudiotsPackPremiumEmoticonsCollectionViewCell *cell, NSDictionary *menuItemDictionary) {
         [cell setEmoticonInfoDictionary:menuItemDictionary];
         [cell.emoticonImageView setImage:[UIImage imageNamed:[menuItemDictionary valueForKey:@"image_play"]]];
-        [cell.lockImageView setHidden: [[AudiotsIAPHelper sharedInstance] isPremiumPurchased]];
+        
+        
+        // don't display the lock if the cell is a dummy
+        NSString *inAppBundleIdStr = [menuItemDictionary safeObjectForKey:@"in_app_bundle_id"];
+        if (inAppBundleIdStr != nil && ![inAppBundleIdStr isEqualToString:@"dummy"]) {
+            [cell.lockImageView setHidden: [[AudiotsIAPHelper sharedInstance] isPremiumPurchased]];
+        } else {
+            [cell.lockImageView setHidden: YES];
+        }
         
     } forCellReuseIdentifier:@"packPremiumEmoticonsCollectionViewCell"];
     
@@ -308,16 +317,21 @@
             }
         }  else if ([[emoticonInfoDictionary valueForKey:@"cellType"] isEqualToString:@"packPremiumEmoticonsCollectionViewCell"]) {
             
-            if ([[AudiotsIAPHelper sharedInstance] isPremiumPurchased]){
-                NSString *audioFileName = [emoticonInfoDictionary objectForKey:@"sound_mp3"];
-                NSString *imageFileName = [emoticonInfoDictionary objectForKey:@"image_play"];
-                
-                [[AudiotsAudioVideoManager sharedInstance] createMovieWithAudioFileName:audioFileName andImageArray:@[[UIImage imageNamed:imageFileName]]];
+            // Do nothing if the cell is a dummy
+            NSString *inAppBundleIdStr = [emoticonInfoDictionary safeObjectForKey:@"in_app_bundle_id"];
+            if (inAppBundleIdStr != nil && ![inAppBundleIdStr isEqualToString:@"dummy"]) {
+            
+                if ([[AudiotsIAPHelper sharedInstance] isPremiumPurchased]){
+                    NSString *audioFileName = [emoticonInfoDictionary objectForKey:@"sound_mp3"];
+                    NSString *imageFileName = [emoticonInfoDictionary objectForKey:@"image_play"];
+                    
+                    [[AudiotsAudioVideoManager sharedInstance] createMovieWithAudioFileName:audioFileName andImageArray:@[[UIImage imageNamed:imageFileName]]];
 
-            } else {
-                
-                [self showToastMessage:@"To unlock the content, please open Audiots app and purchase Audiots4Good content."];
-                
+                } else {
+                    
+                    [self showToastMessage:@"To unlock the content, please open Audiots app and purchase Audiots4Good content."];
+                    
+                }
             }
             
             

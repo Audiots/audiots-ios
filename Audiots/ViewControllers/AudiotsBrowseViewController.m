@@ -214,8 +214,10 @@
         
         BOOL hideLock = YES;
         
+        // don't display the lock if the cell is a dummy
         NSString *inAppBundleIdStr = [menuItemDictionary safeObjectForKey:@"in_app_bundle_id"];
-        if (inAppBundleIdStr != nil) {
+        if (inAppBundleIdStr != nil && ![inAppBundleIdStr isEqualToString:@"dummy"]) {
+
             hideLock = [[AudiotsIAPHelper sharedInstance] productPurchased:inAppBundleIdStr];
         }
         
@@ -453,9 +455,9 @@
             }
         } else if ([[emoticonInfoDictionary valueForKey:@"cellType"] isEqualToString:@"packPremiumEmoticonsCollectionViewCell"]) {
             
-            
+            // Do nothing if the cell is a dummy
             NSString *inAppBundleIdStr = [emoticonInfoDictionary safeObjectForKey:@"in_app_bundle_id"];
-            if (inAppBundleIdStr != nil) {
+            if (inAppBundleIdStr != nil && ![inAppBundleIdStr isEqualToString:@"dummy"]) {
                 
                 if ([[AudiotsIAPHelper sharedInstance] productPurchased:inAppBundleIdStr]) {
                     

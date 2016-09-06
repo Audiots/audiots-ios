@@ -245,6 +245,20 @@
 			</dict>			
 			<dict>
 				<key>image_plain</key>
+				<string>dummy</string>
+				<key>image_play</key>
+				<string>dummy</string>
+				<key>image_speaker</key>
+				<string>dummy</string>
+				<key>sound_mp3</key>
+				<string>dummy</string>
+				<key>in_app_bundle_id</key>
+				<string>dummy</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
 				<string>sj-all-girls-arm-in-arm-plain</string>
 				<key>image_play</key>
 				<string>sj-all-girls-arm-in-arm-play</string>
