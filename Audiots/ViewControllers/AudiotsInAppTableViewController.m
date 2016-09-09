@@ -154,7 +154,7 @@
                     _sjDescriptionLabel.text = product.localizedDescription;
                     
                     
-                    if ([[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdPremium]) {
+                    if ([[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdSeeJane]) {
                         [_sjBuyButton setTitle:@"Paid" forState:UIControlStateNormal];
                         
                     } else {

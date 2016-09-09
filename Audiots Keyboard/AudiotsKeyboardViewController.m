@@ -209,13 +209,16 @@
         [cell.emoticonImageView setImage:[UIImage imageNamed:[menuItemDictionary valueForKey:@"image_play"]]];
         
         
+        BOOL hideLock = YES;
+        
         // don't display the lock if the cell is a dummy
         NSString *inAppBundleIdStr = [menuItemDictionary safeObjectForKey:@"in_app_bundle_id"];
         if (inAppBundleIdStr != nil && ![inAppBundleIdStr isEqualToString:@"dummy"]) {
-            [cell.lockImageView setHidden: [[AudiotsIAPHelper sharedInstance] isPremiumPurchased]];
-        } else {
-            [cell.lockImageView setHidden: YES];
+            
+            hideLock = [[AudiotsIAPHelper sharedInstance] productPurchased:inAppBundleIdStr];
         }
+        
+        [cell.lockImageView setHidden:hideLock];
         
     } forCellReuseIdentifier:@"packPremiumEmoticonsCollectionViewCell"];
     
