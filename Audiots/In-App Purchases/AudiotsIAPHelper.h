@@ -16,6 +16,5 @@ extern NSString * const kInAppIdSeeJane;
 
 + (AudiotsIAPHelper *)sharedInstance;
 
-- (BOOL) isPremiumPurchased;
 
 @end

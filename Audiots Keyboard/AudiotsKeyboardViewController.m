@@ -324,7 +324,7 @@
             NSString *inAppBundleIdStr = [emoticonInfoDictionary safeObjectForKey:@"in_app_bundle_id"];
             if (inAppBundleIdStr != nil && ![inAppBundleIdStr isEqualToString:@"dummy"]) {
             
-                if ([[AudiotsIAPHelper sharedInstance] isPremiumPurchased]){
+                if ([[AudiotsIAPHelper sharedInstance] productPurchased:inAppBundleIdStr ]){
                     NSString *audioFileName = [emoticonInfoDictionary objectForKey:@"sound_mp3"];
                     NSString *imageFileName = [emoticonInfoDictionary objectForKey:@"image_play"];
                     

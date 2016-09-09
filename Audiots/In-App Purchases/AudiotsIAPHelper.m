@@ -24,9 +24,5 @@ NSString * const kInAppIdSeeJane = @"com.4_girls_tech.audiots.inapp.seejane";
 }
 
 
--(BOOL) isPremiumPurchased {
-    
-    return [self productPurchased:@"com.4_girls_tech.audiots.inapp.premium"];
-}
 
 @end
