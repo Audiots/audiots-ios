@@ -200,48 +200,6 @@
 				<string>com.4_girls_tech.audiots.inapp.premium</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>	
-			<dict>
-				<key>image_plain</key>
-				<string>cat-1-plain</string>
-				<key>image_play</key>
-				<string>cat-1-play</string>
-				<key>image_speaker</key>
-				<string>cat-1-speaker</string>
-				<key>sound_mp3</key>
-				<string>cat-1-sound</string>
-				<key>in_app_bundle_id</key>
-				<string>com.4_girls_tech.audiots.inapp.premium</string>
-				<key>cellType</key>
-				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>cat-2-plain</string>
-				<key>image_play</key>
-				<string>cat-2-play</string>
-				<key>image_speaker</key>
-				<string>cat-2-speaker</string>
-				<key>sound_mp3</key>
-				<string>cat-2-sound</string>
-				<key>in_app_bundle_id</key>
-				<string>com.4_girls_tech.audiots.inapp.premium</string>
-				<key>cellType</key>
-				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>dog-1-plain</string>
-				<key>image_play</key>
-				<string>dog-1-play</string>
-				<key>image_speaker</key>
-				<string>dog-1-speaker</string>
-				<key>sound_mp3</key>
-				<string>dog-1-sound</string>
-				<key>in_app_bundle_id</key>
-				<string>com.4_girls_tech.audiots.inapp.premium</string>
-				<key>cellType</key>
-				<string>packPremiumEmoticonsCollectionViewCell</string>
 			</dict>		
 			<dict>
 				<key>image_plain</key>
