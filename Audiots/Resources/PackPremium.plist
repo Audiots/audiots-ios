@@ -203,102 +203,270 @@
 			</dict>		
 			<dict>
 				<key>image_plain</key>
-				<string>cat-head-plain</string>
+				<string>dummy</string>
 				<key>image_play</key>
-				<string>cat-head-play</string>
+				<string>dummy</string>
 				<key>image_speaker</key>
-				<string>cat-head-speaker</string>
+				<string>dummy</string>
 				<key>sound_mp3</key>
-				<string>cat-head-sound</string>
+				<string>dummy</string>
 				<key>in_app_bundle_id</key>
-				<string>com.4_girls_tech.audiots.inapp.premium</string>
+				<string>dummy</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>
+			</dict>			
 			<dict>
 				<key>image_plain</key>
-				<string>dog-head1-plain</string>
+				<string>sj-all-girls-arm-in-arm-plain</string>
 				<key>image_play</key>
-				<string>dog-head1-play</string>
+				<string>sj-all-girls-arm-in-arm-play</string>
 				<key>image_speaker</key>
-				<string>dog-head1-speaker</string>
+				<string>sj-all-girls-arm-in-arm-speaker</string>
 				<key>sound_mp3</key>
-				<string>dog-head1-sound</string>
+				<string>sj-all-girls-arm-in-arm-sound</string>
 				<key>in_app_bundle_id</key>
-				<string>com.4_girls_tech.audiots.inapp.premium</string>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>
+			</dict>			
 			<dict>
 				<key>image_plain</key>
-				<string>dog-hind-legs-plain</string>
+				<string>sj-all-girls-arm-in-arm-jobs-plain</string>
 				<key>image_play</key>
-				<string>dog-hind-legs-play</string>
+				<string>sj-all-girls-arm-in-arm-jobs-play</string>
 				<key>image_speaker</key>
-				<string>dog-hind-legs-speaker</string>
+				<string>sj-all-girls-arm-in-arm-jobs-speaker</string>
 				<key>sound_mp3</key>
-				<string>dog-hind-legs-sound</string>
+				<string>sj-all-girls-arm-in-arm-jobs-sound</string>
 				<key>in_app_bundle_id</key>
-				<string>com.4_girls_tech.audiots.inapp.premium</string>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>
+			</dict>			
 			<dict>
 				<key>image_plain</key>
-				<string>dog-lying-down-plain</string>
+				<string>sj-all-girls-filming-plain</string>
 				<key>image_play</key>
-				<string>dog-lying-down-play</string>
+				<string>sj-all-girls-filming-play</string>
 				<key>image_speaker</key>
-				<string>dog-lying-down-speaker</string>
+				<string>sj-all-girls-filming-speaker</string>
 				<key>sound_mp3</key>
-				<string>dog-lying-down-sound</string>
+				<string>sj-all-girls-filming-sound</string>
 				<key>in_app_bundle_id</key>
-				<string>com.4_girls_tech.audiots.inapp.premium</string>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>
+			</dict>			
 			<dict>
 				<key>image_plain</key>
-				<string>dog-paw-up-plain</string>
+				<string>sj-green-girl-plain</string>
 				<key>image_play</key>
-				<string>dog-paw-up-play</string>
+				<string>sj-green-girl-play</string>
 				<key>image_speaker</key>
-				<string>dog-paw-up-speaker</string>
+				<string>sj-green-girl-speaker</string>
 				<key>sound_mp3</key>
-				<string>dog-paw-up-sound</string>
+				<string>sj-green-girl-sound</string>
 				<key>in_app_bundle_id</key>
-				<string>com.4_girls_tech.audiots.inapp.premium</string>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>
+			</dict>			
 			<dict>
 				<key>image_plain</key>
-				<string>funny-cat2-plain</string>
+				<string>sj-green-girl-shadow-plain</string>
 				<key>image_play</key>
-				<string>funny-cat2-play</string>
+				<string>sj-green-girl-shadow-play</string>
 				<key>image_speaker</key>
-				<string>funny-cat2-speaker</string>
+				<string>sj-green-girl-shadow-speaker</string>
 				<key>sound_mp3</key>
-				<string>funny-cat2-sound</string>
+				<string>sj-green-girl-shadow-sound</string>
 				<key>in_app_bundle_id</key>
-				<string>com.4_girls_tech.audiots.inapp.premium</string>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>
+			</dict>			
 			<dict>
 				<key>image_plain</key>
-				<string>funny-cat3-plain</string>
+				<string>sj-orange-plain</string>
 				<key>image_play</key>
-				<string>funny-cat3-play</string>
+				<string>sj-orange-play</string>
 				<key>image_speaker</key>
-				<string>funny-cat3-speaker</string>
+				<string>sj-orange-speaker</string>
 				<key>sound_mp3</key>
-				<string>funny-cat3-sound</string>
+				<string>sj-orange-sound</string>
 				<key>in_app_bundle_id</key>
-				<string>com.4_girls_tech.audiots.inapp.premium</string>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>sj-orange-girl-hero-plain</string>
+				<key>image_play</key>
+				<string>sj-orange-girl-hero-play</string>
+				<key>image_speaker</key>
+				<string>sj-orange-girl-hero-speaker</string>
+				<key>sound_mp3</key>
+				<string>sj-orange-girl-hero-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>sj-orange-girl-shadow-plain</string>
+				<key>image_play</key>
+				<string>sj-orange-girl-shadow-play</string>
+				<key>image_speaker</key>
+				<string>sj-orange-girl-shadow-speaker</string>
+				<key>sound_mp3</key>
+				<string>sj-orange-girl-shadow-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>sj-pink-girl-plain</string>
+				<key>image_play</key>
+				<string>sj-pink-girl-play</string>
+				<key>image_speaker</key>
+				<string>sj-pink-girl-speaker</string>
+				<key>sound_mp3</key>
+				<string>sj-pink-girl-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>sj-pink-girl-shadow-plain</string>
+				<key>image_play</key>
+				<string>sj-pink-girl-shadow-play</string>
+				<key>image_speaker</key>
+				<string>sj-pink-girl-shadow-speaker</string>
+				<key>sound_mp3</key>
+				<string>sj-pink-girl-shadow-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>sj-purple-girl-plain</string>
+				<key>image_play</key>
+				<string>sj-purple-girl-play</string>
+				<key>image_speaker</key>
+				<string>sj-purple-girl-speaker</string>
+				<key>sound_mp3</key>
+				<string>sj-purple-girl-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>sj-purple-girl-shadow-plain</string>
+				<key>image_play</key>
+				<string>sj-purple-girl-shadow-play</string>
+				<key>image_speaker</key>
+				<string>sj-purple-girl-shadow-speaker</string>
+				<key>sound_mp3</key>
+				<string>sj-purple-girl-shadow-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>sj-teal-girl-plain</string>
+				<key>image_play</key>
+				<string>sj-teal-girl-play</string>
+				<key>image_speaker</key>
+				<string>sj-teal-girl-speaker</string>
+				<key>sound_mp3</key>
+				<string>sj-teal-girl-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>sj-teal-girl-chair-plain</string>
+				<key>image_play</key>
+				<string>sj-teal-girl-chair-play</string>
+				<key>image_speaker</key>
+				<string>sj-teal-girl-chair-speaker</string>
+				<key>sound_mp3</key>
+				<string>sj-teal-girl-chair-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>sj-teal-girl-director-plain</string>
+				<key>image_play</key>
+				<string>sj-teal-girl-director-play</string>
+				<key>image_speaker</key>
+				<string>sj-teal-girl-director-speaker</string>
+				<key>sound_mp3</key>
+				<string>sj-teal-girl-director-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>sj-teal-girl-director2-plain</string>
+				<key>image_play</key>
+				<string>sj-teal-girl-director2-play</string>
+				<key>image_speaker</key>
+				<string>sj-teal-girl-director2-speaker</string>
+				<key>sound_mp3</key>
+				<string>sj-teal-girl-director2-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>sj-teal-girl-director3-plain</string>
+				<key>image_play</key>
+				<string>sj-teal-girl-director3-play</string>
+				<key>image_speaker</key>
+				<string>sj-teal-girl-director3-speaker</string>
+				<key>sound_mp3</key>
+				<string>sj-teal-girl-director3-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
+			<dict>
+				<key>image_plain</key>
+				<string>sj-teal-girl-shadow-plain</string>
+				<key>image_play</key>
+				<string>sj-teal-girl-shadow-play</string>
+				<key>image_speaker</key>
+				<string>sj-teal-girl-shadow-speaker</string>
+				<key>sound_mp3</key>
+				<string>sj-teal-girl-shadow-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>			
 		</array>
 	</dict>
 </array>

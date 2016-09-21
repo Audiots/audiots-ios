@@ -17,7 +17,7 @@ NSString * const kInAppIdSeeJane = @"com.4_girls_tech.audiots.inapp.seejane";
     static AudiotsIAPHelper * sharedInstance; dispatch_once(&once, ^{
         NSSet * productIdentifiers = [NSSet setWithObjects:
                                       kInAppIdPremium,
-                                      //kInAppIdSeeJane,
+                                      kInAppIdSeeJane,
                                       nil];
         sharedInstance = [[self alloc] initWithProductIdentifiers:productIdentifiers]; });
     return sharedInstance;
