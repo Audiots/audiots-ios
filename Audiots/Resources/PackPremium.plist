@@ -466,7 +466,35 @@
 				<string>com.4_girls_tech.audiots.inapp.seejane</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
-			</dict>			
+			</dict>		
+			<dict>
+				<key>image_plain</key>
+				<string>support-seejane1-plain</string>
+				<key>image_play</key>
+				<string>support-seejane1-play</string>
+				<key>image_speaker</key>
+				<string>support-seejane1-speaker</string>
+				<key>sound_mp3</key>
+				<string>support-seejane1-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>support-seejane2-plain</string>
+				<key>image_play</key>
+				<string>support-seejane2-play</string>
+				<key>image_speaker</key>
+				<string>support-seejane2-speaker</string>
+				<key>sound_mp3</key>
+				<string>support-seejane2-sound</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.seejane</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>		
 		</array>
 	</dict>
 </array>
