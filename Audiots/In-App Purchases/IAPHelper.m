@@ -256,7 +256,7 @@ NSString *const IAPHelperProductRestoredNotification = @"IAPHelperProductRestore
         [fileManager copyItemAtPath:resourcePath toPath:myCreationsPlistPath error:&error];
     }
     
-    NSString *targetFolder = [storeUrl path];
+    //NSString *targetFolder = [storeUrl path];
     
     [self completeTransaction:download.transaction];
 }

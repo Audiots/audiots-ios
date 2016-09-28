@@ -101,7 +101,7 @@
 
 - (BOOL)isOpenAccessGranted
 {
-    return [UIPasteboard generalPasteboard];
+    return [UIPasteboard generalPasteboard] != nil;
 }
 
 #pragma mark - Initialization

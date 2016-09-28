@@ -33,7 +33,7 @@
 
 - (BOOL)isOpenAccessGranted
 {
-    return [UIPasteboard generalPasteboard];
+    return [UIPasteboard generalPasteboard] != nil;
 }
 
 - (void)viewDidLoad {

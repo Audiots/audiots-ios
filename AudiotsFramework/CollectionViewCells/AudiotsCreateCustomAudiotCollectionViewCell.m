@@ -13,6 +13,7 @@
 @implementation AudiotsCreateCustomAudiotCollectionViewCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
 }
 
 -(void)setAudiotInfoDictionary:(NSDictionary *)audiotInfoDictionary {

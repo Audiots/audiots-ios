@@ -26,6 +26,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    [super awakeFromNib];
     //NSLog(@"awakeFromNib");
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(receiveStartNotification:)
