@@ -26,6 +26,13 @@
 @property (weak, nonatomic) IBOutlet UIButton *sjBuyButton;
 
 
+// Cure Cancer
+@property (weak, nonatomic) IBOutlet UILabel *ccTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ccDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UIButton *ccBuyButton;
+
+
+
 @end
 
 @implementation AudiotsInAppTableViewController
@@ -112,7 +119,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 4;
 }
 
 
@@ -163,6 +170,21 @@
                     }
                     [_sjBuyButton sizeToFit];
                     
+                } else if ([product.productIdentifier isEqualToString:kInAppIdCureCancer]) {
+                    
+                    [_priceFormatter setLocale:product.priceLocale];
+                    
+                    _ccTitleLabel.text = product.localizedTitle;
+                    _ccDescriptionLabel.text = product.localizedDescription;
+                    
+                    if ([[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdSeeJane]) {
+                        [_ccBuyButton setTitle:@"Paid" forState:UIControlStateNormal];
+                        
+                    } else {
+                        
+                        [_ccBuyButton setTitle:[NSString stringWithFormat:@"%@",  [_priceFormatter stringFromNumber:product.price]] forState:UIControlStateNormal];
+                    }
+                    [_ccBuyButton sizeToFit];
                 }
                 
             }
@@ -187,7 +209,7 @@
 - (IBAction)sjBuyAction:(id)sender {
     if (![[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdSeeJane]) {
         if (_products.count > 0) {
-            SKProduct *product = _products[1];
+            SKProduct *product = _products[2];
             
             NSLog(@"Buying %@...", product.productIdentifier);
             [[AudiotsIAPHelper sharedInstance] buyProduct:product];
@@ -217,5 +239,19 @@
     [self presentViewController:alertController animated:YES completion:nil];
     
 }
+
+- (IBAction)ccBuyAction:(id)sender {
+    
+    if (![[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdCureCancer]) {
+        if (_products.count > 0) {
+            SKProduct *product = _products[1];
+            
+            NSLog(@"Buying %@...", product.productIdentifier);
+            [[AudiotsIAPHelper sharedInstance] buyProduct:product];
+        }
+    }
+    
+}
+
 
 @end

@@ -11,6 +11,7 @@
 
 extern NSString * const kInAppIdPremium;
 extern NSString * const kInAppIdSeeJane;
+extern NSString * const kInAppIdCureCancer;
 
 @interface AudiotsIAPHelper : IAPHelper
 

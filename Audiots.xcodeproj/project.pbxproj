@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		270A409F1CA6082E001B2E05 /* AudiotsSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270A409E1CA6082E001B2E05 /* AudiotsSendViewController.m */; };
 		2712E29C1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2712E29B1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.m */; };
+		2719AA741DAC9EC1004CF019 /* CureCancer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2719AA731DAC9EC1004CF019 /* CureCancer.xcassets */; };
 		271DE3FE1CDA7BB30013C973 /* PackPremium.plist in Resources */ = {isa = PBXBuildFile; fileRef = 271DE3FD1CDA7BB30013C973 /* PackPremium.plist */; };
 		271DE3FF1CDA7BB30013C973 /* PackPremium.plist in Resources */ = {isa = PBXBuildFile; fileRef = 271DE3FD1CDA7BB30013C973 /* PackPremium.plist */; };
 		271DE4011CDA80780013C973 /* AudiotsAvailablePacksPremium.plist in Resources */ = {isa = PBXBuildFile; fileRef = 271DE4001CDA80780013C973 /* AudiotsAvailablePacksPremium.plist */; };
@@ -23,6 +24,7 @@
 		276AC6881CA5D53400DB378D /* PackSpanish.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6861CA5D53400DB378D /* PackSpanish.xcassets */; };
 		277AC8AF1CD8071700627647 /* AudiotsIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 277AC8AC1CD8071700627647 /* AudiotsIAPHelper.m */; };
 		277AC8B01CD8071700627647 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 277AC8AE1CD8071700627647 /* IAPHelper.m */; };
+		2781A4551DACBB5200FB3E99 /* CureCancer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2719AA731DAC9EC1004CF019 /* CureCancer.xcassets */; };
 		27838A6A1D637F78006A1DE8 /* JimmyFallon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27838A691D637F78006A1DE8 /* JimmyFallon.xcassets */; };
 		27838A6B1D637F78006A1DE8 /* JimmyFallon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27838A691D637F78006A1DE8 /* JimmyFallon.xcassets */; };
 		2785EF5A1D7B3D7600692EC7 /* SeeJane.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2785EF591D7B3D7600692EC7 /* SeeJane.xcassets */; };
@@ -164,6 +166,7 @@
 		270A409E1CA6082E001B2E05 /* AudiotsSendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudiotsSendViewController.m; path = ViewControllers/AudiotsSendViewController.m; sourceTree = "<group>"; };
 		2712E29A1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudiotsInAppTableViewController.h; path = ViewControllers/AudiotsInAppTableViewController.h; sourceTree = "<group>"; };
 		2712E29B1CD7FB18000C7DB0 /* AudiotsInAppTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudiotsInAppTableViewController.m; path = ViewControllers/AudiotsInAppTableViewController.m; sourceTree = "<group>"; };
+		2719AA731DAC9EC1004CF019 /* CureCancer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = CureCancer.xcassets; path = Packs/CureCancer.xcassets; sourceTree = "<group>"; };
 		271DE3FD1CDA7BB30013C973 /* PackPremium.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackPremium.plist; path = Resources/PackPremium.plist; sourceTree = "<group>"; };
 		271DE4001CDA80780013C973 /* AudiotsAvailablePacksPremium.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudiotsAvailablePacksPremium.plist; path = Resources/AudiotsAvailablePacksPremium.plist; sourceTree = "<group>"; };
 		271F19711D78A4C80040FB74 /* NSDictionary+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Helper.h"; path = "../Audiots/Categories/NSDictionary+Helper.h"; sourceTree = "<group>"; };
@@ -573,6 +576,7 @@
 				2D9A55C41C232F5A00ECB5C0 /* PackTwo.xcassets */,
 				27838A691D637F78006A1DE8 /* JimmyFallon.xcassets */,
 				2785EF591D7B3D7600692EC7 /* SeeJane.xcassets */,
+				2719AA731DAC9EC1004CF019 /* CureCancer.xcassets */,
 			);
 			name = Packs;
 			sourceTree = "<group>";
@@ -736,6 +740,7 @@
 				2DCFF6A31BE3DE31008869BF /* Assets.xcassets in Resources */,
 				2D9A55C51C232F5A00ECB5C0 /* PackTwo.xcassets in Resources */,
 				2D4CDD021BF13B2E0010B26F /* MyCreations.plist in Resources */,
+				2719AA741DAC9EC1004CF019 /* CureCancer.xcassets in Resources */,
 				2795E41F1D1314D3008CC5EF /* PackEight.xcassets in Resources */,
 				2DCFF6A11BE3DE31008869BF /* Main.storyboard in Resources */,
 				2D40FAF51BF2943B003579CD /* Settings.bundle in Resources */,
@@ -775,6 +780,7 @@
 				2DECE4D71C036BA9000518A9 /* AudiotsCustomEmoticonsCollectionViewCell.xib in Resources */,
 				2D81A1A91C721D6C00A8A769 /* Keyboard.storyboard in Resources */,
 				2DCFF6CA1BE3DF91008869BF /* AudiotsKeyboard.storyboard in Resources */,
+				2781A4551DACBB5200FB3E99 /* CureCancer.xcassets in Resources */,
 				2D81A1A81C721D6C00A8A769 /* KeyArt.xcassets in Resources */,
 				2D9A55C31C232F4B00ECB5C0 /* PackOne.xcassets in Resources */,
 				2795E42A1D13637E008CC5EF /* PackNine.xcassets in Resources */,
