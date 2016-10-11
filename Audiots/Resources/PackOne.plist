@@ -425,7 +425,67 @@
 				<string>surf_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
-			</dict>			
+			</dict>		
+			<dict>
+				<key>image_plain</key>
+				<string>girl_boxing-darker-plain</string>
+				<key>image_play</key>
+				<string>girl_boxing-darker-play</string>
+				<key>image_speaker</key>
+				<string>girl_boxing-darker-speaker</string>
+				<key>sound_mp3</key>
+				<string>girl_boxing-darker-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>girl_runner-darkest-plain</string>
+				<key>image_play</key>
+				<string>girl_runner-darkest-play</string>
+				<key>image_speaker</key>
+				<string>girl_runner-darkest-speaker</string>
+				<key>sound_mp3</key>
+				<string>girl_runner-darkest-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>girl_soccer-darker-plain</string>
+				<key>image_play</key>
+				<string>girl_soccer-darker-play</string>
+				<key>image_speaker</key>
+				<string>girl_soccer-darker-speaker</string>
+				<key>sound_mp3</key>
+				<string>girl_soccer-darker-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>girl_weights-white-plain</string>
+				<key>image_play</key>
+				<string>girl_weights-white-play</string>
+				<key>image_speaker</key>
+				<string>girl_weights-white-speaker</string>
+				<key>sound_mp3</key>
+				<string>girl_weights-white-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>surfboard2-plain</string>
+				<key>image_play</key>
+				<string>surfboard2-play</string>
+				<key>image_speaker</key>
+				<string>surfboard2-speaker</string>
+				<key>sound_mp3</key>
+				<string>surfboard2-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
 			<dict>
 				<key>image_plain</key>
 				<string>logo_plain</string>
