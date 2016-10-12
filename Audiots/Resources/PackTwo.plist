@@ -1071,7 +1071,7 @@
 				<key>image_speaker</key>
 				<string>logo_speaker</string>
 				<key>sound_mp3</key>
-				<string>logo_pack_three_sound</string>
+				<string>AudiotsApp4Fun-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
