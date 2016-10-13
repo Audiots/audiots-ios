@@ -223,18 +223,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>beer_plain</string>
-				<key>image_play</key>
-				<string>beer_play</string>
-				<key>image_speaker</key>
-				<string>beer_speaker</string>
-				<key>sound_mp3</key>
-				<string>beer_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>birthday-cake_plain</string>
 				<key>image_play</key>
 				<string>birthday-cake_play</string>

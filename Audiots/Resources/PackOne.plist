@@ -295,19 +295,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>arm-muscle-plain</string>
-				<key>image_play</key>
-				<string>arm-muscle-play</string>
-				<key>image_speaker</key>
-				<string>arm-muscle-speaker</string>
-				<key>sound_mp3</key>
-				<string>ni_madres_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-
-			<dict>
-				<key>image_plain</key>
 				<string>crossfingers_plain</string>
 				<key>image_play</key>
 				<string>crossfingers_play</string>
