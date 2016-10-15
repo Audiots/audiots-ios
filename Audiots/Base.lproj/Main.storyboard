@@ -1859,8 +1859,31 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="n9H-i4-9vG">
-                                        <rect key="frame" x="0.0" y="214" width="375" height="107"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="ra7-ac-lo1">
+                                        <rect key="frame" x="0.0" y="214" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ra7-ac-lo1" id="bnd-XY-4yD">
+                                            <frame key="frameInset" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vJ-fm-ehl">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <state key="normal" title="Restore Purchases">
+                                                        <color key="titleColor" red="0.25490196079999999" green="0.72156862749999995" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="restoreAction:" destination="H43-fC-K8S" eventType="touchUpInside" id="LGk-q7-yLa"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2vJ-fm-ehl" firstAttribute="centerX" secondItem="bnd-XY-4yD" secondAttribute="centerX" id="cZs-E3-CvN"/>
+                                                <constraint firstItem="2vJ-fm-ehl" firstAttribute="centerY" secondItem="bnd-XY-4yD" secondAttribute="centerY" id="nhX-J3-4KG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="n9H-i4-9vG">
+                                        <rect key="frame" x="0.0" y="274" width="375" height="107"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n9H-i4-9vG" id="0hI-NK-GVa">
                                             <frame key="frameInset" width="375" height="107"/>
@@ -1919,29 +1942,6 @@
                                                 <constraint firstItem="vMO-ao-FxP" firstAttribute="leading" secondItem="n3E-lQ-c7t" secondAttribute="trailing" constant="8" id="f5I-EX-ox7"/>
                                                 <constraint firstItem="gUF-Qj-oMm" firstAttribute="centerY" secondItem="0hI-NK-GVa" secondAttribute="centerY" id="kdg-39-H8B"/>
                                                 <constraint firstItem="vMO-ao-FxP" firstAttribute="trailing" secondItem="0hI-NK-GVa" secondAttribute="trailingMargin" id="mho-u6-eCo"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="ra7-ac-lo1">
-                                        <rect key="frame" x="0.0" y="321" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ra7-ac-lo1" id="bnd-XY-4yD">
-                                            <frame key="frameInset" width="375" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vJ-fm-ehl">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <state key="normal" title="Restore Purchases">
-                                                        <color key="titleColor" red="0.25490196079999999" green="0.72156862749999995" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="restoreAction:" destination="H43-fC-K8S" eventType="touchUpInside" id="LGk-q7-yLa"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="2vJ-fm-ehl" firstAttribute="centerX" secondItem="bnd-XY-4yD" secondAttribute="centerX" id="cZs-E3-CvN"/>
-                                                <constraint firstItem="2vJ-fm-ehl" firstAttribute="centerY" secondItem="bnd-XY-4yD" secondAttribute="centerY" id="nhX-J3-4KG"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
