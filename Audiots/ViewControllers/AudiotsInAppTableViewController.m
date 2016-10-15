@@ -209,7 +209,7 @@
 - (IBAction)sjBuyAction:(id)sender {
     if (![[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdSeeJane]) {
         if (_products.count > 0) {
-            SKProduct *product = _products[2];
+            SKProduct *product = _products[1];
             
             NSLog(@"Buying %@...", product.productIdentifier);
             [[AudiotsIAPHelper sharedInstance] buyProduct:product];
