@@ -11,7 +11,7 @@
 
 @interface AudiotsInAppTableViewController ()
 {
-    NSArray *_products;
+    NSMutableDictionary *_products;
     NSNumberFormatter * _priceFormatter;
 }
 
@@ -133,11 +133,19 @@
     
     [[AudiotsIAPHelper sharedInstance] requestProductsWithCompletionHandler:^(BOOL success, NSArray *products) {
         if (success) {
-            _products = products;
+            //_products = products;
             
-            for (SKProduct * product in _products) {
+            [_products removeAllObjects];
+            _products = nil;
+            
+            _products = [[NSMutableDictionary alloc] init];
+            
+            for (SKProduct * product in products) {
                 
                 if ([product.productIdentifier isEqualToString:kInAppIdPremium]) {
+                    
+                    [_products setValue:product forKey:kInAppIdPremium];
+                    
                     // premium
                     [_priceFormatter setLocale:product.priceLocale];
                     
@@ -154,6 +162,7 @@
                     }
                     [_buyButton sizeToFit];
                 } else if ([product.productIdentifier isEqualToString:kInAppIdSeeJane]) {
+                    [_products setValue:product forKey:kInAppIdSeeJane];
                     // see jane
                     [_priceFormatter setLocale:product.priceLocale];
                     
@@ -172,12 +181,14 @@
                     
                 } else if ([product.productIdentifier isEqualToString:kInAppIdCureCancer]) {
                     
+                    [_products setValue:product forKey:kInAppIdCureCancer];
+                    
                     [_priceFormatter setLocale:product.priceLocale];
                     
                     _ccTitleLabel.text = product.localizedTitle;
                     _ccDescriptionLabel.text = product.localizedDescription;
                     
-                    if ([[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdSeeJane]) {
+                    if ([[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdCureCancer]) {
                         [_ccBuyButton setTitle:@"Paid" forState:UIControlStateNormal];
                         
                     } else {
@@ -186,11 +197,13 @@
                     }
                     [_ccBuyButton sizeToFit];
                 }
-                
             }
             
         }
+        
+        
     }];
+    
     
 }
 
@@ -198,7 +211,7 @@
 
     if (![[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdPremium]) {
         if (_products.count > 0) {
-            SKProduct *product = _products[0];
+            SKProduct *product = _products[kInAppIdPremium];
             
             NSLog(@"Buying %@...", product.productIdentifier);
             [[AudiotsIAPHelper sharedInstance] buyProduct:product];
@@ -209,7 +222,7 @@
 - (IBAction)sjBuyAction:(id)sender {
     if (![[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdSeeJane]) {
         if (_products.count > 0) {
-            SKProduct *product = _products[1];
+            SKProduct *product = _products[kInAppIdSeeJane];
             
             NSLog(@"Buying %@...", product.productIdentifier);
             [[AudiotsIAPHelper sharedInstance] buyProduct:product];
@@ -244,7 +257,7 @@
     
     if (![[AudiotsIAPHelper sharedInstance] productPurchased:kInAppIdCureCancer]) {
         if (_products.count > 0) {
-            SKProduct *product = _products[1];
+            SKProduct *product = _products[kInAppIdCureCancer];
             
             NSLog(@"Buying %@...", product.productIdentifier);
             [[AudiotsIAPHelper sharedInstance] buyProduct:product];

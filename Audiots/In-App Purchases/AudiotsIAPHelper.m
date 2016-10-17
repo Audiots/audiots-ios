@@ -19,6 +19,7 @@ NSString * const kInAppIdCureCancer = @"com.4_girls_tech.audiots.inapp.curecance
         NSSet * productIdentifiers = [NSSet setWithObjects:
                                       kInAppIdPremium,
                                       kInAppIdSeeJane,
+                                      kInAppIdCureCancer,
                                       nil];
         sharedInstance = [[self alloc] initWithProductIdentifiers:productIdentifiers]; });
     return sharedInstance;
