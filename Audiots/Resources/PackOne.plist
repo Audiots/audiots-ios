@@ -4,43 +4,7 @@
 <array>
 	<dict>
 		<key>objects</key>
-		<array>		
-			<dict>
-				<key>image_plain</key>
-				<string>sloth-with-clothing-plain</string>
-				<key>image_play</key>
-				<string>sloth-with-clothing-play</string>
-				<key>image_speaker</key>
-				<string>sloth-with-clothing-speaker</string>
-				<key>sound_mp3</key>
-				<string>sloth-with-clothing-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>sloth-with-skateboard-plain</string>
-				<key>image_play</key>
-				<string>sloth-with-skateboard-play</string>
-				<key>image_speaker</key>
-				<string>sloth-with-skateboard-speaker</string>
-				<key>sound_mp3</key>
-				<string>sloth-with-skateboard-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>			
-			<dict>
-				<key>image_plain</key>
-				<string>sloth-with-surfing-and-specific-clothing-plain</string>
-				<key>image_play</key>
-				<string>sloth-with-surfing-and-specific-clothing-play</string>
-				<key>image_speaker</key>
-				<string>sloth-with-surfing-and-specific-clothing-speaker</string>
-				<key>sound_mp3</key>
-				<string>sloth-with-surfing-and-specific-clothing-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>			
+		<array>			
 			<dict>
 				<key>image_plain</key>
 				<string>kiss_plain</string>
