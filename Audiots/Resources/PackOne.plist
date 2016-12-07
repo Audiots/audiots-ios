@@ -4,7 +4,43 @@
 <array>
 	<dict>
 		<key>objects</key>
-		<array>			
+		<array>		
+			<dict>
+				<key>image_plain</key>
+				<string>sloth-xmas-hat-plain</string>
+				<key>image_play</key>
+				<string>sloth-xmas-hat-play</string>
+				<key>image_speaker</key>
+				<string>sloth-xmas-hat-speaker</string>
+				<key>sound_mp3</key>
+				<string>JingleBellsSloth</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>		
+			<dict>
+				<key>image_plain</key>
+				<string>bulldog-xmas-antlers-plain</string>
+				<key>image_play</key>
+				<string>bulldog-xmas-antlers-play</string>
+				<key>image_speaker</key>
+				<string>bulldog-xmas-antlers-speaker</string>
+				<key>sound_mp3</key>
+				<string>XMasHolidaySong</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>penguin_plain</string>
+				<key>image_play</key>
+				<string>penguin_play</string>
+				<key>image_speaker</key>
+				<string>penguin_speaker</string>
+				<key>sound_mp3</key>
+				<string>HappyHolidaysEveryone</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
 			<dict>
 				<key>image_plain</key>
 				<string>kiss_plain</string>
@@ -38,6 +74,18 @@
 				<string>poop_speaker</string>
 				<key>sound_mp3</key>
 				<string>poop_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>dab_plain</string>
+				<key>image_play</key>
+				<string>dab_play</string>
+				<key>image_speaker</key>
+				<string>dab_speaker</string>
+				<key>sound_mp3</key>
+				<string></string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>

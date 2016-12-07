@@ -139,18 +139,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>penguin_plain</string>
-				<key>image_play</key>
-				<string>penguin_play</string>
-				<key>image_speaker</key>
-				<string>penguin_speaker</string>
-				<key>sound_mp3</key>
-				<string>penguin_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>pig_plain</string>
 				<key>image_play</key>
 				<string>pig_play</string>
