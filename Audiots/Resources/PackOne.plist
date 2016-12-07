@@ -85,7 +85,7 @@
 				<key>image_speaker</key>
 				<string>dab_speaker</string>
 				<key>sound_mp3</key>
-				<string></string>
+				<string>WhatBoom</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
