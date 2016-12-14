@@ -7,6 +7,66 @@
 		<array>		
 			<dict>
 				<key>image_plain</key>
+				<string>bulldog-xmas-hat-plain</string>
+				<key>image_play</key>
+				<string>bulldog-xmas-hat-play</string>
+				<key>image_speaker</key>
+				<string>bulldog-xmas-hat-speaker</string>
+				<key>sound_mp3</key>
+				<string>LoveTheHowladays</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>gift-plain</string>
+				<key>image_play</key>
+				<string>gift-play</string>
+				<key>image_speaker</key>
+				<string>gift-speaker</string>
+				<key>sound_mp3</key>
+				<string>HappyHolidaysEveryone</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>snowmen-plain</string>
+				<key>image_play</key>
+				<string>snowmen-play</string>
+				<key>image_speaker</key>
+				<string>snowmen-speaker</string>
+				<key>sound_mp3</key>
+				<string>XMasHolidaySong</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>tree-plain</string>
+				<key>image_play</key>
+				<string>tree-play</string>
+				<key>image_speaker</key>
+				<string>tree-speaker</string>
+				<key>sound_mp3</key>
+				<string>HappyHolidaysEveryone</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>snowmen-gift-tree-plain</string>
+				<key>image_play</key>
+				<string>snowmen-gift-tree-play</string>
+				<key>image_speaker</key>
+				<string>snowmen-gift-tree-speaker</string>
+				<key>sound_mp3</key>
+				<string>XMasHolidaySong</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
 				<string>sloth-xmas-hat-plain</string>
 				<key>image_play</key>
 				<string>sloth-xmas-hat-play</string>
@@ -16,7 +76,7 @@
 				<string>JingleBellsSloth</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
-			</dict>		
+			</dict>
 			<dict>
 				<key>image_plain</key>
 				<string>bulldog-xmas-antlers-plain</string>
@@ -29,6 +89,18 @@
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>reindeer_plain</string>
+				<key>image_play</key>
+				<string>reindeer_play</string>
+				<key>image_speaker</key>
+				<string>reindeer_speaker</string>
+				<key>sound_mp3</key>
+				<string>reindeer_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
 			<dict>
 				<key>image_plain</key>
 				<string>penguin_plain</string>
