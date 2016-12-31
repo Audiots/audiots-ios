@@ -31,11 +31,6 @@
 
 @implementation AudiotsBrowseViewController
 
-- (BOOL)isOpenAccessGranted
-{
-    return [UIPasteboard generalPasteboard] != nil;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 

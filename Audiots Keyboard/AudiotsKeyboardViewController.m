@@ -14,7 +14,7 @@
 #import "AudiotsCustomEmoticonsCollectionViewCell.h"
 #import "AudiotsCreateCustomAudiotCollectionViewCell.h"
 #import "AudiotsPackPremiumEmoticonsCollectionViewCell.h"
-
+#import "AudiotsKeyboard.h"
 
 #import <Toast/UIView+Toast.h>
 
@@ -23,6 +23,9 @@
 
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
+
+
+static NSString* const FULL_ACCESS_MESSAGE = @"'Allow Full Access' must be enabled in Settings in order to send Audiots. \nSee 'Getting Started' in the Audiots app for details.";
 
 @interface AudiotsKeyboardViewController ()
 @property (assign, nonatomic) NSInteger shiftStatus; //0 = off, 1 = on, 2 = caps lock
@@ -88,6 +91,15 @@
 
 }
 
+-(void) viewDidAppear:(BOOL)animated {
+    
+    if (![AudiotsKeyboard isOpenAccessGranted]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.view makeToast:FULL_ACCESS_MESSAGE duration:15.0f position:CSToastPositionTop];
+        });
+    }
+}
+
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
@@ -99,10 +111,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)isOpenAccessGranted
-{
-    return [UIPasteboard generalPasteboard] != nil;
-}
+
 
 #pragma mark - Initialization
 
@@ -235,8 +244,7 @@
         self.packEmoticonsDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[(NSDictionary*)[self.packSelectionDataSource objectAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]] valueForKey:@"packName"] ofType:@"plist"]];
     }
     
-    if ([self isOpenAccessGranted]) {
-    } else {
+    if (![AudiotsKeyboard isOpenAccessGranted]) {
         [self.packEmoticonsCollectionView setAlpha:0.3f];
     }
 
@@ -267,11 +275,11 @@
     if (collectionView == self.packSelectionCollectionView) {
         shouldSelect = YES;
     } else if (collectionView == self.packEmoticonsCollectionView) {
-        if ([self isOpenAccessGranted]) {
+        if ([AudiotsKeyboard isOpenAccessGranted]) {
             return shouldSelect = YES;
         } else {
             dispatch_async(dispatch_get_main_queue(), ^{
-                [self.view makeToast:@"'Allow Full Access' must be enabled in Settings in order to send Audiots." duration:5.0f position:CSToastPositionCenter];
+                [self.view makeToast:FULL_ACCESS_MESSAGE duration:5.0f position:CSToastPositionCenter];
             });
         }
     }
@@ -300,6 +308,7 @@
             self.packEmoticonsDataSource = [[PSDPListDataSource alloc] initWithContentsOfFile:myCreationsPlistPath];
         }
     } else if (collectionView == self.packEmoticonsCollectionView) {
+        
         NSDictionary *emoticonInfoDictionary = [(AudiotsPackEmoticonsCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath] emoticonInfoDictionary];
         
         if ([[emoticonInfoDictionary valueForKey:@"cellType"] isEqualToString:@"packEmoticonsCollectionViewCell"]) {
@@ -311,14 +320,16 @@
             NSString *audioFilePath = [emoticonInfoDictionary objectForKey:@"sound_file_path"];
             NSString *imageFileName = [emoticonInfoDictionary objectForKey:@"image_play"];
 
-            if ([self isOpenAccessGranted]) {
+            if ([AudiotsKeyboard isOpenAccessGranted]) {
                 [[AudiotsAudioVideoManager sharedInstance] createMovieWithFilePath:audioFilePath andImageArray:@[[UIImage imageNamed:imageFileName]]];
             } else {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    [self.view makeToast:@"Please enable Full Access."];
+                    [self.view makeToast:FULL_ACCESS_MESSAGE];
                 });
             }
         }  else if ([[emoticonInfoDictionary valueForKey:@"cellType"] isEqualToString:@"packPremiumEmoticonsCollectionViewCell"]) {
+            
+
             
             // Do nothing if the cell is a dummy
             NSString *inAppBundleIdStr = [emoticonInfoDictionary safeObjectForKey:@"in_app_bundle_id"];

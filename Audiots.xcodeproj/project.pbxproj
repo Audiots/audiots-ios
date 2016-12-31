@@ -18,6 +18,8 @@
 		271DE4041CDAAF890013C973 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 277AC8AE1CD8071700627647 /* IAPHelper.m */; };
 		271F19731D78A4C80040FB74 /* NSDictionary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F19721D78A4C80040FB74 /* NSDictionary+Helper.m */; };
 		271F19741D78A4C80040FB74 /* NSDictionary+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F19721D78A4C80040FB74 /* NSDictionary+Helper.m */; };
+		2725A7811E15EFE8007E452F /* AudiotsKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2725A7801E15EFE8007E452F /* AudiotsKeyboard.m */; };
+		2725A7821E15EFE8007E452F /* AudiotsKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2725A7801E15EFE8007E452F /* AudiotsKeyboard.m */; };
 		276AC6841CA5D52800DB378D /* PackSpanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6831CA5D52800DB378D /* PackSpanish.plist */; };
 		276AC6851CA5D52800DB378D /* PackSpanish.plist in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6831CA5D52800DB378D /* PackSpanish.plist */; };
 		276AC6871CA5D53400DB378D /* PackSpanish.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276AC6861CA5D53400DB378D /* PackSpanish.xcassets */; };
@@ -173,6 +175,8 @@
 		271DE4001CDA80780013C973 /* AudiotsAvailablePacksPremium.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudiotsAvailablePacksPremium.plist; path = Resources/AudiotsAvailablePacksPremium.plist; sourceTree = "<group>"; };
 		271F19711D78A4C80040FB74 /* NSDictionary+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Helper.h"; path = "../Audiots/Categories/NSDictionary+Helper.h"; sourceTree = "<group>"; };
 		271F19721D78A4C80040FB74 /* NSDictionary+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Helper.m"; path = "../Audiots/Categories/NSDictionary+Helper.m"; sourceTree = "<group>"; };
+		2725A77F1E15EFE8007E452F /* AudiotsKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiotsKeyboard.h; sourceTree = "<group>"; };
+		2725A7801E15EFE8007E452F /* AudiotsKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudiotsKeyboard.m; sourceTree = "<group>"; };
 		276AC6831CA5D52800DB378D /* PackSpanish.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackSpanish.plist; path = Resources/PackSpanish.plist; sourceTree = "<group>"; };
 		276AC6861CA5D53400DB378D /* PackSpanish.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackSpanish.xcassets; path = Packs/PackSpanish.xcassets; sourceTree = "<group>"; };
 		277AC8AB1CD8071700627647 /* AudiotsIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudiotsIAPHelper.h; sourceTree = "<group>"; };
@@ -339,6 +343,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2725A77E1E15EF3D007E452F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2725A77F1E15EFE8007E452F /* AudiotsKeyboard.h */,
+				2725A7801E15EFE8007E452F /* AudiotsKeyboard.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		277AC8AA1CD8071700627647 /* In-App Purchases */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +446,7 @@
 				2DCFF6F51BE3E561008869BF /* Views */,
 				2DCFF6F41BE3E54B008869BF /* CollectionViewCells */,
 				2DCFF6F31BE3E543008869BF /* ViewControllers */,
+				2725A77E1E15EF3D007E452F /* Helpers */,
 				2DCFF6E61BE3E497008869BF /* AudiotsFramework.h */,
 				2DCFF6E81BE3E497008869BF /* Info.plist */,
 			);
@@ -942,6 +956,7 @@
 				2DE5BCA21BFA7BA200E59706 /* AudiotsIntroViewController.m in Sources */,
 				2DECE4D41C036BA9000518A9 /* AudiotsCustomEmoticonsCollectionViewCell.m in Sources */,
 				2DC13EFB1BF2450F005E9202 /* AudiotsAudioVideoManager.m in Sources */,
+				2725A7811E15EFE8007E452F /* AudiotsKeyboard.m in Sources */,
 				2DC13F051BF24548005E9202 /* AudiotsPackSelectionCollectionViewCell.m in Sources */,
 				2DECE4CD1C0203AE000518A9 /* AudiotsCreateStepOneViewController.m in Sources */,
 				2DCFF7131BE3EA0E008869BF /* AudiotsShopViewController.m in Sources */,
@@ -977,6 +992,7 @@
 				2DC13EFA1BF2450E005E9202 /* AudiotsAudioVideoManager.m in Sources */,
 				2D81A1AA1C721D6C00A8A769 /* KeyboardViewController.m in Sources */,
 				2DCFF6C81BE3DF7C008869BF /* AudiotsKeyboardViewController.m in Sources */,
+				2725A7821E15EFE8007E452F /* AudiotsKeyboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
