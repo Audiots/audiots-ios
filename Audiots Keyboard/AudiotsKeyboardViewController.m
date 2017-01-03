@@ -25,9 +25,11 @@
 #import <Crashlytics/Crashlytics.h>
 
 
-static NSString* const FULL_ACCESS_MESSAGE = @"'Allow Full Access' must be enabled in Settings in order to send Audiots. \nSee 'Getting Started' in the Audiots app for details.";
+static NSString* const FULL_ACCESS_MESSAGE = @"Hint: Make sure you have 'Allow Full Access' on. See 'Getting Started' in the Audiots app for details.";
 
-@interface AudiotsKeyboardViewController ()
+@interface AudiotsKeyboardViewController () {
+    CSToastStyle *notificationStyle;
+}
 @property (assign, nonatomic) NSInteger shiftStatus; //0 = off, 1 = on, 2 = caps lock
 @end
 
@@ -60,6 +62,13 @@ static NSString* const FULL_ACCESS_MESSAGE = @"'Allow Full Access' must be enabl
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    notificationStyle = [[CSToastStyle alloc] initWithDefaultStyle];
+    [notificationStyle setBackgroundColor:[UIColor colorWithRed:65.0/255.0 green:184.0/255.0 blue:175.0/255.0 alpha:1.0]];
+    [notificationStyle setCornerRadius:6.0f];
+    [notificationStyle setTitleAlignment:NSTextAlignmentCenter];
+    [notificationStyle setTitleColor:[UIColor whiteColor]];
+    [notificationStyle setMaxWidthPercentage:0.9f];
+    
     // Initialize Crashlytics
     [Fabric with:@[[Crashlytics class]]];
 
@@ -95,7 +104,7 @@ static NSString* const FULL_ACCESS_MESSAGE = @"'Allow Full Access' must be enabl
     
     if (![AudiotsKeyboard isOpenAccessGranted]) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.view makeToast:FULL_ACCESS_MESSAGE duration:15.0f position:CSToastPositionTop];
+            [self.view makeToast:FULL_ACCESS_MESSAGE duration:15.0f position:CSToastPositionTop style: notificationStyle];
         });
     }
 }
@@ -279,7 +288,7 @@ static NSString* const FULL_ACCESS_MESSAGE = @"'Allow Full Access' must be enabl
             return shouldSelect = YES;
         } else {
             dispatch_async(dispatch_get_main_queue(), ^{
-                [self.view makeToast:FULL_ACCESS_MESSAGE duration:5.0f position:CSToastPositionCenter];
+                [self.view makeToast:FULL_ACCESS_MESSAGE duration:5.0f position:CSToastPositionCenter style: notificationStyle];
             });
         }
     }
@@ -385,12 +394,6 @@ static NSString* const FULL_ACCESS_MESSAGE = @"'Allow Full Access' must be enabl
 -(void) showToastMessage: (NSString*) message {
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        CSToastStyle *notificationStyle = [[CSToastStyle alloc] initWithDefaultStyle];
-        [notificationStyle setBackgroundColor:[UIColor colorWithRed:65.0/255.0 green:184.0/255.0 blue:175.0/255.0 alpha:1.0]];
-        [notificationStyle setCornerRadius:6.0f];
-        [notificationStyle setTitleAlignment:NSTextAlignmentCenter];
-        [notificationStyle setTitleColor:[UIColor whiteColor]];
-        [notificationStyle setMaxWidthPercentage:0.9f];
 
         [self.view makeToast:message
                     duration:5.0
