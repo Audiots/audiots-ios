@@ -13,6 +13,7 @@
 NSString * const kInAppIdPremium = @"com.4_girls_tech.audiots.inapp.premium";
 NSString * const kInAppIdSeeJane = @"com.4_girls_tech.audiots.inapp.seejane";
 NSString * const kInAppIdCureCancer = @"com.4_girls_tech.audiots.inapp.curecancer";
+NSString * const kInAppIdSacha = @"com.4_girls_tech.audiots.inapp.sacha";
 
 + (AudiotsIAPHelper *)sharedInstance { static dispatch_once_t once;
     static AudiotsIAPHelper * sharedInstance; dispatch_once(&once, ^{
@@ -20,6 +21,7 @@ NSString * const kInAppIdCureCancer = @"com.4_girls_tech.audiots.inapp.curecance
                                       kInAppIdPremium,
                                       kInAppIdSeeJane,
                                       kInAppIdCureCancer,
+                                      kInAppIdSacha,
                                       nil];
         sharedInstance = [[self alloc] initWithProductIdentifiers:productIdentifiers]; });
     return sharedInstance;

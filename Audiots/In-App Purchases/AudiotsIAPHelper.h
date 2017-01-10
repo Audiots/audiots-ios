@@ -8,6 +8,11 @@
 
 #import "IAPHelper.h"
 
+@protocol InAppDelegate <NSObject>
+@optional
+- (void)buy:(SKProduct*) product;
+- (void)restore;
+@end
 
 extern NSString * const kInAppIdPremium;
 extern NSString * const kInAppIdSeeJane;

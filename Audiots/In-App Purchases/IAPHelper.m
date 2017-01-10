@@ -111,6 +111,16 @@ NSString *const IAPHelperProductRestoredNotification = @"IAPHelperProductRestore
 }
 
 - (void)restoreCompletedTransactions {
+    
+    // take current payment queue
+    SKPaymentQueue* currentQueue = [SKPaymentQueue defaultQueue];
+    // finish ALL transactions in queue
+    [currentQueue.transactions enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        
+        SKPaymentTransaction *paymentTransaction = (SKPaymentTransaction *)obj;
+        [currentQueue finishTransaction:paymentTransaction];
+    }];
+    
     [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
 }
 
