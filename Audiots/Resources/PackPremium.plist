@@ -351,7 +351,7 @@
 				<key>sound_mp3</key>
 				<string>YoureMagical</string>
 				<key>in_app_bundle_id</key>
-				<string>com.4_girls_tech.audiots.inapp.sacha</string>
+				<string>com.4_girls_tech.audiots.inapp.sasha</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
 			</dict>			
