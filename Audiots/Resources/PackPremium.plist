@@ -307,12 +307,26 @@
 				<key>image_speaker</key>
 				<string>sasha-speaker</string>
 				<key>sound_mp3</key>
-				<string>ThankYouSupportTheSashaProject</string>
+				<string>CheckOutMyHandPantedJeans</string>
 				<key>in_app_bundle_id</key>
 				<string>com.4_girls_tech.audiots.inapp.sasha</string>
 				<key>cellType</key>
 				<string>packPremiumEmoticonsCollectionViewCell</string>
 			</dict>		
+			<dict>
+				<key>image_plain</key>
+				<string>thank-you-plain</string>
+				<key>image_play</key>
+				<string>thank-you-play</string>
+				<key>image_speaker</key>
+				<string>thank-you-speaker</string>
+				<key>sound_mp3</key>
+				<string>ThankYouSupportTheSashaProject</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.sasha</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>	
 			<dict>
 				<key>image_plain</key>
 				<string>star-painted-jeans-plain</string>
