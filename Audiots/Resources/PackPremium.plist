@@ -7,6 +7,62 @@
 		<array>	
 			<dict>
 				<key>image_plain</key>
+				<string>little-dog-1-plain</string>
+				<key>image_play</key>
+				<string>little-dog-1-play</string>
+				<key>image_speaker</key>
+				<string>little-dog-1-speaker</string>
+				<key>sound_mp3</key>
+				<string>AdoptPetToday</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.premium</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>little-dog-2-plain</string>
+				<key>image_play</key>
+				<string>little-dog-2-play</string>
+				<key>image_speaker</key>
+				<string>little-dog-2-speaker</string>
+				<key>sound_mp3</key>
+				<string>PickMe</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.premium</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>little-dog-3-plain</string>
+				<key>image_play</key>
+				<string>little-dog-3-play</string>
+				<key>image_speaker</key>
+				<string>little-dog-3-speaker</string>
+				<key>sound_mp3</key>
+				<string>ILoveDogs</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.premium</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>little-dog-4-plain</string>
+				<key>image_play</key>
+				<string>little-dog-4-play</string>
+				<key>image_speaker</key>
+				<string>little-dog-4-speaker</string>
+				<key>sound_mp3</key>
+				<string>AdoptPetToday</string>
+				<key>in_app_bundle_id</key>
+				<string>com.4_girls_tech.audiots.inapp.premium</string>
+				<key>cellType</key>
+				<string>packPremiumEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
 				<string>spca_cat_antlers-plain</string>
 				<key>image_play</key>
 				<string>spca_cat_antlers_play</string>

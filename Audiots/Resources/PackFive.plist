@@ -7,6 +7,54 @@
 		<array>
 			<dict>
 				<key>image_plain</key>
+				<string>congrats-grad-card-plain</string>
+				<key>image_play</key>
+				<string>congrats-grad-card-play</string>
+				<key>image_speaker</key>
+				<string>congrats-grad-card-speaker</string>
+				<key>sound_mp3</key>
+				<string>CongratsGrad</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>easter-card-dog-ears-plain</string>
+				<key>image_play</key>
+				<string>easter-card-dog-ears-play</string>
+				<key>image_speaker</key>
+				<string>easter-card-dog-ears-speaker</string>
+				<key>sound_mp3</key>
+				<string>CongratsOnYourNewPup</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>way-to-go-grad-card-plain</string>
+				<key>image_play</key>
+				<string>way-to-go-grad-card-play</string>
+				<key>image_speaker</key>
+				<string>way-to-go-grad-card-speaker</string>
+				<key>sound_mp3</key>
+				<string>Way2Go</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>hoppy-easter-bunny-card-plain</string>
+				<key>image_play</key>
+				<string>hoppy-easter-bunny-card-play</string>
+				<key>image_speaker</key>
+				<string>hoppy-easter-bunny-card-speaker</string>
+				<key>sound_mp3</key>
+				<string>HoppyEaster</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
 				<string>bulldog-holiday-card-plain</string>
 				<key>image_play</key>
 				<string>bulldog-holiday-card-play</string>
