@@ -11,8 +11,8 @@
 #import "AudiotsPackSelectionCollectionView.h"
 #import "AudiotsPackEmoticonsCollectionView.h"
 
-#import <PSDDataSource/PSDPlistDataSource.h>
-#import <PSDDataSource/UICollectionView+PSDDataSource.h>
+#import "PSDPlistDataSource.h"
+#import "UICollectionView+PSDDataSource.h"
 
 @interface AudiotsCreateStepOneViewController : UIViewController <UICollectionViewDelegate, PSDDataSourceDelegate>
 

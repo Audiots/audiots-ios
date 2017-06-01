@@ -3,7 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <PSDDataSource/PSDArrayDataSource.h>
+#import "PSDArrayDataSource.h"
 
 @interface PSDKVOArrayDataSource : PSDDataSource
 - (id)initWithArrayControllers:(NSArray *)arrayControllers;

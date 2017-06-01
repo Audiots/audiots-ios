@@ -48,6 +48,34 @@
 		27B75D9E1DF7F7150012967D /* Holidays.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B75D9D1DF7F7150012967D /* Holidays.xcassets */; };
 		27B75D9F1DF805F60012967D /* Holidays.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B75D9D1DF7F7150012967D /* Holidays.xcassets */; };
 		27BA8DE81CA5D93F00CE9C48 /* AudiotsBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFF7091BE3EA0E008869BF /* AudiotsBrowseViewController.m */; };
+		27D20F021EE08C2A00FE0BBC /* NSMutableArray+PSDDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EE41EE08C2A00FE0BBC /* NSMutableArray+PSDDataSource.m */; };
+		27D20F031EE08C2A00FE0BBC /* NSMutableArray+PSDDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EE41EE08C2A00FE0BBC /* NSMutableArray+PSDDataSource.m */; };
+		27D20F041EE08C2A00FE0BBC /* NSMutableDictionary+PSDDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EE61EE08C2A00FE0BBC /* NSMutableDictionary+PSDDataSource.m */; };
+		27D20F051EE08C2A00FE0BBC /* NSMutableDictionary+PSDDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EE61EE08C2A00FE0BBC /* NSMutableDictionary+PSDDataSource.m */; };
+		27D20F061EE08C2A00FE0BBC /* PSDArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EE81EE08C2A00FE0BBC /* PSDArrayController.m */; };
+		27D20F071EE08C2A00FE0BBC /* PSDArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EE81EE08C2A00FE0BBC /* PSDArrayController.m */; };
+		27D20F081EE08C2A00FE0BBC /* PSDArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EEA1EE08C2A00FE0BBC /* PSDArrayDataSource.m */; };
+		27D20F091EE08C2A00FE0BBC /* PSDArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EEA1EE08C2A00FE0BBC /* PSDArrayDataSource.m */; };
+		27D20F0A1EE08C2A00FE0BBC /* PSDCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EEC1EE08C2A00FE0BBC /* PSDCollectionViewController.m */; };
+		27D20F0B1EE08C2A00FE0BBC /* PSDCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EEC1EE08C2A00FE0BBC /* PSDCollectionViewController.m */; };
+		27D20F0C1EE08C2A00FE0BBC /* PSDCompoundDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EEE1EE08C2A00FE0BBC /* PSDCompoundDataSource.m */; };
+		27D20F0D1EE08C2A00FE0BBC /* PSDCompoundDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EEE1EE08C2A00FE0BBC /* PSDCompoundDataSource.m */; };
+		27D20F0E1EE08C2A00FE0BBC /* PSDCoreDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EF11EE08C2A00FE0BBC /* PSDCoreDataSource.m */; };
+		27D20F0F1EE08C2A00FE0BBC /* PSDCoreDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EF11EE08C2A00FE0BBC /* PSDCoreDataSource.m */; };
+		27D20F101EE08C2A00FE0BBC /* PSDDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EF51EE08C2A00FE0BBC /* PSDDataSource.m */; };
+		27D20F111EE08C2A00FE0BBC /* PSDDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EF51EE08C2A00FE0BBC /* PSDDataSource.m */; };
+		27D20F121EE08C2A00FE0BBC /* PSDKVOArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EF71EE08C2A00FE0BBC /* PSDKVOArrayDataSource.m */; };
+		27D20F131EE08C2A00FE0BBC /* PSDKVOArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EF71EE08C2A00FE0BBC /* PSDKVOArrayDataSource.m */; };
+		27D20F141EE08C2A00FE0BBC /* PSDPListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EF91EE08C2A00FE0BBC /* PSDPListDataSource.m */; };
+		27D20F151EE08C2A00FE0BBC /* PSDPListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EF91EE08C2A00FE0BBC /* PSDPListDataSource.m */; };
+		27D20F161EE08C2A00FE0BBC /* PSDSparseArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EFB1EE08C2A00FE0BBC /* PSDSparseArray.m */; };
+		27D20F171EE08C2A00FE0BBC /* PSDSparseArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EFB1EE08C2A00FE0BBC /* PSDSparseArray.m */; };
+		27D20F181EE08C2A00FE0BBC /* UICollectionView+NSFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EFD1EE08C2A00FE0BBC /* UICollectionView+NSFetchedResultsController.m */; };
+		27D20F191EE08C2A00FE0BBC /* UICollectionView+NSFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EFD1EE08C2A00FE0BBC /* UICollectionView+NSFetchedResultsController.m */; };
+		27D20F1A1EE08C2A00FE0BBC /* UICollectionView+PSDDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EFF1EE08C2A00FE0BBC /* UICollectionView+PSDDataSource.m */; };
+		27D20F1B1EE08C2A00FE0BBC /* UICollectionView+PSDDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EFF1EE08C2A00FE0BBC /* UICollectionView+PSDDataSource.m */; };
+		27D20F1C1EE08C2A00FE0BBC /* UITableView+PSDDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20F011EE08C2A00FE0BBC /* UITableView+PSDDataSource.m */; };
+		27D20F1D1EE08C2A00FE0BBC /* UITableView+PSDDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20F011EE08C2A00FE0BBC /* UITableView+PSDDataSource.m */; };
 		27D4A6DF1C87641A009FAE0E /* PackFour.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6DE1C87641A009FAE0E /* PackFour.plist */; };
 		27D4A6E41C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
 		27D4A6E51C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
@@ -198,6 +226,37 @@
 		2795E4261D13175B008CC5EF /* PackFive.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackFive.plist; path = Resources/PackFive.plist; sourceTree = "<group>"; };
 		27A1596A1D429D6D00942478 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		27B75D9D1DF7F7150012967D /* Holidays.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Holidays.xcassets; path = Packs/Holidays.xcassets; sourceTree = "<group>"; };
+		27D20EE31EE08C2A00FE0BBC /* NSMutableArray+PSDDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+PSDDataSource.h"; sourceTree = "<group>"; };
+		27D20EE41EE08C2A00FE0BBC /* NSMutableArray+PSDDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+PSDDataSource.m"; sourceTree = "<group>"; };
+		27D20EE51EE08C2A00FE0BBC /* NSMutableDictionary+PSDDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+PSDDataSource.h"; sourceTree = "<group>"; };
+		27D20EE61EE08C2A00FE0BBC /* NSMutableDictionary+PSDDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+PSDDataSource.m"; sourceTree = "<group>"; };
+		27D20EE71EE08C2A00FE0BBC /* PSDArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDArrayController.h; sourceTree = "<group>"; };
+		27D20EE81EE08C2A00FE0BBC /* PSDArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDArrayController.m; sourceTree = "<group>"; };
+		27D20EE91EE08C2A00FE0BBC /* PSDArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDArrayDataSource.h; sourceTree = "<group>"; };
+		27D20EEA1EE08C2A00FE0BBC /* PSDArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDArrayDataSource.m; sourceTree = "<group>"; };
+		27D20EEB1EE08C2A00FE0BBC /* PSDCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDCollectionViewController.h; sourceTree = "<group>"; };
+		27D20EEC1EE08C2A00FE0BBC /* PSDCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDCollectionViewController.m; sourceTree = "<group>"; };
+		27D20EED1EE08C2A00FE0BBC /* PSDCompoundDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDCompoundDataSource.h; sourceTree = "<group>"; };
+		27D20EEE1EE08C2A00FE0BBC /* PSDCompoundDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDCompoundDataSource.m; sourceTree = "<group>"; };
+		27D20EEF1EE08C2A00FE0BBC /* PSDCoreDataSource+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PSDCoreDataSource+Private.h"; sourceTree = "<group>"; };
+		27D20EF01EE08C2A00FE0BBC /* PSDCoreDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDCoreDataSource.h; sourceTree = "<group>"; };
+		27D20EF11EE08C2A00FE0BBC /* PSDCoreDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDCoreDataSource.m; sourceTree = "<group>"; };
+		27D20EF21EE08C2A00FE0BBC /* PSDDataMerge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDDataMerge.h; sourceTree = "<group>"; };
+		27D20EF31EE08C2A00FE0BBC /* PSDDataSource+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PSDDataSource+Private.h"; sourceTree = "<group>"; };
+		27D20EF41EE08C2A00FE0BBC /* PSDDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDDataSource.h; sourceTree = "<group>"; };
+		27D20EF51EE08C2A00FE0BBC /* PSDDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDDataSource.m; sourceTree = "<group>"; };
+		27D20EF61EE08C2A00FE0BBC /* PSDKVOArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDKVOArrayDataSource.h; sourceTree = "<group>"; };
+		27D20EF71EE08C2A00FE0BBC /* PSDKVOArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDKVOArrayDataSource.m; sourceTree = "<group>"; };
+		27D20EF81EE08C2A00FE0BBC /* PSDPListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDPListDataSource.h; sourceTree = "<group>"; };
+		27D20EF91EE08C2A00FE0BBC /* PSDPListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDPListDataSource.m; sourceTree = "<group>"; };
+		27D20EFA1EE08C2A00FE0BBC /* PSDSparseArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDSparseArray.h; sourceTree = "<group>"; };
+		27D20EFB1EE08C2A00FE0BBC /* PSDSparseArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDSparseArray.m; sourceTree = "<group>"; };
+		27D20EFC1EE08C2A00FE0BBC /* UICollectionView+NSFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+NSFetchedResultsController.h"; sourceTree = "<group>"; };
+		27D20EFD1EE08C2A00FE0BBC /* UICollectionView+NSFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+NSFetchedResultsController.m"; sourceTree = "<group>"; };
+		27D20EFE1EE08C2A00FE0BBC /* UICollectionView+PSDDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+PSDDataSource.h"; sourceTree = "<group>"; };
+		27D20EFF1EE08C2A00FE0BBC /* UICollectionView+PSDDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+PSDDataSource.m"; sourceTree = "<group>"; };
+		27D20F001EE08C2A00FE0BBC /* UITableView+PSDDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PSDDataSource.h"; sourceTree = "<group>"; };
+		27D20F011EE08C2A00FE0BBC /* UITableView+PSDDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PSDDataSource.m"; sourceTree = "<group>"; };
 		27D4A6DE1C87641A009FAE0E /* PackFour.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackFour.plist; path = Resources/PackFour.plist; sourceTree = "<group>"; };
 		27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackFour.xcassets; path = Packs/PackFour.xcassets; sourceTree = "<group>"; };
 		27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudiotsRecordPacks.plist; path = Resources/AudiotsRecordPacks.plist; sourceTree = "<group>"; };
@@ -369,6 +428,44 @@
 			path = "In-App Purchases";
 			sourceTree = "<group>";
 		};
+		27D20EE21EE08C2A00FE0BBC /* PSDDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				27D20EE31EE08C2A00FE0BBC /* NSMutableArray+PSDDataSource.h */,
+				27D20EE41EE08C2A00FE0BBC /* NSMutableArray+PSDDataSource.m */,
+				27D20EE51EE08C2A00FE0BBC /* NSMutableDictionary+PSDDataSource.h */,
+				27D20EE61EE08C2A00FE0BBC /* NSMutableDictionary+PSDDataSource.m */,
+				27D20EE71EE08C2A00FE0BBC /* PSDArrayController.h */,
+				27D20EE81EE08C2A00FE0BBC /* PSDArrayController.m */,
+				27D20EE91EE08C2A00FE0BBC /* PSDArrayDataSource.h */,
+				27D20EEA1EE08C2A00FE0BBC /* PSDArrayDataSource.m */,
+				27D20EEB1EE08C2A00FE0BBC /* PSDCollectionViewController.h */,
+				27D20EEC1EE08C2A00FE0BBC /* PSDCollectionViewController.m */,
+				27D20EED1EE08C2A00FE0BBC /* PSDCompoundDataSource.h */,
+				27D20EEE1EE08C2A00FE0BBC /* PSDCompoundDataSource.m */,
+				27D20EEF1EE08C2A00FE0BBC /* PSDCoreDataSource+Private.h */,
+				27D20EF01EE08C2A00FE0BBC /* PSDCoreDataSource.h */,
+				27D20EF11EE08C2A00FE0BBC /* PSDCoreDataSource.m */,
+				27D20EF21EE08C2A00FE0BBC /* PSDDataMerge.h */,
+				27D20EF31EE08C2A00FE0BBC /* PSDDataSource+Private.h */,
+				27D20EF41EE08C2A00FE0BBC /* PSDDataSource.h */,
+				27D20EF51EE08C2A00FE0BBC /* PSDDataSource.m */,
+				27D20EF61EE08C2A00FE0BBC /* PSDKVOArrayDataSource.h */,
+				27D20EF71EE08C2A00FE0BBC /* PSDKVOArrayDataSource.m */,
+				27D20EF81EE08C2A00FE0BBC /* PSDPListDataSource.h */,
+				27D20EF91EE08C2A00FE0BBC /* PSDPListDataSource.m */,
+				27D20EFA1EE08C2A00FE0BBC /* PSDSparseArray.h */,
+				27D20EFB1EE08C2A00FE0BBC /* PSDSparseArray.m */,
+				27D20EFC1EE08C2A00FE0BBC /* UICollectionView+NSFetchedResultsController.h */,
+				27D20EFD1EE08C2A00FE0BBC /* UICollectionView+NSFetchedResultsController.m */,
+				27D20EFE1EE08C2A00FE0BBC /* UICollectionView+PSDDataSource.h */,
+				27D20EFF1EE08C2A00FE0BBC /* UICollectionView+PSDDataSource.m */,
+				27D20F001EE08C2A00FE0BBC /* UITableView+PSDDataSource.h */,
+				27D20F011EE08C2A00FE0BBC /* UITableView+PSDDataSource.m */,
+			);
+			path = PSDDataSource;
+			sourceTree = "<group>";
+		};
 		2D81A1A31C721D2F00A8A769 /* iOS Keyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +544,7 @@
 		2DCFF6E51BE3E497008869BF /* AudiotsFramework */ = {
 			isa = PBXGroup;
 			children = (
+				27D20EE21EE08C2A00FE0BBC /* PSDDataSource */,
 				2DF0EA071BEB957E0043E215 /* Categories */,
 				2DCFF6F21BE3E515008869BF /* AVManager */,
 				2DCFF6F51BE3E561008869BF /* Views */,
@@ -632,14 +730,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DCFF6AA1BE3DE31008869BF /* Build configuration list for PBXNativeTarget "Audiots" */;
 			buildPhases = (
-				0D990D39043B1D868D7B448D /* Check Pods Manifest.lock */,
+				0D990D39043B1D868D7B448D /* [CP] Check Pods Manifest.lock */,
 				2DCFF68F1BE3DE31008869BF /* Sources */,
 				2DCFF6901BE3DE31008869BF /* Frameworks */,
 				2DCFF6911BE3DE31008869BF /* Resources */,
 				2DCFF6C51BE3DF34008869BF /* Embed App Extensions */,
 				2DCFF6DE1BE3E25A008869BF /* Embed Frameworks */,
-				BFC117E21EEC499749B001B4 /* Embed Pods Frameworks */,
-				366E3691B7FFDC4FEA4F43EA /* Copy Pods Resources */,
+				BFC117E21EEC499749B001B4 /* [CP] Embed Pods Frameworks */,
+				366E3691B7FFDC4FEA4F43EA /* [CP] Copy Pods Resources */,
 				2D195EBF1C8492260093DF3F /* Fabric / Crashlytics */,
 			);
 			buildRules = (
@@ -656,12 +754,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DCFF6C01BE3DF34008869BF /* Build configuration list for PBXNativeTarget "Audiots Keyboard" */;
 			buildPhases = (
-				5C1D24B496A2292AD0CD5660 /* Check Pods Manifest.lock */,
+				5C1D24B496A2292AD0CD5660 /* [CP] Check Pods Manifest.lock */,
 				2DCFF6B31BE3DF34008869BF /* Sources */,
 				2DCFF6B41BE3DF34008869BF /* Frameworks */,
 				2DCFF6B51BE3DF34008869BF /* Resources */,
-				3329EDE7961AE26F38C85E31 /* Embed Pods Frameworks */,
-				65FE13EEDF3A30FC5308B524 /* Copy Pods Resources */,
+				65FE13EEDF3A30FC5308B524 /* [CP] Copy Pods Resources */,
 				271D04A71C9FAEDB00302463 /* Remove Frameworks */,
 			);
 			buildRules = (
@@ -827,19 +924,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D990D39043B1D868D7B448D /* Check Pods Manifest.lock */ = {
+		0D990D39043B1D868D7B448D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		271D04A71C9FAEDB00302463 /* Remove Frameworks */ = {
@@ -870,29 +967,14 @@
 			shellPath = /bin/sh;
 			shellScript = "distributionConfig=\"Distribution\"\nif [ \"$distributionConfig\" = \"${CONFIGURATION}\" ]; then\necho \"Running Crashlytics\"\n./Crashlytics.framework/run 9ab292590adaef28f059466534a6b451d21f081b 2853b85fa1e11b7cd1625be04270a6796902205781967e4dd2c58ac83f5d0ff2\nfi";
 		};
-		3329EDE7961AE26F38C85E31 /* Embed Pods Frameworks */ = {
+		366E3691B7FFDC4FEA4F43EA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audiots Keyboard/Pods-Audiots Keyboard-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		366E3691B7FFDC4FEA4F43EA /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -900,29 +982,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audiots/Pods-Audiots-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5C1D24B496A2292AD0CD5660 /* Check Pods Manifest.lock */ = {
+		5C1D24B496A2292AD0CD5660 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		65FE13EEDF3A30FC5308B524 /* Copy Pods Resources */ = {
+		65FE13EEDF3A30FC5308B524 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -930,14 +1012,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audiots Keyboard/Pods-Audiots Keyboard-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BFC117E21EEC499749B001B4 /* Embed Pods Frameworks */ = {
+		BFC117E21EEC499749B001B4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -952,18 +1034,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D20F021EE08C2A00FE0BBC /* NSMutableArray+PSDDataSource.m in Sources */,
 				2DCFF7051BE3E9F9008869BF /* AudiotsIntroTableViewCell.m in Sources */,
 				2DCFF7061BE3E9F9008869BF /* AudiotsRateUsTableViewCell.m in Sources */,
 				2DC13F021BF24536005E9202 /* AudiotsPackEmoticonsCollectionViewCell.m in Sources */,
 				277AC8B01CD8071700627647 /* IAPHelper.m in Sources */,
+				27D20F101EE08C2A00FE0BBC /* PSDDataSource.m in Sources */,
+				27D20F1C1EE08C2A00FE0BBC /* UITableView+PSDDataSource.m in Sources */,
 				2DC13EFE1BF24527005E9202 /* AudiotsPackEmoticonsCollectionView.m in Sources */,
 				27FC6B281D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m in Sources */,
+				27D20F081EE08C2A00FE0BBC /* PSDArrayDataSource.m in Sources */,
 				271F19731D78A4C80040FB74 /* NSDictionary+Helper.m in Sources */,
 				2DC13EFF1BF24530005E9202 /* AudiotsPackSelectionCollectionView.m in Sources */,
+				27D20F0A1EE08C2A00FE0BBC /* PSDCollectionViewController.m in Sources */,
 				27687F331E256E1700BFEA54 /* AudiotsInAppRestoreTableViewCell.m in Sources */,
 				270A409F1CA6082E001B2E05 /* AudiotsSendViewController.m in Sources */,
 				27687F301E256DBC00BFEA54 /* AudiotsInAppTableViewCell.m in Sources */,
+				27D20F0C1EE08C2A00FE0BBC /* PSDCompoundDataSource.m in Sources */,
 				2DCFF7111BE3EA0E008869BF /* AudiotsHomeTableViewController.m in Sources */,
+				27D20F061EE08C2A00FE0BBC /* PSDArrayController.m in Sources */,
+				27D20F041EE08C2A00FE0BBC /* NSMutableDictionary+PSDDataSource.m in Sources */,
+				27D20F161EE08C2A00FE0BBC /* PSDSparseArray.m in Sources */,
 				2DE5BCA21BFA7BA200E59706 /* AudiotsIntroViewController.m in Sources */,
 				2DECE4D41C036BA9000518A9 /* AudiotsCustomEmoticonsCollectionViewCell.m in Sources */,
 				2DC13EFB1BF2450F005E9202 /* AudiotsAudioVideoManager.m in Sources */,
@@ -973,15 +1064,20 @@
 				2DECE4CD1C0203AE000518A9 /* AudiotsCreateStepOneViewController.m in Sources */,
 				2DCFF7131BE3EA0E008869BF /* AudiotsShopViewController.m in Sources */,
 				2DCFF7321BE3ED62008869BF /* AudiotsHomeTableViewHeaderView.m in Sources */,
+				27D20F0E1EE08C2A00FE0BBC /* PSDCoreDataSource.m in Sources */,
 				2DECE4D01C0203C8000518A9 /* AudiotsCreateStepTwoViewController.m in Sources */,
 				277AC8AF1CD8071700627647 /* AudiotsIAPHelper.m in Sources */,
 				2DCFF7071BE3E9F9008869BF /* AudiotsShopTableViewCell.m in Sources */,
 				2DCFF7101BE3EA0E008869BF /* AudiotsBrowseViewController.m in Sources */,
 				2DCFF7031BE3E9F9008869BF /* AudiotsBrowseTableViewCell.m in Sources */,
 				27F88CC21D7F7E2800189C68 /* AudiotsKeyboardViewController.m in Sources */,
+				27D20F141EE08C2A00FE0BBC /* PSDPListDataSource.m in Sources */,
+				27D20F181EE08C2A00FE0BBC /* UICollectionView+NSFetchedResultsController.m in Sources */,
+				27D20F121EE08C2A00FE0BBC /* PSDKVOArrayDataSource.m in Sources */,
 				2DCFF69B1BE3DE31008869BF /* AppDelegate.m in Sources */,
 				2DCFF6981BE3DE31008869BF /* main.m in Sources */,
 				2DCFF7041BE3E9F9008869BF /* AudiotsFeedbackTableViewCell.m in Sources */,
+				27D20F1A1EE08C2A00FE0BBC /* UICollectionView+PSDDataSource.m in Sources */,
 				2DC13F091BF24551005E9202 /* AudiotsCreateCustomAudiotCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -990,17 +1086,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D20F031EE08C2A00FE0BBC /* NSMutableArray+PSDDataSource.m in Sources */,
+				27D20F051EE08C2A00FE0BBC /* NSMutableDictionary+PSDDataSource.m in Sources */,
 				2DC13F001BF24530005E9202 /* AudiotsPackSelectionCollectionView.m in Sources */,
+				27D20F131EE08C2A00FE0BBC /* PSDKVOArrayDataSource.m in Sources */,
+				27D20F0F1EE08C2A00FE0BBC /* PSDCoreDataSource.m in Sources */,
 				2DECE4D51C036BA9000518A9 /* AudiotsCustomEmoticonsCollectionViewCell.m in Sources */,
 				27BA8DE81CA5D93F00CE9C48 /* AudiotsBrowseViewController.m in Sources */,
+				27D20F111EE08C2A00FE0BBC /* PSDDataSource.m in Sources */,
+				27D20F0D1EE08C2A00FE0BBC /* PSDCompoundDataSource.m in Sources */,
 				271DE4031CDAAF850013C973 /* AudiotsIAPHelper.m in Sources */,
 				271F19741D78A4C80040FB74 /* NSDictionary+Helper.m in Sources */,
 				271DE4041CDAAF890013C973 /* IAPHelper.m in Sources */,
 				27FC6B291D354F2100559902 /* AudiotsPackPremiumEmoticonsCollectionViewCell.m in Sources */,
+				27D20F071EE08C2A00FE0BBC /* PSDArrayController.m in Sources */,
+				27D20F0B1EE08C2A00FE0BBC /* PSDCollectionViewController.m in Sources */,
+				27D20F1D1EE08C2A00FE0BBC /* UITableView+PSDDataSource.m in Sources */,
 				2DC13F011BF24536005E9202 /* AudiotsPackEmoticonsCollectionViewCell.m in Sources */,
 				2DC13F0A1BF24551005E9202 /* AudiotsCreateCustomAudiotCollectionViewCell.m in Sources */,
+				27D20F151EE08C2A00FE0BBC /* PSDPListDataSource.m in Sources */,
+				27D20F1B1EE08C2A00FE0BBC /* UICollectionView+PSDDataSource.m in Sources */,
 				2DC13F061BF24549005E9202 /* AudiotsPackSelectionCollectionViewCell.m in Sources */,
+				27D20F091EE08C2A00FE0BBC /* PSDArrayDataSource.m in Sources */,
 				2DC13EFD1BF24525005E9202 /* AudiotsPackEmoticonsCollectionView.m in Sources */,
+				27D20F191EE08C2A00FE0BBC /* UICollectionView+NSFetchedResultsController.m in Sources */,
+				27D20F171EE08C2A00FE0BBC /* PSDSparseArray.m in Sources */,
 				2DC13EFA1BF2450E005E9202 /* AudiotsAudioVideoManager.m in Sources */,
 				2D81A1AA1C721D6C00A8A769 /* KeyboardViewController.m in Sources */,
 				2DCFF6C81BE3DF7C008869BF /* AudiotsKeyboardViewController.m in Sources */,

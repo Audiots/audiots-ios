@@ -1,10 +1,6 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## PSDDataSource
-
-
-
 ## Toast
 
 Copyright (c) 2011-2015 Charles Scalesse.

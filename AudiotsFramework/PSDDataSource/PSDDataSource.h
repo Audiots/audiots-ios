@@ -7,7 +7,7 @@
 
 // Strict definition of the data source
 
-
+#import <UIKit/UIKit.h>
 @class PSDDataSource;
 
 @protocol PSDDataSourceContainer <NSObject>

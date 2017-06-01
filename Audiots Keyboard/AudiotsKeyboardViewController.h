@@ -13,8 +13,8 @@
 
 #import "AudiotsAudioVideoManager.h"
 
-#import <PSDDataSource/PSDPlistDataSource.h>
-#import <PSDDataSource/UICollectionView+PSDDataSource.h>
+#import "PSDPlistDataSource.h"
+#import "UICollectionView+PSDDataSource.h"
 
 
 @interface AudiotsKeyboardViewController : UIInputViewController <UICollectionViewDelegate, AudiotsAudioVideoManagerDelegate>
