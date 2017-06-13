@@ -7,8 +7,10 @@
 //
 
 #import "AudiotsCreateStepTwoViewController.h"
+#import "MZTimerLabel/MZTimerLabel.h"
 
 @interface AudiotsCreateStepTwoViewController ()
+@property (weak, nonatomic) IBOutlet MZTimerLabel *recordTimerLabel;
 
 @end
 
@@ -16,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _recordTimerLabel.timeFormat = @"HH:mm:ss";
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -46,7 +50,9 @@
 
 #pragma mark - AudiotsAudioVideoManagerDelegate
 -(void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onAudioRecordFinsihed:(NSURL *)recordedAudioFileUrl {
-        
+    
+    [_recordTimerLabel reset];
+    
     NSURL* storeUrl = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.4-girls-tech.audiots"];
     NSString *myCreationsPlistPath = [[storeUrl path] stringByAppendingPathComponent:@"MyCreations.plist"];
    
@@ -120,6 +126,9 @@
         [[AudiotsAudioVideoManager sharedInstance] stopRecording];
         [self.recordAudioButton setImage:[UIImage imageNamed:@"Record-Button"] forState:UIControlStateNormal];
     }
+    
+    [_recordTimerLabel setResetTimerAfterFinish:YES];
+    [_recordTimerLabel start];
 }
 
 -(void) changeText: (NSString*) updateText{
