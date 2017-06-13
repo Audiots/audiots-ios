@@ -1529,6 +1529,12 @@
                                     <action selector="onRecordAudioButtonTapped:" destination="cEK-EB-Z7W" eventType="touchUpInside" id="sK2-23-4rG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeP-Gx-Woh" customClass="MZTimerLabel">
+                                <rect key="frame" x="159" y="481" width="58.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1538,6 +1544,7 @@
                             <constraint firstItem="dAh-Mf-6u6" firstAttribute="top" secondItem="ojF-1W-Zua" secondAttribute="bottom" constant="20" id="EbF-Se-VYu"/>
                             <constraint firstItem="yWK-Y2-Zrm" firstAttribute="top" secondItem="YNT-f9-JPN" secondAttribute="bottom" constant="20" id="EzY-Ee-fhR"/>
                             <constraint firstAttribute="trailing" secondItem="yWK-Y2-Zrm" secondAttribute="trailing" constant="15" id="H72-Gu-8eh"/>
+                            <constraint firstItem="CeP-Gx-Woh" firstAttribute="centerX" secondItem="rif-0o-TfK" secondAttribute="centerX" id="Juy-mO-Cwq"/>
                             <constraint firstAttribute="trailing" secondItem="dAh-Mf-6u6" secondAttribute="trailing" constant="15" id="Km1-O8-zww"/>
                             <constraint firstItem="0ze-NA-n3Y" firstAttribute="leading" secondItem="rif-0o-TfK" secondAttribute="leading" constant="15" id="Lxf-H1-V7i"/>
                             <constraint firstItem="nTh-Ty-bw8" firstAttribute="centerX" secondItem="rif-0o-TfK" secondAttribute="centerX" id="NkJ-z4-WjX"/>
@@ -1548,6 +1555,7 @@
                             <constraint firstItem="yWK-Y2-Zrm" firstAttribute="leading" secondItem="rif-0o-TfK" secondAttribute="leading" constant="15" id="g22-5N-eNj"/>
                             <constraint firstItem="dAh-Mf-6u6" firstAttribute="leading" secondItem="rif-0o-TfK" secondAttribute="leading" constant="15" id="hak-5z-42T"/>
                             <constraint firstItem="nTh-Ty-bw8" firstAttribute="top" secondItem="yWK-Y2-Zrm" secondAttribute="bottom" constant="20" id="oLs-UK-P9H"/>
+                            <constraint firstItem="3C3-gz-KnX" firstAttribute="top" secondItem="CeP-Gx-Woh" secondAttribute="bottom" constant="33" id="stP-BA-qZN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Create" id="fxa-qA-0hD">
@@ -1557,6 +1565,7 @@
                         <outlet property="currentEmoticonImageView" destination="nTh-Ty-bw8" id="CAb-FA-tRI"/>
                         <outlet property="descriptionLabel" destination="YNT-f9-JPN" id="mHv-5e-fuM"/>
                         <outlet property="recordAudioButton" destination="3C3-gz-KnX" id="N60-LN-TRw"/>
+                        <outlet property="recordTimerLabel" destination="CeP-Gx-Woh" id="Vqc-w6-hm4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hwQ-Tl-gbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2242,7 +2251,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hYO-hK-n9k"/>
+                    <navigationItem key="navigationItem" id="hYO-hK-n9k">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="jRl-r9-OdQ">
+                            <connections>
+                                <segue destination="ijC-1S-FpL" kind="unwind" unwindAction="unwindFromCreateStepOneViewController:" id="FPb-ww-azl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="lTm-ij-yX7" kind="show" identifier="showEmoji" id="v6V-gt-wrl"/>
                         <segue destination="cEK-EB-Z7W" kind="show" identifier="showCreateStepTwoB" id="ZAd-DP-xpH"/>

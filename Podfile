@@ -9,6 +9,7 @@ target 'Audiots' do
     pod 'iCloudDocumentSync', '7.4.1'
     pod 'UrbanAirship-iOS-SDK', '7.0.2'
     pod 'TGCameraViewController', '2.2.8'
+    pod 'MZTimerLabel', '0.5.4'
 end
 
 target 'Audiots Keyboard' do

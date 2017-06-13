@@ -1,21 +1,24 @@
 PODS:
   - iCloudDocumentSync (7.4.1)
+  - MZTimerLabel (0.5.4)
   - TGCameraViewController (2.2.8)
   - Toast (3.0)
   - UrbanAirship-iOS-SDK (7.0.2)
 
 DEPENDENCIES:
   - iCloudDocumentSync (= 7.4.1)
+  - MZTimerLabel
   - TGCameraViewController (= 2.2.8)
   - Toast (= 3.0)
   - UrbanAirship-iOS-SDK (= 7.0.2)
 
 SPEC CHECKSUMS:
   iCloudDocumentSync: 961aac30ca09c221de4c236e94dae69912f2c589
+  MZTimerLabel: cd9bfb9304540ef2a9e163384fca9c978f0dbf83
   TGCameraViewController: 0768b534800e6136e70dd3cc5aafe1310b448480
   Toast: 32c59229abfcf41850162b83bb9259dc84372473
   UrbanAirship-iOS-SDK: 16c7b57ce1f11f42bd27c503db9a6dbc7e80cf5f
 
-PODFILE CHECKSUM: b254ad3bfdb4304c1d54b1d7fe87d9de62991d1b
+PODFILE CHECKSUM: e6d4642e4d8a0a719d4c9462a1049908fbce70f0
 
 COCOAPODS: 1.2.1
