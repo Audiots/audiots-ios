@@ -76,6 +76,9 @@
 		27D20F1B1EE08C2A00FE0BBC /* UICollectionView+PSDDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20EFF1EE08C2A00FE0BBC /* UICollectionView+PSDDataSource.m */; };
 		27D20F1C1EE08C2A00FE0BBC /* UITableView+PSDDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20F011EE08C2A00FE0BBC /* UITableView+PSDDataSource.m */; };
 		27D20F1D1EE08C2A00FE0BBC /* UITableView+PSDDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20F011EE08C2A00FE0BBC /* UITableView+PSDDataSource.m */; };
+		27D20F641EEF32AD00FE0BBC /* AppShare.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D20F631EEF32AD00FE0BBC /* AppShare.xcassets */; };
+		27D20F651EEF32AD00FE0BBC /* AppShare.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D20F631EEF32AD00FE0BBC /* AppShare.xcassets */; };
+		27D20F681EEF6D6D00FE0BBC /* AudiotsCustomOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D20F671EEF6D6D00FE0BBC /* AudiotsCustomOptionViewController.m */; };
 		27D4A6DF1C87641A009FAE0E /* PackFour.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6DE1C87641A009FAE0E /* PackFour.plist */; };
 		27D4A6E41C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
 		27D4A6E51C8764B9009FAE0E /* PackFour.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */; };
@@ -257,6 +260,9 @@
 		27D20EFF1EE08C2A00FE0BBC /* UICollectionView+PSDDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+PSDDataSource.m"; sourceTree = "<group>"; };
 		27D20F001EE08C2A00FE0BBC /* UITableView+PSDDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PSDDataSource.h"; sourceTree = "<group>"; };
 		27D20F011EE08C2A00FE0BBC /* UITableView+PSDDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PSDDataSource.m"; sourceTree = "<group>"; };
+		27D20F631EEF32AD00FE0BBC /* AppShare.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = AppShare.xcassets; path = Packs/AppShare.xcassets; sourceTree = "<group>"; };
+		27D20F661EEF6D6D00FE0BBC /* AudiotsCustomOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudiotsCustomOptionViewController.h; path = ViewControllers/AudiotsCustomOptionViewController.h; sourceTree = "<group>"; };
+		27D20F671EEF6D6D00FE0BBC /* AudiotsCustomOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudiotsCustomOptionViewController.m; path = ViewControllers/AudiotsCustomOptionViewController.m; sourceTree = "<group>"; };
 		27D4A6DE1C87641A009FAE0E /* PackFour.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PackFour.plist; path = Resources/PackFour.plist; sourceTree = "<group>"; };
 		27D4A6E31C8764B9009FAE0E /* PackFour.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = PackFour.xcassets; path = Packs/PackFour.xcassets; sourceTree = "<group>"; };
 		27DC00AE1CAECEB6002D72A5 /* AudiotsRecordPacks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AudiotsRecordPacks.plist; path = Resources/AudiotsRecordPacks.plist; sourceTree = "<group>"; };
@@ -625,6 +631,8 @@
 				270A409E1CA6082E001B2E05 /* AudiotsSendViewController.m */,
 				27687F2B1E256C8E00BFEA54 /* AudiotsInAppTableViewController.h */,
 				27687F2C1E256C8E00BFEA54 /* AudiotsInAppTableViewController.m */,
+				27D20F661EEF6D6D00FE0BBC /* AudiotsCustomOptionViewController.h */,
+				27D20F671EEF6D6D00FE0BBC /* AudiotsCustomOptionViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -703,6 +711,7 @@
 				2785EF591D7B3D7600692EC7 /* SeeJane.xcassets */,
 				2719AA731DAC9EC1004CF019 /* CureCancer.xcassets */,
 				27B75D9D1DF7F7150012967D /* Holidays.xcassets */,
+				27D20F631EEF32AD00FE0BBC /* AppShare.xcassets */,
 			);
 			name = Packs;
 			sourceTree = "<group>";
@@ -781,7 +790,7 @@
 					"black image",
 					image,
 				);
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Perfect Sense Digital";
 				TargetAttributes = {
 					2DCFF6921BE3DE31008869BF = {
@@ -855,6 +864,7 @@
 				276AC6841CA5D52800DB378D /* PackSpanish.plist in Resources */,
 				2D9A55C81C232F6800ECB5C0 /* PackThree.xcassets in Resources */,
 				2795E4211D1314DD008CC5EF /* PackNine.xcassets in Resources */,
+				27D20F641EEF32AD00FE0BBC /* AppShare.xcassets in Resources */,
 				27838A6A1D637F78006A1DE8 /* JimmyFallon.xcassets in Resources */,
 				2DF0E9D71BE3F5E20043E215 /* AudiotsAvailablePacks.plist in Resources */,
 				2DC13F081BF2454D005E9202 /* AudiotsPackSelectionCollectionViewCell.xib in Resources */,
@@ -896,6 +906,7 @@
 				2D93EC1C1BFA248100F8AA32 /* PackOne.plist in Resources */,
 				27FB60971C977B88003EED9F /* PackFour.plist in Resources */,
 				2DF0E9F21BE3FF960043E215 /* AudiotsAvailablePacks.plist in Resources */,
+				27D20F651EEF32AD00FE0BBC /* AppShare.xcassets in Resources */,
 				27838A6B1D637F78006A1DE8 /* JimmyFallon.xcassets in Resources */,
 				2D9A55CC1C2331C800ECB5C0 /* PackTwo.plist in Resources */,
 				2D369CD71C298196005E2629 /* PackLogo.xcassets in Resources */,
@@ -1048,6 +1059,7 @@
 				2DC13EFF1BF24530005E9202 /* AudiotsPackSelectionCollectionView.m in Sources */,
 				27D20F0A1EE08C2A00FE0BBC /* PSDCollectionViewController.m in Sources */,
 				27687F331E256E1700BFEA54 /* AudiotsInAppRestoreTableViewCell.m in Sources */,
+				27D20F681EEF6D6D00FE0BBC /* AudiotsCustomOptionViewController.m in Sources */,
 				270A409F1CA6082E001B2E05 /* AudiotsSendViewController.m in Sources */,
 				27687F301E256DBC00BFEA54 /* AudiotsInAppTableViewCell.m in Sources */,
 				27D20F0C1EE08C2A00FE0BBC /* PSDCompoundDataSource.m in Sources */,
@@ -1161,8 +1173,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1206,8 +1220,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1286,8 +1302,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1346,8 +1364,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";

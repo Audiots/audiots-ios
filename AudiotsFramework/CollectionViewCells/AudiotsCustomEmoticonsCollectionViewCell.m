@@ -10,7 +10,10 @@
 
 #import "AudiotsAudioVideoManager.h"
 
-@interface AudiotsCustomEmoticonsCollectionViewCell ()
+@interface AudiotsCustomEmoticonsCollectionViewCell (){
+    
+    BOOL hasMediaType;
+}
 
 -(void) startShake;
 -(void) stopShake;
@@ -27,6 +30,9 @@
 - (void)awakeFromNib {
     // Initialization code
     [super awakeFromNib];
+    
+    hasMediaType = NO;
+    
     //NSLog(@"awakeFromNib");
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(receiveStartNotification:)
@@ -120,14 +126,38 @@
 -(void)setEmoticonInfoDictionary:(NSDictionary *)emoticonInfoDictionary {
     if (emoticonInfoDictionary != _emoticonInfoDictionary) {
         _emoticonInfoDictionary = emoticonInfoDictionary;
+        
+        if (_emoticonInfoDictionary != nil) {
+            NSString *mediaType = _emoticonInfoDictionary[@"mediaType"];
+            
+            if ([mediaType isEqualToString:@"photo"]) {
+                
+                hasMediaType = true;
+                [self setButtonImage:@"play-32"];
+            }
+        }
     }
 }
 
+-(void) setButtonImage: (NSString*) imageName {
+    _emoticonPreviewButton.layer.cornerRadius = 16;
+    _emoticonPreviewButton.backgroundColor = [UIColor whiteColor];
+    UIImage * buttonImage = [UIImage imageNamed:imageName];
+    [_emoticonPreviewButton setImage:buttonImage forState:UIControlStateNormal];
+}
+
 - (IBAction)onPreviewButtonTapped:(id)sender {
-    NSString *audioFileName = [self.emoticonInfoDictionary objectForKey:@"sound_file_path"];
-    NSString *speakerImage = [self.emoticonInfoDictionary objectForKey:@"image_speaker"];
     
-    [self.emoticonImageView setImage:[UIImage imageNamed:speakerImage]];
+    NSString *audioFileName = [self.emoticonInfoDictionary objectForKey:@"sound_file_path"];
+    
+    if (hasMediaType) {
+       [self setButtonImage:@"speaker-32"];
+    } else {
+
+        NSString *speakerImage = [self.emoticonInfoDictionary objectForKey:@"image_speaker"];
+        
+        [self.emoticonImageView setImage:[UIImage imageNamed:speakerImage]];
+    }
 
     NSURL *audio_inputFileUrl = [NSURL fileURLWithPath:audioFileName];
 
@@ -140,9 +170,14 @@
 #pragma mark - AudiotsAudioVideoManagerDelegate
 
 -(void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onPreviewSoundFinished:(BOOL)finished {
-    NSString *playImage = [self.emoticonInfoDictionary objectForKey:@"image_play"];
     
-    [self.emoticonImageView setImage:[UIImage imageNamed:playImage]];
+    if (hasMediaType) {
+        [self setButtonImage:@"play-32"];
+    } else {
+        NSString *playImage = [self.emoticonInfoDictionary objectForKey:@"image_play"];
+        
+        [self.emoticonImageView setImage:[UIImage imageNamed:playImage]];
+    }
     
     [[AudiotsAudioVideoManager sharedInstance] removeDelegate:self];
 }

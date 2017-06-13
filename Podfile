@@ -8,6 +8,7 @@ target 'Audiots' do
     #pod 'XLPagerTabStrip', '2.0.0'
     pod 'iCloudDocumentSync', '7.4.1'
     pod 'UrbanAirship-iOS-SDK', '7.0.2'
+    pod 'TGCameraViewController', '2.2.8'
 end
 
 target 'Audiots Keyboard' do

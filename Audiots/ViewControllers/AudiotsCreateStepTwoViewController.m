@@ -22,7 +22,13 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     [super viewWillAppear:animated];
     
+    NSString *mediaType = [self.selectedEmoticonInfoDictionary valueForKey:@"mediaType"];
+    
+    if ([mediaType  isEqual: @"photo"]) {
+        [self.currentEmoticonImageView setImage:[self.selectedEmoticonInfoDictionary valueForKey:@"image_play"]];
+    } else {
     [self.currentEmoticonImageView setImage:[UIImage imageNamed:[self.selectedEmoticonInfoDictionary valueForKey:@"image_play"]]];
+    }
     
     [[AudiotsAudioVideoManager sharedInstance] addDelegate:self];
 }
@@ -48,11 +54,32 @@
     NSDictionary *objectsDictionary = [rootArray objectAtIndex:0];
     NSMutableArray *objectsArray = [objectsDictionary valueForKey:@"objects"];
 
-    NSDictionary *customAudiotDictionary = @{@"image_plain"      : [self.selectedEmoticonInfoDictionary valueForKey:@"image_plain"],
+    NSDictionary *customAudiotDictionary = nil;
+    
+    NSString *mediaType = [self.selectedEmoticonInfoDictionary valueForKey:@"mediaType"];
+    if ([mediaType  isEqual: @"photo"]) {
+        
+        NSString *photoFilename = [NSString stringWithFormat:@"%@/photo_%u.png", [storeUrl path], arc4random()];
+        
+        UIImage *image = [self.selectedEmoticonInfoDictionary valueForKey:@"image_play"];
+        
+        NSData *imageData = UIImagePNGRepresentation(image);
+        
+        [imageData writeToFile:photoFilename atomically:NO];
+        
+        customAudiotDictionary = @{@"image_plain"      : photoFilename,
+                                   @"image_play"       : photoFilename,
+                                   @"image_speaker"    : photoFilename,
+                                   @"sound_file_path"  : [recordedAudioFileUrl path],
+                                   @"cellType"         : @"customEmoticonsCollectionViewCell",
+                                   @"mediaType"        : @"photo"};
+    } else {
+        customAudiotDictionary = @{@"image_plain"      : [self.selectedEmoticonInfoDictionary valueForKey:@"image_plain"],
                                              @"image_play"       : [self.selectedEmoticonInfoDictionary valueForKey:@"image_play"],
                                              @"image_speaker"    : [self.selectedEmoticonInfoDictionary valueForKey:@"image_speaker"],
                                              @"sound_file_path"  : [recordedAudioFileUrl path],
                                              @"cellType"         : @"customEmoticonsCollectionViewCell"};
+    }
     
     [objectsArray addObject:customAudiotDictionary];
     [objectsDictionary setValue:objectsArray forKey:@"objects"];
