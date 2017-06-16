@@ -22,7 +22,7 @@
 #import "NSDictionary+Helper.h"
 
 
-@interface AudiotsBrowseViewController ()
+@interface AudiotsBrowseViewController () <UIPopoverPresentationControllerDelegate>
 @property (nonatomic, assign) BOOL isCurrentPackMyCreations;
 
 @property (nonatomic, assign) BOOL isDeleteMode;
@@ -534,8 +534,21 @@
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
             [self presentViewController:activityViewController animated:YES completion:nil];
         } else {
-            UIPopoverController *popup = [[UIPopoverController alloc] initWithContentViewController:activityViewController];
-            [popup presentPopoverFromRect:CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/4, 0, 0)inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+//            UIPopoverController *popup = [[UIPopoverController alloc] initWithContentViewController: activityViewController];
+//            
+//            [popup presentPopoverFromRect:CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/4, 0, 0)inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+            
+            activityViewController.modalPresentationStyle = UIModalPresentationPopover;
+            [self presentViewController:activityViewController animated:YES completion:nil];
+            
+            // configure the Popover presentation controller
+            UIPopoverPresentationController *popController = [activityViewController popoverPresentationController];
+            popController.permittedArrowDirections = UIPopoverArrowDirectionAny;
+            popController.delegate = self;
+            
+            // in case we don't have a bar button as reference
+            popController.sourceView = self.view;
+            popController.sourceRect = CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/4, 0, 0);
         }
     });
     
@@ -554,5 +567,22 @@
 - (IBAction)unwindFromCreateStepOneViewController:(UIStoryboardSegue *)segue {
 }
 
+# pragma mark - Popover Presentation Controller Delegate
 
+- (void)popoverPresentationControllerDidDismissPopover:(UIPopoverPresentationController *)popoverPresentationController {
+    
+    // called when a Popover is dismissed
+}
+
+- (BOOL)popoverPresentationControllerShouldDismissPopover:(UIPopoverPresentationController *)popoverPresentationController {
+    
+    // return YES if the Popover should be dismissed
+    // return NO if the Popover should not be dismissed
+    return YES;
+}
+
+- (void)popoverPresentationController:(UIPopoverPresentationController *)popoverPresentationController willRepositionPopoverToRect:(inout CGRect *)rect inView:(inout UIView *__autoreleasing  _Nonnull *)view {
+    
+    // called when the Popover changes position
+}
 @end

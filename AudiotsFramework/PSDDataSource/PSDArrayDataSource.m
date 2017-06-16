@@ -16,7 +16,7 @@
     self = [super init];
     
     if (self) {
-        self.sections = sections;
+        self.sections = [sections mutableCopy];
     }
     return self;
 }
