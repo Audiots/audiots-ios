@@ -85,7 +85,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "TGCameraViewController/TGCameraViewController/Classes/View/Base.lproj/TGPhotoViewController.xib"
   install_resource "TGCameraViewController/TGCameraViewController/TGCameraViewController.xcassets"
   install_resource "TGCameraViewController/TGCameraViewController/Resources/TGCameraViewController.bundle"
-  install_resource "UrbanAirship-iOS-SDK/Airship/AirshipResources.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/UrbanAirship-iOS-SDK/AirshipResources.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "TGCameraViewController/TGCameraViewController/Classes/View/Base.lproj/TGCameraAuthorizationViewController.xib"
@@ -93,7 +93,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "TGCameraViewController/TGCameraViewController/Classes/View/Base.lproj/TGPhotoViewController.xib"
   install_resource "TGCameraViewController/TGCameraViewController/TGCameraViewController.xcassets"
   install_resource "TGCameraViewController/TGCameraViewController/Resources/TGCameraViewController.bundle"
-  install_resource "UrbanAirship-iOS-SDK/Airship/AirshipResources.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/UrbanAirship-iOS-SDK/AirshipResources.bundle"
 fi
 if [[ "$CONFIGURATION" == "AdHoc" ]]; then
   install_resource "TGCameraViewController/TGCameraViewController/Classes/View/Base.lproj/TGCameraAuthorizationViewController.xib"
@@ -101,7 +101,7 @@ if [[ "$CONFIGURATION" == "AdHoc" ]]; then
   install_resource "TGCameraViewController/TGCameraViewController/Classes/View/Base.lproj/TGPhotoViewController.xib"
   install_resource "TGCameraViewController/TGCameraViewController/TGCameraViewController.xcassets"
   install_resource "TGCameraViewController/TGCameraViewController/Resources/TGCameraViewController.bundle"
-  install_resource "UrbanAirship-iOS-SDK/Airship/AirshipResources.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/UrbanAirship-iOS-SDK/AirshipResources.bundle"
 fi
 if [[ "$CONFIGURATION" == "Distribution" ]]; then
   install_resource "TGCameraViewController/TGCameraViewController/Classes/View/Base.lproj/TGCameraAuthorizationViewController.xib"
@@ -109,7 +109,7 @@ if [[ "$CONFIGURATION" == "Distribution" ]]; then
   install_resource "TGCameraViewController/TGCameraViewController/Classes/View/Base.lproj/TGPhotoViewController.xib"
   install_resource "TGCameraViewController/TGCameraViewController/TGCameraViewController.xcassets"
   install_resource "TGCameraViewController/TGCameraViewController/Resources/TGCameraViewController.bundle"
-  install_resource "UrbanAirship-iOS-SDK/Airship/AirshipResources.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/UrbanAirship-iOS-SDK/AirshipResources.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

@@ -86,10 +86,10 @@
     // etc.
     
     config.detectProvisioningMode = YES;
-    config.productionAppKey = @"rk7C_MWdS66wggQ8Rr8M8g";
-    config.productionAppSecret = @"kJunCV98TBCchRdJkQBkHA";
-    config.developmentAppKey = @"C5tRTMhAQdasPygzdlJ0NA";
-    config.developmentAppSecret = @"NnIc_f5qRAWAJmWvn4Z8zw";
+    config.productionAppKey = @"HIIGXDp2RmiH3JE56PH6Zg";
+    config.productionAppSecret = @"3ufjYoyGQ5io7xrtMRqcsw";
+    config.developmentAppKey = @"5WczG_8HTTm5tX1ykR-8EA";
+    config.developmentAppSecret = @"qXKNhLr-SnGv1sjm7YZ5VQ";
     
 //    NSLog(@"App Key: %@", config.appKey);
 //    NSLog(@"App Secret: %@", config.appSecret);
@@ -106,9 +106,9 @@
     // Set the notification types required for the app (optional). This value defaults
     // to badge, alert and sound, so it's only necessary to set it if you want
     // to add or remove types.
-    [UAirship push].userNotificationTypes = (UIUserNotificationTypeAlert |
-                                             UIUserNotificationTypeBadge |
-                                             UIUserNotificationTypeSound);
+    [UAirship push].defaultPresentationOptions = (UNNotificationPresentationOptionAlert |
+                                                  UNNotificationPresentationOptionBadge |
+                                                  UNNotificationPresentationOptionSound);
     
     // User notifications will not be enabled until userPushNotificationsEnabled is
     // set YES on UAPush. Once enabled, the setting will be persisted and the user

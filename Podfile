@@ -7,7 +7,7 @@ target 'Audiots' do
     pod 'Toast', '3.0'
     #pod 'XLPagerTabStrip', '2.0.0'
     pod 'iCloudDocumentSync', '7.4.1'
-    pod 'UrbanAirship-iOS-SDK', '7.0.2'
+    pod 'UrbanAirship-iOS-SDK'
     pod 'TGCameraViewController', '2.2.8'
     pod 'MZTimerLabel', '0.5.4'
 end
