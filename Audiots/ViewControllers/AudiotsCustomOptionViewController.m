@@ -20,8 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     UIColor *tintColor = [UIColor colorWithRed:0.25 green:0.72 blue:0.69 alpha:1.0];
+    
+    //self.navigationItem.title = @"Create Your Own";
+    // set title color
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : tintColor}];
+
+    
     [TGCameraColor setTintColor:tintColor];
     //[TGCamera setOption:kTGCameraOptionHiddenAlbumButton value:@YES];
     [TGCamera setOption:kTGCameraOptionHiddenFilterButton value:@YES];

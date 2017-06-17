@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="52l-Lr-1Jl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="52l-Lr-1Jl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -690,7 +690,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCR-HY-CS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1856" y="-1795"/>
+            <point key="canvasLocation" x="1990" y="-1998"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="OwF-WE-y8P">
@@ -1375,7 +1375,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tdn-Mi-T1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2217" y="-1619"/>
+            <point key="canvasLocation" x="2554" y="-1583"/>
         </scene>
         <!--Create-->
         <scene sceneID="cZ4-aw-c8h">
@@ -2220,7 +2220,7 @@
             </objects>
             <point key="canvasLocation" x="2045" y="-234"/>
         </scene>
-        <!--Audiots Custom Option View Controller-->
+        <!--Create Your Own-->
         <scene sceneID="BBT-1l-iBh">
             <objects>
                 <viewController id="Lec-wa-iPM" customClass="AudiotsCustomOptionViewController" sceneMemberID="viewController">
@@ -2232,27 +2232,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gX0-Rt-I17">
-                                <rect key="frame" x="122" y="186" width="130" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gX0-Rt-I17">
+                                <rect key="frame" x="121" y="164" width="130" height="102"/>
                                 <state key="normal" title="Button" image="Pink Smiley"/>
                                 <connections>
                                     <action selector="showEmojisAction:" destination="Lec-wa-iPM" eventType="touchUpInside" id="rf9-7g-QAI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcH-0X-jbr">
-                                <rect key="frame" x="122" y="393" width="130" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcH-0X-jbr">
+                                <rect key="frame" x="121" y="343" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="QGl-t3-TTd"/>
+                                    <constraint firstAttribute="width" constant="130" id="uLX-AT-fQ1"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="photo_camera"/>
                                 <connections>
                                     <action selector="showCameraAction:" destination="Lec-wa-iPM" eventType="touchUpInside" id="ZpP-Xc-OBn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji with sounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUM-UJ-BVr">
+                                <rect key="frame" x="117" y="274" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pics audio captions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYr-rD-8Um">
+                                <rect key="frame" x="113" y="481" width="148.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vYr-rD-8Um" firstAttribute="centerX" secondItem="2rw-hy-BAR" secondAttribute="centerX" id="7He-B8-jU4"/>
+                            <constraint firstItem="EcH-0X-jbr" firstAttribute="leading" secondItem="gX0-Rt-I17" secondAttribute="leading" id="8sP-95-1eV"/>
+                            <constraint firstItem="EcH-0X-jbr" firstAttribute="centerX" secondItem="nUM-UJ-BVr" secondAttribute="centerX" id="B57-Y1-y3k"/>
+                            <constraint firstItem="nUM-UJ-BVr" firstAttribute="centerX" secondItem="2rw-hy-BAR" secondAttribute="centerX" constant="-1" id="VBo-MR-Dv6"/>
+                            <constraint firstAttribute="bottom" secondItem="EcH-0X-jbr" secondAttribute="bottom" constant="194" id="WfZ-Tj-zVI"/>
+                            <constraint firstItem="nUM-UJ-BVr" firstAttribute="top" secondItem="gX0-Rt-I17" secondAttribute="bottom" constant="8" id="q7f-tC-NlG"/>
+                            <constraint firstItem="vYr-rD-8Um" firstAttribute="top" secondItem="EcH-0X-jbr" secondAttribute="bottom" constant="8" id="rU5-XR-s5F"/>
+                            <constraint firstItem="EcH-0X-jbr" firstAttribute="trailing" secondItem="gX0-Rt-I17" secondAttribute="trailing" id="xif-Aj-PKO"/>
+                            <constraint firstItem="EcH-0X-jbr" firstAttribute="top" secondItem="nUM-UJ-BVr" secondAttribute="bottom" constant="48" id="ztE-zp-AeS"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hYO-hK-n9k">
+                    <navigationItem key="navigationItem" title="Create Your Own" id="hYO-hK-n9k">
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="jRl-r9-OdQ">
+                            <color key="tintColor" red="0.25490196079999999" green="0.72156862749999995" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="ijC-1S-FpL" kind="unwind" unwindAction="unwindFromCreateStepOneViewController:" id="FPb-ww-azl"/>
                             </connections>
@@ -2265,7 +2291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3c-JX-KnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3006" y="-846"/>
+            <point key="canvasLocation" x="3005.5999999999999" y="-846.02698650674665"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="LZB-1N-gQw">
