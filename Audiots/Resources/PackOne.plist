@@ -7,13 +7,13 @@
 		<array>		
 			<dict>
 				<key>image_plain</key>
-				<string>kiss_plain</string>
+				<string>blowing-kiss-hair-plain</string>
 				<key>image_play</key>
-				<string>kiss_play</string>
+				<string>blowing-kiss-hair-play</string>
 				<key>image_speaker</key>
-				<string>kiss_speaker</string>
+				<string>blowing-kiss-hair-speaker</string>
 				<key>sound_mp3</key>
-				<string>kiss_sound</string>
+				<string>blowing-kiss-hair-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>			
@@ -31,23 +31,23 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>poop_plain</string>
+				<string>poop-plain</string>
 				<key>image_play</key>
-				<string>poop_play</string>
+				<string>poop-play</string>
 				<key>image_speaker</key>
-				<string>poop_speaker</string>
+				<string>poop-speaker</string>
 				<key>sound_mp3</key>
-				<string>poop_sound</string>
+				<string>poop-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>dab_plain</string>
+				<string>dab-with-hair-plain</string>
 				<key>image_play</key>
-				<string>dab_play</string>
+				<string>dab-with-hair-play</string>
 				<key>image_speaker</key>
-				<string>dab_speaker</string>
+				<string>dab-with-hair-speaker</string>
 				<key>sound_mp3</key>
 				<string>WhatBoom</string>
 				<key>cellType</key>
@@ -67,37 +67,37 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>angel_plain</string>
+				<string>emoji-halo-wings-plain</string>
 				<key>image_play</key>
-				<string>angel_play</string>
+				<string>emoji-halo-wings-play</string>
 				<key>image_speaker</key>
-				<string>angel_speaker</string>
+				<string>emoji-halo-wings-speaker</string>
 				<key>sound_mp3</key>
-				<string>angel_sound</string>
+				<string>emoji-halo-wings-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>anger_plain</string>
+				<string>anger-thumbs-down-red-plain</string>
 				<key>image_play</key>
-				<string>anger_play</string>
+				<string>anger-thumbs-down-red-play</string>
 				<key>image_speaker</key>
-				<string>anger_speaker</string>
+				<string>anger-thumbs-down-red-speaker</string>
 				<key>sound_mp3</key>
-				<string>anger_sound</string>
+				<string>anger-thumbs-down-red-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
+			</dict>	
 			<dict>
 				<key>image_plain</key>
-				<string>braces_plain</string>
+				<string>braces-with-hat-plain</string>
 				<key>image_play</key>
-				<string>braces_play</string>
+				<string>braces-with-hat-play</string>
 				<key>image_speaker</key>
-				<string>braces_speaker</string>
+				<string>braces-with-hat-speaker</string>
 				<key>sound_mp3</key>
-				<string>braces_sound</string>
+				<string>braces-with-hat-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -175,25 +175,25 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>frown_plain</string>
+				<string>frowning-cap-plain</string>
 				<key>image_play</key>
-				<string>frown_play</string>
+				<string>frowning-cap-play</string>
 				<key>image_speaker</key>
-				<string>frown_speaker</string>
+				<string>frowning-cap-speaker</string>
 				<key>sound_mp3</key>
-				<string>frown_sound</string>
+				<string>frowning-cap-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>grin_plain</string>
+				<string>smile-with-hat-plain</string>
 				<key>image_play</key>
-				<string>grin_play</string>
+				<string>smile-with-hat-play</string>
 				<key>image_speaker</key>
-				<string>grin_speaker</string>
+				<string>smile-with-hat-speaker</string>
 				<key>sound_mp3</key>
-				<string>grin_sound</string>
+				<string>smile-with-hat-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -211,37 +211,37 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>shades_plain</string>
+				<string>round-sunglasses-plain</string>
 				<key>image_play</key>
-				<string>shades_play</string>
+				<string>round-sunglasses-play</string>
 				<key>image_speaker</key>
-				<string>shades_speaker</string>
+				<string>round-sunglasses-speaker</string>
 				<key>sound_mp3</key>
-				<string>shades_sound</string>
+				<string>round-sunglasses-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>wink_plain</string>
+				<string>wink-with-hair-plain</string>
 				<key>image_play</key>
-				<string>wink_play</string>
+				<string>wink-with-hair-play</string>
 				<key>image_speaker</key>
-				<string>wink_speaker</string>
+				<string>wink-with-hair-speaker</string>
 				<key>sound_mp3</key>
-				<string>wink_sound</string>
+				<string>wink-with-hair-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>sleep_plain</string>
+				<string>zzz-sleep-with-hair-plain</string>
 				<key>image_play</key>
-				<string>sleep_play</string>
+				<string>zzz-sleep-with-hair-play</string>
 				<key>image_speaker</key>
-				<string>sleep_speaker</string>
+				<string>zzz-sleep-with-hair-speaker</string>
 				<key>sound_mp3</key>
-				<string>sleep_sound</string>
+				<string>zzz-sleep-with-hair-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -259,13 +259,13 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>alien_plain</string>
+				<string>green-alien-plain</string>
 				<key>image_play</key>
-				<string>alien_play</string>
+				<string>green-alien-play</string>
 				<key>image_speaker</key>
-				<string>alien_speaker</string>
+				<string>green-alien-speaker</string>
 				<key>sound_mp3</key>
-				<string>alien_sound</string>
+				<string>green-alien-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -301,7 +301,7 @@
 				<key>image_speaker</key>
 				<string>praying-hands-speaker</string>
 				<key>sound_mp3</key>
-				<string>si_dios_quiere_sound</string>
+				<string>praying-hands-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
