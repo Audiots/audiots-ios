@@ -16,7 +16,7 @@
 #import "AudiotsPackPremiumEmoticonsCollectionViewCell.h"
 #import "AudiotsKeyboard.h"
 
-#import <Toast/UIView+Toast.h>
+//#import <Toast/UIView+Toast.h>
 
 #import <QuartzCore/QuartzCore.h>
 #import "NSDictionary+Helper.h"
@@ -28,7 +28,7 @@
 static NSString* const FULL_ACCESS_MESSAGE = @"Hint: Make sure you have 'Allow Full Access' on. See 'Getting Started' in the Audiots app for details.";
 
 @interface AudiotsKeyboardViewController () {
-    CSToastStyle *notificationStyle;
+    //CSToastStyle *notificationStyle;
 }
 @property (assign, nonatomic) NSInteger shiftStatus; //0 = off, 1 = on, 2 = caps lock
 @end
@@ -62,12 +62,12 @@ static NSString* const FULL_ACCESS_MESSAGE = @"Hint: Make sure you have 'Allow F
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    notificationStyle = [[CSToastStyle alloc] initWithDefaultStyle];
-    [notificationStyle setBackgroundColor:[UIColor colorWithRed:65.0/255.0 green:184.0/255.0 blue:175.0/255.0 alpha:1.0]];
-    [notificationStyle setCornerRadius:6.0f];
-    [notificationStyle setTitleAlignment:NSTextAlignmentCenter];
-    [notificationStyle setTitleColor:[UIColor whiteColor]];
-    [notificationStyle setMaxWidthPercentage:0.9f];
+//    notificationStyle = [[CSToastStyle alloc] initWithDefaultStyle];
+//    [notificationStyle setBackgroundColor:[UIColor colorWithRed:65.0/255.0 green:184.0/255.0 blue:175.0/255.0 alpha:1.0]];
+//    [notificationStyle setCornerRadius:6.0f];
+//    [notificationStyle setTitleAlignment:NSTextAlignmentCenter];
+//    [notificationStyle setTitleColor:[UIColor whiteColor]];
+//    [notificationStyle setMaxWidthPercentage:0.9f];
     
     // Initialize Crashlytics
     [Fabric with:@[[Crashlytics class]]];
@@ -103,9 +103,9 @@ static NSString* const FULL_ACCESS_MESSAGE = @"Hint: Make sure you have 'Allow F
 -(void) viewDidAppear:(BOOL)animated {
     
     if (![AudiotsKeyboard isOpenAccessGranted]) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.view makeToast:FULL_ACCESS_MESSAGE duration:15.0f position:CSToastPositionTop style: notificationStyle];
-        });
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [self.view makeToast:FULL_ACCESS_MESSAGE duration:15.0f position:CSToastPositionTop style: notificationStyle];
+//        });
     }
 }
 
@@ -287,9 +287,9 @@ static NSString* const FULL_ACCESS_MESSAGE = @"Hint: Make sure you have 'Allow F
         if ([AudiotsKeyboard isOpenAccessGranted]) {
             return shouldSelect = YES;
         } else {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.view makeToast:FULL_ACCESS_MESSAGE duration:5.0f position:CSToastPositionCenter style: notificationStyle];
-            });
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                [self.view makeToast:FULL_ACCESS_MESSAGE duration:5.0f position:CSToastPositionCenter style: notificationStyle];
+//            });
         }
     }
     
@@ -332,9 +332,9 @@ static NSString* const FULL_ACCESS_MESSAGE = @"Hint: Make sure you have 'Allow F
             if ([AudiotsKeyboard isOpenAccessGranted]) {
                 [[AudiotsAudioVideoManager sharedInstance] createMovieWithFilePath:audioFilePath andImageArray:@[[UIImage imageNamed:imageFileName]]];
             } else {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self.view makeToast:FULL_ACCESS_MESSAGE];
-                });
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    [self.view makeToast:FULL_ACCESS_MESSAGE];
+//                });
             }
         }  else if ([[emoticonInfoDictionary valueForKey:@"cellType"] isEqualToString:@"packPremiumEmoticonsCollectionViewCell"]) {
             
@@ -373,9 +373,9 @@ static NSString* const FULL_ACCESS_MESSAGE = @"Hint: Make sure you have 'Allow F
 
 #pragma mark - AudiotsAudioVideoManagerDelegate
 -(void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onCreateMovieFailed:(BOOL)status {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.view makeToast:@"Failed to generate Audiot."];
-    });
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        [self.view makeToast:@"Failed to generate Audiot."];
+//    });
 }
 
 -(void)AudiotsAudioVideoManager:(AudiotsAudioVideoManager *)audioVideoManager onCreateMovieFinsihed:(NSURL *)movieFileUrl {
@@ -393,18 +393,18 @@ static NSString* const FULL_ACCESS_MESSAGE = @"Hint: Make sure you have 'Allow F
 
 -(void) showToastMessage: (NSString*) message {
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-
-        [self.view makeToast:message
-                    duration:5.0
-                    position:CSToastPositionBottom
-                       title:nil
-                       image:nil
-                       style:notificationStyle
-                  completion:^(BOOL didTap) {
-                  }
-         ];
-    });
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//
+//        [self.view makeToast:message
+//                    duration:5.0
+//                    position:CSToastPositionBottom
+//                       title:nil
+//                       image:nil
+//                       style:notificationStyle
+//                  completion:^(BOOL didTap) {
+//                  }
+//         ];
+//    });
 }
 
 
