@@ -16,7 +16,103 @@
 				<string>blowing-kiss-hair-sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
-			</dict>			
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>frowning-cap-plain</string>
+				<key>image_play</key>
+				<string>frowning-cap-play</string>
+				<key>image_speaker</key>
+				<string>frowning-cap-speaker</string>
+				<key>sound_mp3</key>
+				<string>frowning-cap-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>smile-with-hat-plain</string>
+				<key>image_play</key>
+				<string>smile-with-hat-play</string>
+				<key>image_speaker</key>
+				<string>smile-with-hat-speaker</string>
+				<key>sound_mp3</key>
+				<string>smile-with-hat-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>zzz-sleep-with-hair-plain</string>
+				<key>image_play</key>
+				<string>zzz-sleep-with-hair-play</string>
+				<key>image_speaker</key>
+				<string>zzz-sleep-with-hair-speaker</string>
+				<key>sound_mp3</key>
+				<string>zzz-sleep-with-hair-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>smiley1-plain</string>
+				<key>image_play</key>
+				<string>smiley1-play</string>
+				<key>image_speaker</key>
+				<string>smiley1-speaker</string>
+				<key>sound_mp3</key>
+				<string>lol_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>
+			<dict>
+				<key>image_plain</key>
+				<string>smiley2-plain</string>
+				<key>image_play</key>
+				<string>smiley2-play</string>
+				<key>image_speaker</key>
+				<string>smiley2-speaker</string>
+				<key>sound_mp3</key>
+				<string>burp_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>		
+			<dict>
+				<key>image_plain</key>
+				<string>wink-with-hair-plain</string>
+				<key>image_play</key>
+				<string>wink-with-hair-play</string>
+				<key>image_speaker</key>
+				<string>wink-with-hair-speaker</string>
+				<key>sound_mp3</key>
+				<string>wink-with-hair-sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>smiley3-plain</string>
+				<key>image_play</key>
+				<string>smiley3-play</string>
+				<key>image_speaker</key>
+				<string>smiley3-speaker</string>
+				<key>sound_mp3</key>
+				<string>omg_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>	
+			<dict>
+				<key>image_plain</key>
+				<string>smiley4-plain</string>
+				<key>image_play</key>
+				<string>smiley4-play</string>
+				<key>image_speaker</key>
+				<string>smiley4-speaker</string>
+				<key>sound_mp3</key>
+				<string>rofl_sound</string>
+				<key>cellType</key>
+				<string>packEmoticonsCollectionViewCell</string>
+			</dict>		
 			<dict>
 				<key>image_plain</key>
 				<string>lips_plain</string>
@@ -55,18 +151,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>smiley2-plain</string>
-				<key>image_play</key>
-				<string>smiley2-play</string>
-				<key>image_speaker</key>
-				<string>smiley2-speaker</string>
-				<key>sound_mp3</key>
-				<string>burp_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>emoji-halo-wings-plain</string>
 				<key>image_play</key>
 				<string>emoji-halo-wings-play</string>
@@ -98,18 +182,6 @@
 				<string>braces-with-hat-speaker</string>
 				<key>sound_mp3</key>
 				<string>braces-with-hat-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>smiley3-plain</string>
-				<key>image_play</key>
-				<string>smiley3-play</string>
-				<key>image_speaker</key>
-				<string>smiley3-speaker</string>
-				<key>sound_mp3</key>
-				<string>omg_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -175,42 +247,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>frowning-cap-plain</string>
-				<key>image_play</key>
-				<string>frowning-cap-play</string>
-				<key>image_speaker</key>
-				<string>frowning-cap-speaker</string>
-				<key>sound_mp3</key>
-				<string>frowning-cap-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>smile-with-hat-plain</string>
-				<key>image_play</key>
-				<string>smile-with-hat-play</string>
-				<key>image_speaker</key>
-				<string>smile-with-hat-speaker</string>
-				<key>sound_mp3</key>
-				<string>smile-with-hat-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>smiley4-plain</string>
-				<key>image_play</key>
-				<string>smiley4-play</string>
-				<key>image_speaker</key>
-				<string>smiley4-speaker</string>
-				<key>sound_mp3</key>
-				<string>rofl_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>round-sunglasses-plain</string>
 				<key>image_play</key>
 				<string>round-sunglasses-play</string>
@@ -218,42 +254,6 @@
 				<string>round-sunglasses-speaker</string>
 				<key>sound_mp3</key>
 				<string>round-sunglasses-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>wink-with-hair-plain</string>
-				<key>image_play</key>
-				<string>wink-with-hair-play</string>
-				<key>image_speaker</key>
-				<string>wink-with-hair-speaker</string>
-				<key>sound_mp3</key>
-				<string>wink-with-hair-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>zzz-sleep-with-hair-plain</string>
-				<key>image_play</key>
-				<string>zzz-sleep-with-hair-play</string>
-				<key>image_speaker</key>
-				<string>zzz-sleep-with-hair-speaker</string>
-				<key>sound_mp3</key>
-				<string>zzz-sleep-with-hair-sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>smiley1-plain</string>
-				<key>image_play</key>
-				<string>smiley1-play</string>
-				<key>image_speaker</key>
-				<string>smiley1-speaker</string>
-				<key>sound_mp3</key>
-				<string>lol_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
