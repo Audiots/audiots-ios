@@ -55,11 +55,11 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>burp_plain</string>
+				<string>smiley2-plain</string>
 				<key>image_play</key>
-				<string>burp_play</string>
+				<string>smiley2-play</string>
 				<key>image_speaker</key>
-				<string>burp_speaker</string>
+				<string>smiley2-speaker</string>
 				<key>sound_mp3</key>
 				<string>burp_sound</string>
 				<key>cellType</key>
@@ -103,11 +103,11 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>omg_plain</string>
+				<string>smiley3-plain</string>
 				<key>image_play</key>
-				<string>omg_play</string>
+				<string>smiley3-play</string>
 				<key>image_speaker</key>
-				<string>omg_speaker</string>
+				<string>smiley3-speaker</string>
 				<key>sound_mp3</key>
 				<string>omg_sound</string>
 				<key>cellType</key>
@@ -199,11 +199,11 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>rofl_plain</string>
+				<string>smiley4-plain</string>
 				<key>image_play</key>
-				<string>rofl_play</string>
+				<string>smiley4-play</string>
 				<key>image_speaker</key>
-				<string>rofl_speaker</string>
+				<string>smiley4-speaker</string>
 				<key>sound_mp3</key>
 				<string>rofl_sound</string>
 				<key>cellType</key>
@@ -247,11 +247,11 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>lol_plain</string>
+				<string>smiley1-plain</string>
 				<key>image_play</key>
-				<string>lol_play</string>
+				<string>smiley1-play</string>
 				<key>image_speaker</key>
-				<string>lol_speaker</string>
+				<string>smiley1-speaker</string>
 				<key>sound_mp3</key>
 				<string>lol_sound</string>
 				<key>cellType</key>
@@ -295,11 +295,11 @@
 			</dict>	
 			<dict>
 				<key>image_plain</key>
-				<string>praying-hands-plain</string>
+				<string>prayinghands-plain</string>
 				<key>image_play</key>
-				<string>praying-hands-play</string>
+				<string>prayinghands-play</string>
 				<key>image_speaker</key>
-				<string>praying-hands-speaker</string>
+				<string>prayinghands-speaker</string>
 				<key>sound_mp3</key>
 				<string>praying-hands-sound</string>
 				<key>cellType</key>
