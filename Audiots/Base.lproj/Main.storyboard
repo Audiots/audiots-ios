@@ -92,7 +92,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Your Own" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPS-14-AUb">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Photo Audio Captions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPS-14-AUb">
                                                     <rect key="frame" x="8" y="8" width="359" height="47.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                     <color key="textColor" red="0.25490196079999999" green="0.72156862749999995" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1646,7 +1646,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k59-qm-buv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1281" y="-846"/>
+            <point key="canvasLocation" x="1442" y="-846"/>
         </scene>
         <!--Iniciando-->
         <scene sceneID="h1S-XS-bAe">
@@ -3027,7 +3027,7 @@
         <image name="photo_camera" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5UH-Wy-tEu"/>
+        <segue reference="iIH-ev-clN"/>
         <segue reference="ZAd-DP-xpH"/>
     </inferredMetricsTieBreakers>
 </document>
