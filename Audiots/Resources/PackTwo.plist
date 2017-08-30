@@ -43,18 +43,6 @@
 			</dict>					
 			<dict>
 				<key>image_plain</key>
-				<string>cow_plain</string>
-				<key>image_play</key>
-				<string>cow_play</string>
-				<key>image_speaker</key>
-				<string>cow_speaker</string>
-				<key>sound_mp3</key>
-				<string>cow_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>crab_plain</string>
 				<key>image_play</key>
 				<string>crab_play</string>
@@ -103,18 +91,6 @@
 			</dict>	
 			<dict>
 				<key>image_plain</key>
-				<string>kitty_plain</string>
-				<key>image_play</key>
-				<string>kitty_play</string>
-				<key>image_speaker</key>
-				<string>kitty_speaker</string>
-				<key>sound_mp3</key>
-				<string>kitty_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>lightening_plain</string>
 				<key>image_play</key>
 				<string>lightening_play</string>
@@ -127,18 +103,6 @@
 			</dict>
 			<dict>
 				<key>image_plain</key>
-				<string>monkey_plain</string>
-				<key>image_play</key>
-				<string>monkey_play</string>
-				<key>image_speaker</key>
-				<string>monkey_speaker</string>
-				<key>sound_mp3</key>
-				<string>monkey_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
 				<string>pig_plain</string>
 				<key>image_play</key>
 				<string>pig_play</string>
@@ -146,18 +110,6 @@
 				<string>pig_speaker</string>
 				<key>sound_mp3</key>
 				<string>pig_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>puppy_plain</string>
-				<key>image_play</key>
-				<string>puppy_play</string>
-				<key>image_speaker</key>
-				<string>puppy_speaker</string>
-				<key>sound_mp3</key>
-				<string>puppy_sound</string>
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
@@ -846,18 +798,6 @@
 				<key>cellType</key>
 				<string>packEmoticonsCollectionViewCell</string>
 			</dict>
-			<dict>
-				<key>image_plain</key>
-				<string>shower_plain</string>
-				<key>image_play</key>
-				<string>shower_play</string>
-				<key>image_speaker</key>
-				<string>shower_speaker</string>
-				<key>sound_mp3</key>
-				<string>shower_sound</string>
-				<key>cellType</key>
-				<string>packEmoticonsCollectionViewCell</string>
-			</dict>	
 			<dict>
 				<key>image_plain</key>
 				<string>my-house_plain</string>
